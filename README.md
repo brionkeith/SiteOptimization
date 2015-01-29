@@ -1,4 +1,4 @@
-# Testing & Optimization
+# <h2>Testing & Optimization</h2>
 Parent repository for all Site Optimization tests.
 
 <h4>Repo Structure</h4>
