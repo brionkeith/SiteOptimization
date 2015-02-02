@@ -218,3 +218,7 @@ pip-log.txt
 # Ignore the following directory
 EX/_tests/book-today-messaging/node_modules/
 EX/node_modules/
+.sass-cache/
+README.md
+gruntfile.js
+package.json
