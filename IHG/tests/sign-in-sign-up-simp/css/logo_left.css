@@ -1,0 +1,66 @@
+#identityBlock {
+  padding-top: 0;
+  padding-bottom: 14px;
+  border-width: 5px !important; }
+  #identityBlock .paymentihglog {
+    margin-left: 14px;
+    position: relative;
+    top: 50px; }
+  #identityBlock #UHF_header_loginform {
+    margin: 0; }
+  #identityBlock .rememberWrap {
+    margin: 0;
+    padding: 0 0 0 23px;
+    float: right;
+    width: 460px;
+    border-left: 2px solid #cccccc; }
+    #identityBlock .rememberWrap .heavyText {
+      padding: 0; }
+    #identityBlock .rememberWrap .heavyText span {
+      font: bold 14px Georgia,"Times New Roman",Times,serif;
+      font-style: italic; }
+    #identityBlock .rememberWrap .signIn {
+      padding: 0;
+      background: #ffffff; }
+      #identityBlock .rememberWrap .signIn #uhf_btn_SignIn {
+        margin: 14px 10px 0 10px; }
+      #identityBlock .rememberWrap .signIn div input {
+        height: 20px; }
+      #identityBlock .rememberWrap .signIn .rememberCheckbox {
+        top: 0; }
+      #identityBlock .rememberWrap .signIn .forgotRememberPin {
+        margin: 12px 0 0 0;
+        padding: 0;
+        float: left !important; }
+      #identityBlock .rememberWrap .signIn .rememberCheck {
+        margin: 0;
+        clear: both; }
+        #identityBlock .rememberWrap .signIn .rememberCheck #remember {
+          margin: 1px 5px 0 0;
+          float: left; }
+
+#frmGuestInfo #identityBlock {
+  padding: 15px; }
+  #frmGuestInfo #identityBlock .paymentihglog {
+    margin-left: 10px;
+    position: relative;
+    top: 30px; }
+  #frmGuestInfo #identityBlock #anonId .heavyText {
+    padding: 0 0 5px;
+    float: left; }
+  #frmGuestInfo #identityBlock #anonId .heavyText span:first-child {
+    font: bold 14px Georgia,"Times New Roman",Times,serif;
+    font-style: italic; }
+  #frmGuestInfo #identityBlock #anonId .heavyText:nth-child(2) {
+    padding-bottom: 5px; }
+  #frmGuestInfo #identityBlock #anonId .joinNow {
+    padding: 0 0 0 20px;
+    float: right;
+    width: 450px;
+    background: #ffffff;
+    border-left: 2px solid #cccccc; }
+    #frmGuestInfo #identityBlock #anonId .joinNow .joinnowtext {
+      float: right;
+      width: 420px; }
+
+/*# sourceMappingURL=logo_left.css.map */

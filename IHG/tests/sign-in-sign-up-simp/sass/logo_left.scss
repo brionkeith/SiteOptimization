@@ -1,0 +1,107 @@
+$background: #ffffff;
+$border-width: 5px;
+
+#identityBlock {
+	padding-top:0;
+	padding-bottom:14px;
+	border-width: $border-width !important;
+
+	.paymentihglog {
+		margin-left:14px;
+		position:relative;
+		top:50px;
+	}
+
+	#UHF_header_loginform {
+		margin:0;
+	}
+
+	.rememberWrap {
+		margin:0;
+		padding:0 0 0 23px;
+		float:right;
+		width:460px;
+		border-left:2px solid #cccccc;
+
+		.heavyText {
+			padding:0;
+		}		
+
+		.heavyText span {
+			font: bold 14px Georgia,"Times New Roman",Times,serif;
+			font-style: italic;
+		}
+
+		.signIn {
+			padding:0;
+			background: $background;
+
+			#uhf_btn_SignIn {
+				margin:14px 10px 0 10px;
+			}
+
+			div input {
+				height:20px;
+			}
+
+			.rememberCheckbox {
+				top:0;
+			}
+
+			.forgotRememberPin {
+				margin:12px 0 0 0;
+				padding:0;
+				float: left !important;
+			}
+
+			.rememberCheck {
+				margin:0;
+				clear:both;
+				
+				#remember {
+					margin:1px 5px 0 0;
+					float:left;
+				}				
+			}
+		}
+	}
+}
+
+#frmGuestInfo #identityBlock {
+	padding:15px;
+
+	.paymentihglog {
+		margin-left:10px;
+		position: relative;
+		top:30px;
+	}	
+
+	#anonId {
+
+		.heavyText {
+			padding:0 0 5px;
+			float:left;
+		}
+		.heavyText span:first-child {
+			font: bold 14px Georgia,"Times New Roman",Times,serif;
+			font-style: italic;
+		}
+
+		.heavyText:nth-child(2) {
+			padding-bottom:5px;
+		}
+
+		.joinNow {
+			padding:0 0 0 20px;
+			float:right;
+			width:450px;
+			background: $background;
+			border-left:2px solid #cccccc;
+
+			.joinnowtext {
+				float:right;
+				width:420px;
+			}		
+		}	
+	}
+}
