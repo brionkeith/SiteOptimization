@@ -55,7 +55,7 @@ $border-width: 5px;
 				float: left !important;
 
 				> span {
-					display: none;
+					display: none; /*if needed, display property may be removed*/
 				}
 			}
 

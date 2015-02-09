@@ -34,7 +34,8 @@
         padding: 0;
         float: left !important; }
         #identityBlock .rememberWrap .signIn .forgotRememberPin > span {
-          display: none; }
+          display: none;
+          /*if needed, display property may be removed*/ }
       #identityBlock .rememberWrap .signIn .rememberCheck {
         margin: 0;
         clear: both; }
