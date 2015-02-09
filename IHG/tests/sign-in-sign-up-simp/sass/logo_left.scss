@@ -24,6 +24,7 @@ $border-width: 5px;
 		border-left:2px solid #cccccc;
 
 		.heavyText {
+			margin-bottom:5px;
 			padding:0;
 		}		
 
@@ -52,6 +53,10 @@ $border-width: 5px;
 				margin:12px 0 0 0;
 				padding:0;
 				float: left !important;
+
+				> span {
+					display: none;
+				}
 			}
 
 			.rememberCheck {
