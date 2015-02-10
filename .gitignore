@@ -219,6 +219,7 @@ pip-log.txt
 EX/_tests/book-today-messaging/node_modules/
 EX/node_modules/
 IHG/tests/sign-in-sign-up-simp/node_modules/
+IHG/tests/sign-in-sign-up-simp/css/site.css
 .sass-cache/
 README.md
 gruntfile.js
