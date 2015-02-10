@@ -1,0 +1,122 @@
+$background-white: #ffffff;
+$border-width: 5px;
+$width: auto;
+
+#identityBlock {
+	padding-top:0;
+	padding-bottom:14px;
+	border-width: $border-width !important;
+
+	.paymentihglog {
+		margin-right:25px;
+		position:relative;
+		float:right;
+		top:50px;
+	}
+
+	#UHF_header_loginform {
+		margin:0;
+	}
+
+	.rememberWrap {
+		margin:0;
+		padding:0;
+		float:left;
+		width:460px;
+		border-right:2px solid #cccccc;
+
+		.heavyText {		
+			padding:0;
+			font-size:15px;
+		}		
+
+		.heavyText span {
+			padding-left:3px;
+		}
+
+		.signIn {
+			padding:0;
+			background: $background-white;
+
+			#uhf_btn_SignIn {
+				margin:14px 10px 0 10px;
+			}
+
+			div input {
+				height:20px;
+			}
+
+			.rememberCheckbox {
+				top:0;
+			}
+
+			.forgotRememberPin {
+				margin:12px 0 0 0;
+				padding:0;
+				float: left !important;
+
+				> span {
+					display: none; /*if needed, display property may be removed*/
+				}
+			}
+
+			.rememberCheck {
+				margin:0 0 0 5px;
+				clear:both;
+				
+				#remember {
+					margin:1px 5px 0 0;
+					float:left;
+				}				
+			}
+		}
+	}
+}
+
+#frmGuestInfo #identityBlock {
+	padding:0;
+	border:none;
+
+	.paymentihglog {
+		display:none;
+	}	
+
+	#anonId {
+
+		.heavyText {
+			margin: 0 0 10px;
+			padding:0 0 5px;		
+			float:none;
+			border-bottom:1px solid #aaaaaa;
+		}
+		.heavyText span:first-child {
+			padding-left:0;
+			font-size:18px;
+			color:#C13A02;			
+		}
+
+		.heavyText:nth-child(2) {
+			margin:0 0 7px;			
+			padding-bottom:0;
+			border-bottom: none;
+			font-weight: bold;
+			font-size: 14px;
+			color:#444444;
+		}
+
+		.joinNow {
+			padding:0;
+			float:none;
+			width:$width;
+			background: $background-white;
+
+			label {
+				font-size:13.5px;
+			}
+
+			.joinnowtext {
+				float:left;
+			}		
+		}	
+	}
+}
