@@ -216,10 +216,20 @@ pip-log.txt
 .mr.developer.cfg
 
 # Ignore the following directory
+
+# EX
 EX/_tests/book-today-messaging/node_modules/
 EX/node_modules/
+
+# IHG
 IHG/tests/sign-in-sign-up-simp/node_modules/
 IHG/tests/sign-in-sign-up-simp/css/site.css
+
+IHG/tests/Chase-Offer-My_account/node_modules/
+IHG/tests/Chase-Offer-My_account/package.json
+IHG/tests/Chase-Offer-My_account/gruntfile.js
+
+
 .sass-cache/
 README.md
 gruntfile.js
