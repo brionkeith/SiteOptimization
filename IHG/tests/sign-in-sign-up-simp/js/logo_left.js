@@ -12,24 +12,10 @@ jQuery(document).ready(function(jQuery) {
   jQuery('#frmGuestInfo #identityBlock #anonId .heavyText').prependTo('.joinNow'); // Move header text into .joinNow for more accurate positioning
   
   var POINTS = jQuery('#frmGuestInfo #identityBlock .heavyText:eq(1) span').text(); // Get points for earn messaging
-  // var termsLinkHTML = jQuery .clone('.joinnowtext .pcrTerms')attr('href');
+  var termsLinkHTML = jQuery('<a href=\"#\" class=\"pcrTerms\" title=\"IHG<sup>®</sup> Rewards Club Terms & Conditions.\"> IHG<sup>®</sup> Rewards Club Terms &amp; Conditions.</a>');
 
   jQuery('#frmGuestInfo #identityBlock .heavyText:eq(1)').html('This reservation could earn you ' + '<strong>' + POINTS + '</strong>' + ' points towards a free night.'); // Change default text and add POINTS var
-  jQuery('#frmGuestInfo #identityBlock #anonId .joinnowtext label').html('Sign me up now. Look for your new member info on the confirmation page. <br>Read the<a href=\"#\" class=\"pcrTerms\" title="IHG<sup>®</sup> Rewards Club Terms & Conditions."> IHG<sup>®</sup> Rewards Club Terms &amp; Conditions.</a>'); // Change default HTML text
-
-  function openTermsAndConditionDialog() {
-    jQuery('#pcrTerms_conditions_dialog').dialog({autoOpen: false,resizable: false,width: 500,height: 350,dialogClass: 'pcrTermsDialog',buttons: [{alt: jQuery("#pcrTerms_conditions_dialog .closeControl").attr("title"),title: jQuery("#pcrTerms_conditions_dialog .closeControl").attr("title"),click: function() {
-                    jQuery(this).dialog("close");
-                }}]});
-    jQuery('.pcrTerms').click(function(e) {
-        jQuery('#pcrTerms_conditions_dialog').show();
-        jQuery("#pcrTerms_conditions_dialog").removeClass("hide");
-        jQuery('#pcrTerms_conditions_dialog').dialog('open');
-        jQuery("#pcrTerms_conditions_dialog").scrollLeft(0);
-        registerEventToTealeaf(e);
-        return false;
-    });
-  }
+  jQuery('#frmGuestInfo #identityBlock #anonId .joinnowtext label').html('Sign me up now. Look for your new member info on the confirmation page. <br>Read the').append(termsLinkHTML); // Change default HTML text
 
   // mboxTrackDefer
   /*function validate(form){
@@ -54,6 +40,6 @@ jQuery(document).ready(function(jQuery) {
 //   else{
 //     $('#identityBlockOrginal #pcrEnroll').removeAttr('checked');    
 //   }
-  
+
 //   console.log($('#identityBlockOrginal #pcrEnroll').attr('checked'));
 // });

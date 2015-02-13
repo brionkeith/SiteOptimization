@@ -1,9 +1,7 @@
 jQuery(document).ready(function(jQuery) {
 
-  jQuery('#identityBlock:eq(0) .heavyText span').html('We\'ll Fill Out the Form. You\'ll Get the Points. Sign In Now.'); // Change default HTML text
+  jQuery('#identityBlock:eq(0) .heavyText span').html('Sign in IHG<sup>®</sup> Rewards Club Members'); // Change default HTML text
   jQuery('#identityBlock:eq(0) .heavyText, .signIn').wrapAll('<div class=\"rememberWrap\" />'); // Wrap both div tags into a single div
-  //jQuery('#identityBlock:eq(0) .rememberWrap .heavyText').eq(1).remove(); // Remove first dulicate
-  //jQuery('#identityBlock:eq(0) .rememberWrap .heavyText:eq(1)').remove(); // Remove duplicate
   
   jQuery('.signIn div span label').appendTo('.signIn'); // Move form label into div for positioning
   jQuery('.signIn div span input#remember').appendTo('.signIn'); // Move form label into div for positioning

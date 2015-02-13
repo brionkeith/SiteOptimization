@@ -1,0 +1,84 @@
+#identityBlock {
+  padding-top: 0;
+  padding-bottom: 14px;
+  border-width: 5px !important; }
+  #identityBlock .paymentihglog {
+    margin-right: 25px;
+    position: relative;
+    float: right;
+    top: 50px; }
+  #identityBlock #UHF_header_loginform {
+    margin: 0; }
+  #identityBlock .rememberWrap {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 460px;
+    border-right: 2px solid #cccccc; }
+    #identityBlock .rememberWrap .heavyText {
+      padding: 0;
+      font-size: 15px; }
+    #identityBlock .rememberWrap .heavyText span {
+      padding-left: 3px; }
+    #identityBlock .rememberWrap .signIn {
+      padding: 0;
+      background: #ffffff; }
+      #identityBlock .rememberWrap .signIn #uhf_btn_SignIn {
+        margin: 14px 10px 0 10px; }
+      #identityBlock .rememberWrap .signIn div input {
+        height: 20px; }
+      #identityBlock .rememberWrap .signIn .rememberCheckbox {
+        top: 0; }
+      #identityBlock .rememberWrap .signIn .forgotRememberPin {
+        margin: 12px 0 0 0;
+        padding: 0;
+        float: left !important; }
+        #identityBlock .rememberWrap .signIn .forgotRememberPin > span {
+          display: none;
+          /*if needed, display property may be removed*/ }
+      #identityBlock .rememberWrap .signIn .rememberCheck {
+        margin: 0 0 0 5px;
+        clear: both; }
+        #identityBlock .rememberWrap .signIn .rememberCheck #remember {
+          margin: 1px 5px 0 0;
+          float: left; }
+
+#frmGuestInfo #identityBlock {
+  padding: 0;
+  border: none; }
+  #frmGuestInfo #identityBlock .paymentihglog {
+    display: none; }
+  #frmGuestInfo #identityBlock #anonId .heavyText {
+    margin: 0 0 10px;
+    padding: 0 0 5px;
+    float: none;
+    border-bottom: 1px solid #aaaaaa; }
+  #frmGuestInfo #identityBlock #anonId .heavyText span:first-child {
+    padding-left: 0;
+    font-size: 18px;
+    color: #C13A02; }
+  #frmGuestInfo #identityBlock #anonId .heavyText:nth-child(2) {
+    margin: 0 0 7px;
+    padding-bottom: 0;
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #444444; }
+  #frmGuestInfo #identityBlock #anonId .joinNow {
+    padding: 0;
+    float: none;
+    width: auto;
+    background: #ffffff; }
+    #frmGuestInfo #identityBlock #anonId .joinNow label {
+      font-size: 13.5px; }
+    #frmGuestInfo #identityBlock #anonId .joinNow .joinnowtext {
+      margin-bottom: 5px;
+      float: left; }
+    #frmGuestInfo #identityBlock #anonId .joinNow .noEnrollmentText {
+      padding-left: 10px;
+      float: left; }
+    #frmGuestInfo #identityBlock #anonId .joinNow .newEnrollmentRadio {
+      float: left;
+      width: 20px; }
+
+/*# sourceMappingURL=sign_up_radio.css.map */

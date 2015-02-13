@@ -115,8 +115,17 @@ $width: auto;
 			}
 
 			.joinnowtext {
+				margin-bottom:5px;
 				float:left;
-			}		
+			}
+			.noEnrollmentText {
+				padding-left:10px;
+				float:left;
+			}
+			.newEnrollmentRadio {
+				float:left;
+				width:20px;
+			}	
 		}	
 	}
 }
