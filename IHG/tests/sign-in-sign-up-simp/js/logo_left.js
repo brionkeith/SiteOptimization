@@ -12,34 +12,38 @@ jQuery(document).ready(function(jQuery) {
   jQuery('#frmGuestInfo #identityBlock #anonId .heavyText').prependTo('.joinNow'); // Move header text into .joinNow for more accurate positioning
   
   var POINTS = jQuery('#frmGuestInfo #identityBlock .heavyText:eq(1) span').text(); // Get points for earn messaging
-  var termsLinkHTML = jQuery('<a href=\"#\" class=\"pcrTerms\" title=\"IHG<sup>®</sup> Rewards Club Terms & Conditions.\"> IHG<sup>®</sup> Rewards Club Terms &amp; Conditions.</a>');
+  var termsLinkHTML = jQuery('<a href=\"#\" class=\"pcrTerms\" title=\"IHG<sup>®</sup> Rewards Club Terms & Conditions.\"> IHG<sup>®</sup> Rewards Club Terms &amp; Conditions.</a>'); // Terms & Conditions link
 
   jQuery('#frmGuestInfo #identityBlock .heavyText:eq(1)').html('This reservation could earn you ' + '<strong>' + POINTS + '</strong>' + ' points towards a free night.'); // Change default text and add POINTS var
   jQuery('#frmGuestInfo #identityBlock #anonId .joinnowtext label').html('Sign me up now. Look for your new member info on the confirmation page. <br>Read the').append(termsLinkHTML); // Change default HTML text
 
-  // mboxTrackDefer
-  /*function validate(form){
-    if(…the form is valid…){
-    mboxTrackDefer('IHG_Guest_Info');
-    form.submit();
-    }
-  }*/
+  // Fire Terms & Conditions Dialog on click
+  jQuery('a.pcrTerms').on('click', function (event) {
+      event.preventDefault();
 
-  // mboxTrack
-  /*e(".ui-uhfWalletFlyout-wrapper #signup a").click(function() {
-    mboxTrack("IHG_HomePageLogin_Top", "textClicked=signUpControl")
-  });*/
+      if ('.ui-dialog') {
+          jQuery(".pcrTermsDialog").css({
+            "display": "block"
+          });
+      } else {
+          jQuery(".pcrTermsDialog").css("display", "none");
+      }
+
+      alert('Page should not scroll to top.');
+  });
+  
+  //mboxTrack Rewards Club Sign-In
+  function rcSignIn(param) {
+    if (param='rcSignInSubmit') {
+      mboxTrack('IHG_Guest_Info');
+    }
+  }
+
+  //mboxTrack Rewards Club Join
+  function rcJoin(param) {
+    if (param='rcJoinSubmit') {
+      mboxTrack('IHG_Guest_Info');
+    }
+  }  
 
 });
-
-// $(document).on('click', '#pcrEnrollNew', function()
-// {
-//   if ($('#identityBlock #pcrEnrollNew').is(":checked")) {
-//     $('#identityBlockOrginal #pcrEnroll').attr('checked', $('#identityBlock #pcrEnrollNew').attr('checked'));
-//   }
-//   else{
-//     $('#identityBlockOrginal #pcrEnroll').removeAttr('checked');    
-//   }
-
-//   console.log($('#identityBlockOrginal #pcrEnroll').attr('checked'));
-// });
