@@ -3,7 +3,7 @@
   padding-bottom: 14px;
   border-width: 5px !important; }
   #identityBlock .paymentihglog {
-    margin-right: 25px;
+    margin-right: 45px;
     position: relative;
     float: right;
     top: 50px; }
@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     float: left;
-    width: 460px;
+    width: 430px;
     border-right: 2px solid #cccccc; }
     #identityBlock .rememberWrap .heavyText {
       padding: 0;
@@ -46,7 +46,8 @@
 #frmGuestInfo #identityBlock {
   padding: 15px; }
   #frmGuestInfo #identityBlock .paymentihglog {
-    margin-left: 10px;
+    margin-right: 30px;
+    margin-left: 0;
     position: relative;
     top: 30px; }
   #frmGuestInfo #identityBlock #anonId .heavyText {
