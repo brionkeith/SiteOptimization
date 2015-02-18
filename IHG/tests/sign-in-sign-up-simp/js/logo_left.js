@@ -24,23 +24,7 @@ jQuery(document).ready(function(jQuery) {
       event.preventDefault();
 
       if ('.ui-dialog') {
-          jQuery(".ui-dialog.ui-widget.ui-widget-content.ui-corner-all.pcrTermsDialog.ui-draggable.ui-dialog-buttons").css({
-            "display": "block",
-            "outline": "0px",
-            "position": "relative",
-            "height": "auto",
-            "width": "500px",
-            "top": "-996.671875px",
-            "left": "530.5px",
-            "background": "red"
-          });
           jQuery('#pcrTerms_conditions_dialog').removeClass('hide');
-          jQuery('.pcrTermsDialog, #pcrTerms_conditions_dialog').css({
-            "display": "block",
-            "width": "522px",
-            "min-height": "0px",
-            "height": "251px"
-          });
       } else {
           jQuery(".pcrTermsDialog").css("display", "none");
           // jQuery('#pcrTerms_conditions_dialog').addClass('pcrTerms_conditions_dialog');

@@ -67,4 +67,20 @@
       float: right;
       width: 420px; }
 
+/* Terms & Conditions Dialog */
+#guestInfo .ui-dialog.ui-widget.ui-widget-content.ui-corner-all.pcrTermsDialog.ui-draggable.ui-dialog-buttons {
+  display: block;
+  outline: 0px;
+  position: relative;
+  height: auto;
+  width: 500px;
+  top: -996.671875px;
+  left: 530.5px; }
+
+.pcrTermsDialog, #pcrTerms_conditions_dialog {
+  display: block;
+  width: 522px;
+  min-height: 0px;
+  height: 251px; }
+
 /*# sourceMappingURL=logo_left.css.map */
