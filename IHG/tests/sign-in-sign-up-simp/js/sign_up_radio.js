@@ -22,4 +22,41 @@ jQuery(document).ready(function(jQuery) {
   jQuery('.newEnrollmentRadio').append('<input name="pcrQuickEnroll" value="true" type="radio">').appendTo('.noEnrollment'); // Create new radio button
   jQuery('<div class="noEnrollmentText"><label for="pcrEnroll">I am not interested at this time.</label></div>').insertAfter('.newEnrollmentRadio'); // Create new div to hold noEnrollment  
 
+    // Open Terms & Conditions Dialog
+  jQuery('a.pcrTerms').on('click', function(event) {
+    event.preventDefault();
+
+    if ('.ui-dialog') {
+        jQuery('.pcrTermsDialog').css({
+          "display": "block",
+          "outline": "0px",
+          "position": "relative",
+          "height": "auto",
+          "width": "500px",
+          "top": "-996.671875px",
+          "left": "530.5px"
+        });
+
+        jQuery('#pcrTerms_conditions_dialog').removeClass('hide').css({
+          "display": "block",
+          "width": "auto",
+          "min-height": "0px",
+          "height": "251px"
+        });
+
+    } else {
+        jQuery('#pcrTerms_conditions_dialog').addClass('hide');
+    }
+  });
+
+  // Close Terms & Dialog
+  jQuery('.closeControl, .ui-button.ui-corner-all.ui-button-text-only').on('click', function(event) {
+    event.preventDefault();
+
+    if ('.ui-dialog') {
+      jQuery('.pcrTermsDialog').css({"display": "none"});
+      jQuery('#pcrTerms_conditions_dialog').addClass('hide');
+    }
+  });
+
 });

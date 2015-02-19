@@ -15,4 +15,47 @@ jQuery(document).ready(function(jQuery) {
   jQuery('#frmGuestInfo #identityBlock .heavyText:eq(1)').html('This reservation could earn you ' + '<strong>' + POINTS + ' points</strong>' + ' towards a free night.'); // Change default text and add POINTS var
   jQuery('#frmGuestInfo #identityBlock #anonId .joinnowtext label').html('<strong>Sign me up now.</strong> Look for your new member info on the confirmation page. <br>Read the<a href=\"#\" class=\"pcrTerms\"> IHG<sup>®</sup> Rewards Club Terms &amp; Conditions.</a>'); // Change default HTML text
 
+  // Open Terms & Conditions Dialog
+  jQuery('a.pcrTerms').on('click', function(event) {
+    event.preventDefault();
+
+    if ('.ui-dialog') {
+        jQuery('.pcrTermsDialog').css({
+          "display": "block",
+          "outline": "0px",
+          "position": "relative",
+          "height": "auto",
+          "width": "500px",
+          "top": "-996.671875px",
+          "left": "530.5px"
+        });
+
+        jQuery('#pcrTerms_conditions_dialog').removeClass('hide').css({
+          "display": "block",
+          "width": "auto",
+          "min-height": "0px",
+          "height": "251px"
+        });
+
+    } else {
+        jQuery('#pcrTerms_conditions_dialog').addClass('hide');
+    }
+  });
+
+  // Close Terms & Dialog
+  jQuery('.closeControl, .ui-button.ui-corner-all.ui-button-text-only').on('click', function(event) {
+    event.preventDefault();
+
+    if ('.ui-dialog') {
+      jQuery('.pcrTermsDialog').css({"display": "none"});
+      jQuery('#pcrTerms_conditions_dialog').addClass('hide');
+    }
+  });
+  
+  //mboxTrack Rewards Club Sign-In
+  function rcSignIn(param) {
+    if (param='rcSignInSubmit') {
+      mboxTrack('IHG_Guest_Info');
+    }
+  }
 });
