@@ -1,7 +1,7 @@
 # <h2>Testing & Optimization</h2>
-Test Target: IHG 
-Test Name: Sign-in/Sign-Up Simplification
-Experiences: Default (Control); Logo Left; Logo Right; No Logo; Sign-up/Sign-in Radio
+<strong>Test Target:</strong> IHG 
+<strong>Test Name:</strong> Sign-in/Sign-Up Simplification
+<strong>Experiences:</strong> Default (Control); Logo Left; Logo Right; No Logo; Sign-up/Sign-in Radio
 
 <h4>Test Overview</h4>
 Determine the imact of simplifying the Rewards Club sign-up and sign-in message on the Guest Info page.
