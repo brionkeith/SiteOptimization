@@ -41,21 +41,4 @@ jQuery(document).ready(function(jQuery) {
         jQuery('#pcrTerms_conditions_dialog').addClass('hide');
     }
   });
-
-  // Close Terms & Dialog
-  jQuery('.closeControl, .ui-button.ui-corner-all.ui-button-text-only').on('click', function(event) {
-    event.preventDefault();
-
-    if ('.ui-dialog') {
-      jQuery('.pcrTermsDialog').css({"display": "none"});
-      jQuery('#pcrTerms_conditions_dialog').addClass('hide');
-    }
-  });
-  
-  //mboxTrack Rewards Club Sign-In
-  function rcSignIn(param) {
-    if (param='rcSignInSubmit') {
-      mboxTrack('IHG_Guest_Info');
-    }
-  }
 });

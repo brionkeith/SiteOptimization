@@ -3,7 +3,7 @@ jQuery(document).ready(function(jQuery) {
   // Adobe Target/Site Optimization
   // Authored by: Brion Mills
 
-  // Bootstrapper.MVT.injectCSS('body{position:relative; opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important}');
+  Bootstrapper.MVT.injectCSS('body{position:relative; opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important}');
 
   jQuery('#identityBlock:eq(0) .heavyText span').html('We\'ll Fill Out the Form. You\'ll Get the Points. Sign In Now.'); // Change default HTML text
   jQuery('#identityBlock:eq(0) .heavyText, .signIn').wrapAll('<div class=\"rememberWrap\"></div>'); // Wrap both div tags into a single div
@@ -59,19 +59,4 @@ jQuery(document).ready(function(jQuery) {
       jQuery('#pcrTerms_conditions_dialog').addClass('hide');
     }
   });
-  
-  //mboxTrack Rewards Club Sign-In
-  function rcSignIn(param) {
-    if (param='rcSignInSubmit') {
-      mboxTrack('IHG_Guest_Info');
-    }
-  }
-
-  //mboxTrack Rewards Club Join
-  function rcJoin(param) {
-    if (param='rcJoinSubmit') {
-      mboxTrack('IHG_Guest_Info');
-    }
-  }  
-
 });
