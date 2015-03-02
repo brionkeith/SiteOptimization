@@ -1,6 +1,6 @@
 # <h2>Testing & Optimization</h2>
-<strong>Test Target:</strong> IHG 
-<strong>Test Name:</strong> Sign-in/Sign-Up Simplification
+<strong>Test Target:</strong> IHG<br>
+<strong>Test Name:</strong> Sign-in/Sign-Up Simplification<br>
 <strong>Experiences:</strong> Default (Control); Logo Left; Logo Right; No Logo; Sign-up/Sign-in Radio
 
 <h4>Test Overview</h4>
@@ -17,4 +17,4 @@ By simplifying the display and messaging for Rewards Club sign-up and sign-in, t
 </ul>
 
 <h4>Mods</h4>
-jQuery Lib utilized to restructure existing DOM in accordance with mockups provided by UX.
+jQuery Lib utilized to manipulate existing DOM in accordance with mockups provided by UX.
