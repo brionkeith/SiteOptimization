@@ -1,5 +1,5 @@
 # <h2>Testing & Optimization</h2>
-<strong>Test Target:</strong>IHG<br>
+<strong>Test Target:</strong> IHG<br>
 <strong>Test Name:</strong> Sign-in/Sign-Up Simplification<br>
 <strong>Experiences:</strong> Default (Control); Logo Left; Logo Right; No Logo; Sign-up/Sign-in Radio
 
