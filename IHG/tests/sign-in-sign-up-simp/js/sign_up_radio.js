@@ -17,7 +17,7 @@ jQuery(document).ready(function(jQuery) {
   jQuery('<div class="clearingDiv"></div><div class="newEnrollmentRadio"></div>').insertAfter('.joinnowtext'); // Create new div for newEnrollment radio button
 
   var checkbox = jQuery('#pcrEnroll'); // Declare checkbox
-  checkbox.replaceWith('<input type="radio" name="'+checkbox.attr('name')+'" value="'+checkbox.attr('value')+'" />').appendTo('.noEnrollmentRadio'); // Replace checkbox with radio button  
+  checkbox.replaceWith('<input id="pcrEnroll" type="radio" name="'+checkbox.attr('name')+'" value="'+checkbox.attr('value')+'" />').appendTo('.noEnrollmentRadio'); // Replace checkbox with radio button  
 
   jQuery('.newEnrollmentRadio').append('<input name="pcrQuickEnroll" value="true" type="radio">').appendTo('.noEnrollment'); // Create new radio button
   jQuery('<div class="noEnrollmentText"><label for="pcrEnroll">I am not interested at this time.</label></div>').insertAfter('.newEnrollmentRadio'); // Create new div to hold noEnrollment  
