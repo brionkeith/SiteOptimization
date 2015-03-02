@@ -17,4 +17,4 @@ By simplifying the display and messaging for Rewards Club sign-up and sign-in, t
 </ul>
 
 <h4>Mods</h4>
-jQuery Lib utilized to restructure existing DOM in accordance with mockups provided by UX.
+jQuery Lib utilized to manipulate existing DOM in accordance with mockups provided by UX.
