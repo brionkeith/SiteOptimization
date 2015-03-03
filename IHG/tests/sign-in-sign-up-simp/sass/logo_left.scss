@@ -6,6 +6,12 @@ $border-width: 5px;
 	padding-bottom:14px;
 	border-width: $border-width !important;
 
+	.signInErrorBoxContainer {
+		width: auto;
+		float: none;
+		margin-top: 12px;
+	}
+
 	.paymentihglog {
 		margin-left:14px;
 		position:relative;
@@ -62,11 +68,12 @@ $border-width: 5px;
 			.rememberCheck {
 				margin-left:6px;
 				clear:both;
+				width:150px;
 				
 				#remember {
 					margin:1px 5px 0 0;
 					float:left;
-				}				
+				}		
 			}
 		}
 	}
@@ -109,4 +116,13 @@ $border-width: 5px;
 			}		
 		}	
 	}
+}
+
+/* IE9, IE10 */
+@media screen and (min-width:0\0) {
+    #identityBlock .rememberWrap .signIn .rememberCheck #remember { margin-top: -5px \0/ !important;}
+}
+/* IE 10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   #identityBlock .rememberWrap .signIn .rememberCheck #remember { margin-top: -2px; }
 }

@@ -60,13 +60,6 @@ jQuery(document).ready(function(jQuery) {
     }
   });
 
-  /*jQuery('#btnNext').on('click', function () {
-      if (jQuery('#pcrEnroll').is(':checked')) {
-          mboxClickTrack(IHG_Guest_Info, "clicked=enroll");
-          alert("Join Now checkbox selected.");
-      } else {
-          mboxClickTrack(IHG_Guest_Info, "clicked=submit");
-          alert("You did not select the checkbox, but proceeded with booking.");
-      }
-  });*/
+  // Error Message
+  jQuery('.signInErrorBoxContainer').prependTo('#anonId');
 });

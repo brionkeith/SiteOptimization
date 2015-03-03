@@ -2,6 +2,10 @@
   padding-top: 0;
   padding-bottom: 14px;
   border-width: 5px !important; }
+  #identityBlock .signInErrorBoxContainer {
+    width: auto;
+    float: none;
+    margin-top: 12px; }
   #identityBlock .paymentihglog {
     margin-right: 45px;
     position: relative;

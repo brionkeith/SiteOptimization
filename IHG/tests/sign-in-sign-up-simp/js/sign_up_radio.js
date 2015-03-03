@@ -59,4 +59,7 @@ jQuery(document).ready(function(jQuery) {
     }
   });
 
+  // Error Message
+  jQuery('.signInErrorBoxContainer').prependTo('#anonId');  
+
 });

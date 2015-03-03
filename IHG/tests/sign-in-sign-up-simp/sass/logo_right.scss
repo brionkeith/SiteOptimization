@@ -6,6 +6,12 @@ $border-width: 5px;
 	padding-bottom:14px;
 	border-width: $border-width !important;
 
+	.signInErrorBoxContainer {
+		width: auto;
+		float: none;
+		margin-top: 12px;
+	}	
+
 	.paymentihglog {
 		margin-right:45px;
 		position:relative;

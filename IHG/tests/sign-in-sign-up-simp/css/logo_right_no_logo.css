@@ -7,6 +7,11 @@
     position: relative;
     float: right;
     top: 50px; }
+  #identityBlock .signInErrorBoxContainer {
+    width: auto;
+    float: none;
+    margin-top: 12px;
+    margin-bottom: 10px; }
   #identityBlock #UHF_header_loginform {
     margin: 0; }
   #identityBlock .rememberWrap {

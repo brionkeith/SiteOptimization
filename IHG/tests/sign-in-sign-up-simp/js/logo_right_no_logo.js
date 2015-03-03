@@ -51,4 +51,7 @@ jQuery(document).ready(function(jQuery) {
       jQuery('#pcrTerms_conditions_dialog').addClass('hide');
     }
   });
+
+  // Error Message
+  jQuery('.signInErrorBoxContainer').prependTo('#anonId');  
 });

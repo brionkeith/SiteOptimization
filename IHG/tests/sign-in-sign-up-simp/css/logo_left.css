@@ -2,6 +2,10 @@
   padding-top: 0;
   padding-bottom: 14px;
   border-width: 5px !important; }
+  #identityBlock .signInErrorBoxContainer {
+    width: auto;
+    float: none;
+    margin-top: 12px; }
   #identityBlock .paymentihglog {
     margin-left: 14px;
     position: relative;
@@ -38,7 +42,8 @@
           /*if needed, display property may be removed*/ }
       #identityBlock .rememberWrap .signIn .rememberCheck {
         margin-left: 6px;
-        clear: both; }
+        clear: both;
+        width: 150px; }
         #identityBlock .rememberWrap .signIn .rememberCheck #remember {
           margin: 1px 5px 0 0;
           float: left; }
@@ -66,5 +71,14 @@
     #frmGuestInfo #identityBlock #anonId .joinNow .joinnowtext {
       float: right;
       width: 420px; }
+
+/* IE9, IE10 */
+@media screen and (min-width: 0\0) {
+  #identityBlock .rememberWrap .signIn .rememberCheck #remember {
+    margin-top: -5px; } }
+/* IE 10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  #identityBlock .rememberWrap .signIn .rememberCheck #remember {
+    margin-top: -2px; } }
 
 /*# sourceMappingURL=logo_left.css.map */
