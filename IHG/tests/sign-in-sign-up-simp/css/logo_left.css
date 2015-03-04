@@ -1,11 +1,13 @@
 #identityBlock {
-  padding-top: 0;
+  padding-top: 10px;
   padding-bottom: 14px;
   border-width: 5px !important; }
   #identityBlock .signInErrorBoxContainer {
     width: auto;
     float: none;
-    margin-top: 12px; }
+    /*margin-top: 12px;*/ }
+  #identityBlock div.signInErrorBoxContainer:empty {
+    display: none; }
   #identityBlock .paymentihglog {
     margin-left: 14px;
     position: relative;
@@ -75,7 +77,7 @@
 /* IE9, IE10 */
 @media screen and (min-width: 0\0) {
   #identityBlock .rememberWrap .signIn .rememberCheck #remember {
-    margin-top: -5px; } }
+    margin-top: -5px \0/ !important; } }
 /* IE 10+ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   #identityBlock .rememberWrap .signIn .rememberCheck #remember {

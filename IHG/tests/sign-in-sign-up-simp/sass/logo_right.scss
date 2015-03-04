@@ -2,14 +2,14 @@ $background: #ffffff;
 $border-width: 5px;
 
 #identityBlock {
-	padding-top:0;
+	padding-top:10px;
 	padding-bottom:14px;
 	border-width: $border-width !important;
 
 	.signInErrorBoxContainer {
 		width: auto;
 		float: none;
-		margin-top: 12px;
+		/*margin-top: 12px;*/
 	}	
 
 	.paymentihglog {

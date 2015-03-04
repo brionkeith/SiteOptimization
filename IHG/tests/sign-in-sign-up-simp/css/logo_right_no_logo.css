@@ -1,5 +1,5 @@
 #identityBlock {
-  padding-top: 0;
+  padding-top: 10px;
   padding-bottom: 14px;
   border-width: 5px !important; }
   #identityBlock .paymentihglog {
@@ -10,7 +10,7 @@
   #identityBlock .signInErrorBoxContainer {
     width: auto;
     float: none;
-    margin-top: 12px;
+    /*margin-top: 12px;*/
     margin-bottom: 10px; }
   #identityBlock #UHF_header_loginform {
     margin: 0; }

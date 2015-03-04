@@ -3,14 +3,14 @@ $border-width: 5px;
 $width: auto;
 
 #identityBlock {
-	padding-top:0;
+	padding-top:10px;
 	padding-bottom:14px;
 	border-width: $border-width !important;
 
 	.signInErrorBoxContainer {
 		width: auto;
 		float: none;
-		margin-top: 12px;
+		/*margin-top: 12px;*/
 		margin-bottom: 10px;
 	}	
 
