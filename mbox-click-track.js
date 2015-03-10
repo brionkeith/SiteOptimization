@@ -70,10 +70,10 @@ Adbett=window.Adbett||{};
     };
 
     mboxFactoryDefault.addOnLoad(function(){
-        // Adbett.track({selector:'.signIn #uhf_btn_SignIn input#pcrLeftSignInBtn',value:'signin-button',event:'mousedown',type:'signaler'});
-        // Adbett.track({selector:'.joinNow .joinnowcheckbox input#pcrEnroll',value:'joinnow-link',event:'mousedown',type:'signaler'});
+        Adbett.track({selector:'.signIn #uhf_btn_SignIn input#pcrLeftSignInBtn',value:'signin-button',event:'mousedown',type:'signaler'});
+        Adbett.track({selector:'.joinNow .joinnowcheckbox input#pcrEnroll',value:'joinnow-link',event:'mousedown',type:'signaler'});
 
-        jQuery(".signIn #uhf_btn_SignIn input#pcrLeftSignInBtn").on("mousedown", function() {
+        /*jQuery(".signIn #uhf_btn_SignIn input#pcrLeftSignInBtn").on("mousedown", function() {
             mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=signin-button"); // Track mousedown when user signs in to RC
         });
 
@@ -81,11 +81,11 @@ Adbett=window.Adbett||{};
             if (jQuery('.joinNow .joinnowcheckbox input#pcrEnroll').is(":checked")) { // If checkbox value is checked
                 mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=joinnow-link"); // Track clicks when user joins RC
             } else {
-                jQuery('.joinNow .joinnowcheckbox input#pcrEnroll').off('click', function() { // Turn off click event
-                    mboxFactoryDefault.getSignaler().signal('mboxClickTrack', 'mboxClickTrack', 'clicked=unchecked'); // Don't trach 'unchecked' param value
+                jQuery('.joinNow .joinnowcheckbox input#pcrEnroll').off('click', function() {
+                    mboxFactoryDefault.getSignaler().signal('mboxClickTrack', 'mboxClickTrack', 'clicked=unchecked'); // Turn off click event
                 });
             }
-        });
+        });*/
     });
 
 }(Adbett);

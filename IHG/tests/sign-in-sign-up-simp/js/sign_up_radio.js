@@ -12,15 +12,18 @@ jQuery(document).ready(function(jQuery) {
   jQuery('#frmGuestInfo #identityBlock .heavyText span:eq(0)').html('IHG<sup>®</sup> Rewards Club'); // Change default HTML text
   jQuery('#frmGuestInfo #identityBlock #anonId .heavyText').prependTo('.joinNow'); // Move header text into .joinNow for more accurate positioning
   jQuery('#frmGuestInfo #identityBlock .heavyText:eq(1)').html('Earn ' + '<strong>' + POINTS + '</strong>' + ' points and enjoy other great benefits of the FREE IHG<sup>®</sup> Rewards Club.'); // Change default text and add POINTS var  
-  jQuery('#frmGuestInfo #identityBlock #anonId .joinnowtext label').html('<strong>Yes,</strong> instantly enroll me in the free IHG<sup>®</sup> Rewards Club Program. <a href=\"#\" class=\"pcrTerms\"> Terms &amp; Conditions.</a>'); // Change default HTML text
+  jQuery('#frmGuestInfo #identityBlock #anonId .joinnowtext label').html('<strong>Yes,</strong> instantly enroll me in the free IHG<sup>®</sup> Rewards Club Program. <a href=\"#\" class=\"pcrTerms\" title=\"Terms & Conditions\"> Terms &amp; Conditions.</a>'); // Change default HTML text
 
   jQuery('<div class="clearingDiv"></div><div class="newEnrollmentRadio"></div>').insertAfter('.joinnowtext'); // Create new div for newEnrollment radio button
 
   var checkbox = jQuery('#pcrEnroll'); // Declare checkbox
-  checkbox.replaceWith('<input id="pcrEnroll" type="radio" name="'+checkbox.attr('name')+'" value="'+checkbox.attr('value')+'" />').appendTo('.noEnrollmentRadio'); // Replace checkbox with radio button  
+  checkbox.replaceWith('<input id="pcrEnroll" type="radio" name="'+checkbox.attr('name')+'" value="'+checkbox.attr('value')+'" />').appendTo('.noEnrollmentRadio'); // Replace checkbox with radio button
 
-  jQuery('.newEnrollmentRadio').append('<input name="pcrQuickEnroll" value="true" type="radio">').appendTo('.noEnrollment'); // Create new radio button
-  jQuery('<div class="noEnrollmentText"><label for="pcrEnroll">I am not interested at this time.</label></div>').insertAfter('.newEnrollmentRadio'); // Create new div to hold noEnrollment  
+  jQuery('.newEnrollmentRadio').append('<input id="noEnrollment" name="pcrQuickEnroll" value="true" type="radio">').appendTo('.noEnrollment'); // Create new radio button
+  jQuery('<div class="noEnrollmentText"><label for="pcrEnroll">I am not interested at this time.</label></div>').insertAfter('.newEnrollmentRadio'); // Create new div to hold noEnrollment
+
+
+  jQuery('')
 
     // Open Terms & Conditions Dialog
   jQuery('a.pcrTerms').on('click', function(event) {
@@ -59,6 +62,21 @@ jQuery(document).ready(function(jQuery) {
     }
   });
 
+  // Add checked attribute to radio button on click event
+  jQuery('#quickEnrollVerificationGotoTPI, #quickEnrollVerificationPopupCloseBtnBottom').on('click', function(event) {
+    event.preventDefault();
+    jQuery('#pcrEnroll').attr('checked', 'checked'); // add attribute property/value
+    jQuery('#pcrEnroll').attr('disabled', 'disabled');
+    // jQuery('#pcrEnroll, #noEnrollment').prop('disabled', true); // disable radio button
+  });
+
+  jQuery('#quickEnrollVerificationPopup').keydown(function(e){
+    // ESCAPE key pressed
+    if(e.which == 27) {
+      return false;    
+    }
+  });
+        
   // Error Message
   jQuery('.signInErrorBoxContainer').prependTo('#anonId');  
 

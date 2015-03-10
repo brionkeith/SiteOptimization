@@ -17,10 +17,9 @@ jQuery(document).ready(function(jQuery) {
   jQuery('#frmGuestInfo #identityBlock #anonId .heavyText').prependTo('.joinNow'); // Move header text into .joinNow for more accurate positioning
   
   var POINTS = jQuery('#frmGuestInfo #identityBlock .heavyText:eq(1) span').text(); // Get points for earn messaging
-  var termsLinkHTML = jQuery('<a href="#" class="pcrTerms" title=" IHG<sup>®</sup> Rewards Club Terms &amp; Conditions.">IHG<sup>®</sup> Rewards Club Terms &amp; Conditions.</a>'); // Terms & Conditions link
-  // var termsLinkHTML = jQuery('a.pcrTerms'); // Terms & Conditions link
+  var termsLinkHTML = jQuery('<a href="#" class="pcrTerms" title="IHG&reg; Rewards Club Terms &amp; Conditions.">IHG&reg; Rewards Club Terms &amp; Conditions.</a>'); // Terms & Conditions link
 
-  jQuery('#frmGuestInfo #identityBlock .heavyText:eq(1)').html('This reservation could earn you ' + '<strong>' + POINTS + '</strong>' + ' points towards a free night.'); // Change default text and add POINTS var
+  jQuery('#frmGuestInfo #identityBlock .heavyText:eq(1)').html('This reservation could earn you ' + '<strong>' + POINTS + '</strong>' + ' points toward a free night.'); // Change default text and add POINTS var
   jQuery('#frmGuestInfo #identityBlock #anonId .joinnowtext label').html('Sign me up now. Look for your new member info on the confirmation page. <br>Read the ').append(termsLinkHTML); // Change default HTML text
 
   // Open Terms & Conditions Dialog

@@ -12,14 +12,14 @@ $border-width: 5px;
 		/*margin-top: 12px;*/
 	}
 
-	div.signInErrorBoxContainer:empty {
+	/*div.signInErrorBoxContainer:empty {
 		display: none;
-	}
+	}*/
 
 	.paymentihglog {
 		margin-left:14px;
 		position:relative;
-		top:50px;
+		top:60px;
 	}
 
 	#UHF_header_loginform {
@@ -35,7 +35,7 @@ $border-width: 5px;
 
 		.heavyText {
 			margin-bottom:5px;
-			padding:0;
+			padding:0 0 0 3px;
 		}		
 
 		.heavyText span {
@@ -64,8 +64,14 @@ $border-width: 5px;
 				padding:0;
 				float: left !important;
 
-				> span {
-					display: none; /*if needed, display property may be removed*/
+				#UHF_forgotPinLink {
+					margin-top:4px;
+				}				
+
+				@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) {
+						#UHF_forgotPinLink {
+						margin-top:-14px;
+					}	
 				}
 			}
 
@@ -124,9 +130,9 @@ $border-width: 5px;
 
 /* IE9, IE10 */
 @media screen and (min-width:0\0) {
-    #identityBlock .rememberWrap .signIn .rememberCheck #remember { margin-top: -5px \0/ !important;}
+	#identityBlock .rememberWrap .signIn .rememberCheck #remember { margin-top: -5px \0; margin-right: 0 \0;}
 }
 /* IE 10+ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-   #identityBlock .rememberWrap .signIn .rememberCheck #remember { margin-top: -2px; }
+	/*#identityBlock .rememberWrap .signIn .rememberCheck #remember { margin-top: -2px; }*/
 }

@@ -1,17 +1,18 @@
 #identityBlock {
   padding-top: 10px;
   padding-bottom: 14px;
-  border-width: 5px !important; }
+  border-width: 5px !important;
+  /*div.signInErrorBoxContainer:empty {
+  	display: none;
+  }*/ }
   #identityBlock .signInErrorBoxContainer {
     width: auto;
     float: none;
     /*margin-top: 12px;*/ }
-  #identityBlock div.signInErrorBoxContainer:empty {
-    display: none; }
   #identityBlock .paymentihglog {
     margin-left: 14px;
     position: relative;
-    top: 50px; }
+    top: 60px; }
   #identityBlock #UHF_header_loginform {
     margin: 0; }
   #identityBlock .rememberWrap {
@@ -22,7 +23,7 @@
     border-left: 2px solid #cccccc; }
     #identityBlock .rememberWrap .heavyText {
       margin-bottom: 5px;
-      padding: 0; }
+      padding: 0 0 0 3px; }
     #identityBlock .rememberWrap .heavyText span {
       font: bold 14px Georgia,"Times New Roman",Times,serif;
       font-style: italic; }
@@ -39,9 +40,11 @@
         margin: 12px 0 0 0;
         padding: 0;
         float: left !important; }
-        #identityBlock .rememberWrap .signIn .forgotRememberPin > span {
-          display: none;
-          /*if needed, display property may be removed*/ }
+        #identityBlock .rememberWrap .signIn .forgotRememberPin #UHF_forgotPinLink {
+          margin-top: 4px; }
+        @media all and (min--moz-device-pixel-ratio: 0) and (min-resolution: 30dpcm) {
+          #identityBlock .rememberWrap .signIn .forgotRememberPin #UHF_forgotPinLink {
+            margin-top: -14px; } }
       #identityBlock .rememberWrap .signIn .rememberCheck {
         margin-left: 6px;
         clear: both;
@@ -77,10 +80,10 @@
 /* IE9, IE10 */
 @media screen and (min-width: 0\0) {
   #identityBlock .rememberWrap .signIn .rememberCheck #remember {
-    margin-top: -5px \0/ !important; } }
+    margin-top: -5px \0;
+    margin-right: 0 \0; } }
 /* IE 10+ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  #identityBlock .rememberWrap .signIn .rememberCheck #remember {
-    margin-top: -2px; } }
+  /*#identityBlock .rememberWrap .signIn .rememberCheck #remember { margin-top: -2px; }*/ }
 
 /*# sourceMappingURL=logo_left.css.map */

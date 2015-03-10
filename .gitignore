@@ -219,6 +219,7 @@ pip-log.txt
 
 # EX
 EX/_tests/book-today-messaging/node_modules/
+EX/tests/Book-Today-Messaging-V2/node_modules/
 EX/node_modules/
 
 # IHG

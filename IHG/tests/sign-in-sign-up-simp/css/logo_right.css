@@ -1,7 +1,10 @@
 #identityBlock {
   padding-top: 10px;
   padding-bottom: 14px;
-  border-width: 5px !important; }
+  border-width: 5px !important;
+  /*div.signInErrorBoxContainer:empty {
+  	display: none;
+  }*/ }
   #identityBlock .signInErrorBoxContainer {
     width: auto;
     float: none;
@@ -10,7 +13,7 @@
     margin-right: 45px;
     position: relative;
     float: right;
-    top: 50px; }
+    top: 60px; }
   #identityBlock #UHF_header_loginform {
     margin: 0; }
   #identityBlock .rememberWrap {
@@ -36,16 +39,22 @@
       #identityBlock .rememberWrap .signIn .forgotRememberPin {
         margin: 12px 0 0 0;
         padding: 0;
-        float: left !important; }
-        #identityBlock .rememberWrap .signIn .forgotRememberPin > span {
-          display: none;
-          /*if needed, display property may be removed*/ }
+        float: left !important;
+        /*@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) {
+        		#UHF_forgotPinLink {
+        		margin-top:-14px;
+        	}	
+        }*/ }
+        #identityBlock .rememberWrap .signIn .forgotRememberPin #UHF_forgotPinLink {
+          margin-top: 4px; }
       #identityBlock .rememberWrap .signIn .rememberCheck {
         margin-left: 6px;
-        clear: both; }
+        clear: both;
+        width: 150px; }
         #identityBlock .rememberWrap .signIn .rememberCheck #remember {
           margin: 1px 5px 0 0;
-          float: left; }
+          float: left;
+          width: auto; }
 
 #frmGuestInfo #identityBlock {
   padding: 15px; }
@@ -71,5 +80,14 @@
     #frmGuestInfo #identityBlock #anonId .joinNow .joinnowtext {
       float: right;
       width: 420px; }
+
+/* IE9, IE10 */
+@media screen and (min-width: 0\0) {
+  #identityBlock .rememberWrap .signIn .rememberCheck #remember {
+    margin-top: -5px \0;
+    margin-right: 0 \0; } }
+/* IE 10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /*#identityBlock .rememberWrap .signIn .rememberCheck #remember { margin-top: -2px; }*/ }
 
 /*# sourceMappingURL=logo_right.css.map */
