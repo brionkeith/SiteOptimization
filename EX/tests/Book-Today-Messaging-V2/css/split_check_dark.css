@@ -1,0 +1,45 @@
+.spotlightContentWrapper #resultsWrapper {
+  position: relative;
+  top: -55px; }
+
+.progressBar {
+  width: 400px;
+  float: right; }
+  .progressBar .ratesPageHeader {
+    padding-bottom: 0px; }
+  .progressBar .resFlowMainTitle {
+    display: none; }
+
+.msgWrapper {
+  margin: 10px 0;
+  padding: 2px 15px 15px;
+  position: relative;
+  text-align: center;
+  background: #0055a5;
+  border: none;
+  display: none; }
+  .msgWrapper .btmMsg {
+    margin: 0 auto;
+    padding: 0 10px 0 0;
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    border-right: 1px solid #fff;
+    color: #fff;
+    display: none; }
+  .msgWrapper .iconCheckGrn {
+    margin: 0;
+    padding: 0 0 0 10px;
+    position: relative;
+    top: 11px;
+    display: none; }
+  .msgWrapper .ltdAvail {
+    margin-left: 9px;
+    padding: 0;
+    position: relative;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    display: none; }
+
+/*# sourceMappingURL=split_check_dark.css.map */

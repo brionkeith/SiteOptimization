@@ -14,19 +14,20 @@
   margin: 10px 0;
   padding: 15px;
   text-align: center;
-  background: #0055a5;
+  background: #ffffff;
   border: none;
   position: relative;
-  /*display:none;*/ }
+  display: none; }
   .msgWrapper .btmMsg {
     margin: 0 auto;
-    padding: 8px 0 8px 45px;
+    padding: 9px 0 8px 55px;
     height: 35px;
-    background: transparent url("../img/icon_check_circle.png") no-repeat 0 0;
+    background: transparent url("../img/icon_bed_white.png") no-repeat 0 0;
     position: relative;
     font-size: 15px;
     font-weight: bold;
-    color: #fff; }
+    color: #0055a5;
+    display: none; }
   .msgWrapper .ltdAvail {
     margin-left: 11px;
     padding-left: 9px;
@@ -34,4 +35,4 @@
     font-size: 13px;
     font-weight: normal; }
 
-/*# sourceMappingURL=site.css.map */
+/*# sourceMappingURL=bed_white.css.map */

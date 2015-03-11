@@ -17,7 +17,7 @@
   background: #0055a5;
   border: none;
   position: relative;
-  /*display:none;*/ }
+  display: none; }
   .msgWrapper .btmMsg {
     margin: 0 auto;
     padding: 8px 0 8px 45px;
@@ -26,7 +26,8 @@
     position: relative;
     font-size: 15px;
     font-weight: bold;
-    color: #fff; }
+    color: #fff;
+    display: none; }
   .msgWrapper .ltdAvail {
     margin-left: 11px;
     padding-left: 9px;
@@ -34,4 +35,4 @@
     font-size: 13px;
     font-weight: normal; }
 
-/*# sourceMappingURL=site.css.map */
+/*# sourceMappingURL=check_dark.css.map */

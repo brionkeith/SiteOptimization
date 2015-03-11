@@ -218,8 +218,10 @@ pip-log.txt
 # Ignore the following directories
 
 # EX
+EX/tests/Book-Today-Messaging-V2/.sass-cache/
 EX/_tests/book-today-messaging/node_modules/
 EX/tests/Book-Today-Messaging-V2/node_modules/
+EX/tests/Book-Today-Messaging-V2/img/
 EX/node_modules/
 
 # IHG
