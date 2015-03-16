@@ -70,19 +70,52 @@ Adbett=window.Adbett||{};
     };
 
     mboxFactoryDefault.addOnLoad(function(){
-        // Adbett.track({selector:'.signIn #uhf_btn_SignIn input#pcrLeftSignInBtn',value:'signin-button',event:'mousedown',type:'signaler'});
-        // Adbett.track({selector:'.joinNow .joinnowcheckbox input#pcrEnroll',value:'joinnow-link',event:'mousedown',type:'signaler'});
+        //Adbett.track({selector:'.signIn #uhf_btn_SignIn input#pcrLeftSignInBtn',value:'signin-button',event:'mousedown',type:'signaler'});
+        //Adbett.track({selector:'.joinNow .joinnowcheckbox input#pcrEnroll',value:'joinnow-link',event:'mousedown',type:'signaler'});
 
-        jQuery(".signIn #uhf_btn_SignIn input#pcrLeftSignInBtn").on("mousedown", function() {
+        /*jQuery(".signIn #uhf_btn_SignIn input#pcrLeftSignInBtn").on("mousedown",function() {
             mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=signin-button"); // Track mousedown when user signs in to RC
+        });*/
+
+        jQuery('input#pcrLeftSignInBtn').on('click', function(e) {
+            var isValid = true;
+            var SIBX = jQuery('<div class="signInErrorBox"></div>');
+            var ALERTICO = jQuery('<div class="alert-icon"></div>');
+            var ERRORMSG = jQuery('<div class="errorMessage">You must enter either an Email address or an IHG<sup>®</sup> Rewards Club number and a PIN.</div>');
+
+            jQuery('.signIn input[type="text"].emailRCnum, .signIn input[type="text"].emailRCnum').each(function() {
+                if(jQuery.trim(jQuery(this).val()) === '') {
+                    isValid = false;
+                    jQuery('.signInErrorBoxContainer').append(SIBX).css({
+                        'display': 'block'
+                    });
+                    jQuery(ALERTICO).appendTo(SIBX);
+                    jQuery(ERRORMSG).insertAfter(ALERTICO);
+                }
+            });
+            if (isValid === false) {
+                // needs to trigger default error message
+                jQuery('.signInErrorBox').css({
+                    'display': 'block',
+                    'padding': '5px',
+                    'border': '1px solid #f99',
+                    'background': '#fbe5e5'
+                });
+                e.preventDefault();
+            } else {
+                alert('Thank you for submiting.'); //remove once code is completed
+                mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=signin-button");
+            }
         });
 
+
+
         jQuery("#btnNext").on('click', function () {
-            if (jQuery('.joinNow .joinnowcheckbox input#pcrEnroll').is(":checked")) { // If checkbox value is checked
-                mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=joinnow-link"); // Track clicks when user joins RC
+            if (jQuery('.joinNow .joinnowcheckbox input#pcrEnroll').is(":checked")) {
+                mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=joinnow-link"); // Track click event when
             } else {
-                jQuery('.joinNow .joinnowcheckbox input#pcrEnroll').off('click', function() { // Turn off click event
-                    mboxFactoryDefault.getSignaler().signal('mboxClickTrack', 'mboxClickTrack', 'clicked=unchecked'); // Don't trach 'unchecked' param value
+                jQuery('.joinNow .joinnowcheckbox input#pcrEnroll').off('click', function() {
+                    mboxFactoryDefault.getSignaler().signal('mboxClickTrack', 'mboxClickTrack', 'clicked=unchecked'); // Turn off click event
                 });
             }
         });

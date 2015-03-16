@@ -1,8 +1,12 @@
+// Bootstrapper.MVT.injectCSS('body{position:relative; opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important}');
+
 jQuery(document).ready(function(jQuery) {
 
   jQuery('#identityBlock:eq(0) .heavyText span').html('Sign in IHG<sup>®</sup> Rewards Club Members'); // Change default HTML text
   jQuery('#identityBlock:eq(0) .heavyText, .signIn').wrapAll('<div class=\"rememberWrap\" />'); // Wrap both div tags into a single div
   
+  jQuery('.signIn div input:eq(0)').addClass('emailRCnum'); // for Adobe Target mbox clickTracking only
+  jQuery('.signIn div input:eq(1)').addClass('PINnum'); // // for Adobe Target mbox clickTracking only
   jQuery('.signIn div span label').appendTo('.signIn'); // Move form label into div for positioning
   jQuery('.signIn div span input#remember').appendTo('.signIn'); // Move form label into div for positioning
   jQuery('.signIn label, .signIn input#remember').wrapAll('<div class=\"rememberCheck\"></div>'); // Wrap label and input into a single div
@@ -21,9 +25,6 @@ jQuery(document).ready(function(jQuery) {
 
   jQuery('.newEnrollmentRadio').append('<input id="noEnrollment" name="pcrQuickEnroll" value="true" type="radio">').appendTo('.noEnrollment'); // Create new radio button
   jQuery('<div class="noEnrollmentText"><label for="pcrEnroll">I am not interested at this time.</label></div>').insertAfter('.newEnrollmentRadio'); // Create new div to hold noEnrollment
-
-
-  jQuery('')
 
     // Open Terms & Conditions Dialog
   jQuery('a.pcrTerms').on('click', function(event) {
