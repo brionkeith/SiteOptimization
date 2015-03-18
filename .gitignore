@@ -218,8 +218,9 @@ pip-log.txt
 # Ignore the following directories
 
 # EX
-EX/tests/Book-Today-Messaging-V2/.sass-cache/
+EX/_tests/book-today-messaging/index.html
 EX/_tests/book-today-messaging/node_modules/
+EX/tests/Book-Today-Messaging-V2/.sass-cache/
 EX/tests/Book-Today-Messaging-V2/node_modules/
 EX/tests/Book-Today-Messaging-V2/img/
 EX/node_modules/
@@ -233,6 +234,7 @@ IHG/tests/sign-in-sign-up-simp/js/bootstrapper-page-flicker.js
 IHG/tests/Chase-Offer-My-Account/node_modules/
 IHG/tests/Chase-Offer-My-Account/package.json
 IHG/tests/Chase-Offer-My-Account/gruntfile.js
+IHG/tests/Chase-Offer-My-Account/index.html
 
 
 .sass-cache/
