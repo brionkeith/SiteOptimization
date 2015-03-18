@@ -52,6 +52,7 @@
           float: left; }
 
 #frmGuestInfo #identityBlock {
+  margin-bottom: 40px;
   padding: 0;
   border: none; }
   #frmGuestInfo #identityBlock .paymentihglog {

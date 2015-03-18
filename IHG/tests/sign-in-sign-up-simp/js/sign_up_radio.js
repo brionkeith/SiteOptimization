@@ -1,5 +1,3 @@
-// Bootstrapper.MVT.injectCSS('body{position:relative; opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important}');
-
 jQuery(document).ready(function(jQuery) {
 
   jQuery('#identityBlock:eq(0) .heavyText span').html('Sign in IHG<sup>®</sup> Rewards Club Members'); // Change default HTML text
@@ -68,8 +66,19 @@ jQuery(document).ready(function(jQuery) {
     event.preventDefault();
     jQuery('#pcrEnroll').attr('checked', 'checked'); // add attribute property/value
     jQuery('#pcrEnroll').attr('disabled', 'disabled');
-    // jQuery('#pcrEnroll, #noEnrollment').prop('disabled', true); // disable radio button
   });
+
+  // Add checked attribute to radio button on click event
+  jQuery('#quickEnrollVerificationGotoTPI, #quickEnrollVerificationPopupCloseBtnBottom').on('click', function(event) {
+    event.preventDefault();
+    jQuery('#pcrEnroll').attr('checked', 'checked'); // add attribute property/value
+    jQuery('#pcrEnroll').attr('disabled', 'disabled'); // disable radio button
+    jQuery('#noEnrollment').attr('disabled', 'disabled'); // disable radio button
+  });
+
+  jQuery('.noEnrollmentText label').off('click', function(event) {
+    event.preventDefault(); // disable label click event
+  });  
 
   jQuery('#quickEnrollVerificationPopup').keydown(function(e){
     // ESCAPE key pressed
