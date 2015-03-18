@@ -218,8 +218,8 @@ pip-log.txt
 # Ignore the following directories
 
 # EX
-EX/_tests/book-today-messaging/index.html
-EX/_tests/book-today-messaging/node_modules/
+EX/tests/book-today-messaging/index.html
+EX/tests/book-today-messaging/node_modules/
 EX/tests/Book-Today-Messaging-V2/.sass-cache/
 EX/tests/Book-Today-Messaging-V2/node_modules/
 EX/tests/Book-Today-Messaging-V2/img/
