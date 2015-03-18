@@ -4,10 +4,10 @@ jQuery(document).ready(function(jQuery) {
 	var	btmMsd
 	var	ltdAvail
 
-	msgWrap  	 = jQuery('<div class=\"msgWrapper\"></div>'); // Create new wrapper div
-	btmMsg   	 = jQuery('<span class=\"btmMsg\">ROOMS ARE LIMITED</span>'); 
-	iconCheckGrn = jQuery('<img class="\iconCheckGrn\" src="\../img/icon_check_green.png\">');
-	ltdAvail 	 = jQuery('<span class=\"ltdAvail\">Make Your Reservation Today and Lock in this Low Price</span>');
+	msgWrap  	 = jQuery('<div class=\"msgWrapper\"></div>'); // parent wrapper
+	btmMsg   	 = jQuery('<span class=\"btmMsg\">ROOMS ARE LIMITED</span>'); // first span
+	iconCheckGrn = jQuery('<img class=\"iconCheckGrn\" src="https://prodcache.internal.ihg.com/content/dam/etc/media_library/branded/hi/cn/icons/icon_check_green.png\">'); // check icon
+	ltdAvail 	 = jQuery('<span class=\"ltdAvail\">Make Your Reservation Today and Lock in this Low Price</span>'); // second span
 
 	jQuery(msgWrap).insertBefore('#roomRateRoomType');
 	jQuery(btmMsg).appendTo(msgWrap);

@@ -22,10 +22,11 @@
     margin: 0 auto;
     padding: 8px 0 8px 45px;
     height: 35px;
-    background: transparent url("../img/icon_check_green.png") no-repeat 0 0;
+    background: transparent url("https://prodcache.internal.ihg.com/content/dam/etc/media_library/branded/hi/cn/icons/icon_check_green.png") no-repeat 0 0;
     position: relative;
-    font-size: 15px;
+    font-size: 15.25px;
     font-weight: bold;
+    letter-spacing: .4px;
     color: #000;
     display: none; }
   .msgWrapper .ltdAvail {
