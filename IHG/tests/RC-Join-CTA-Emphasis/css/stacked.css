@@ -1,0 +1,20 @@
+.contentWrapperHeader .marketingModuleState {
+  width: 35% !important;
+  position: relative;
+  float: right;
+  text-align: left !important;
+  /*background:green;*/ }
+  .contentWrapperHeader .marketingModuleState h3 {
+    margin-left: 25px;
+    float: left;
+    font: bold italic 20px Georgia,"Times New Roman",Times,serif;
+    text-align: left; }
+  .contentWrapperHeader .marketingModuleState .joinNowButton {
+    margin: 3px 0 0 !important;
+    float: right;
+    height: 30px !important; }
+  .contentWrapperHeader .marketingModuleState .anonMemberSignIn {
+    margin-left: 25px;
+    float: left; }
+
+/*# sourceMappingURL=stacked.css.map */
