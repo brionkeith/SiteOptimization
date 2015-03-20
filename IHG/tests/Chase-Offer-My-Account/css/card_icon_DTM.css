@@ -1,3 +1,32 @@
-/* shell file */
+#myMessages .chaseOffer {
+  margin: 0 0 15px;
+  padding: 0;
+  overflow: auto;
+  /*background: #cacaca;*/ }
+  #myMessages .chaseOffer img {
+    margin: 0 10px 0 0;
+    float: left; }
+  #myMessages .chaseOffer p {
+    margin: 0;
+    padding: 5px 0;
+    float: left;
+    width: 375px; }
+  #myMessages .chaseOffer .rcPoints {
+    margin-right: 3px;
+    padding: 0;
+    float: left;
+    width: auto; }
+  #myMessages .chaseOffer .value {
+    float: left;
+    font-size: 1em;
+    font-weight: bold; }
+  #myMessages .chaseOffer .bonusPtsTxt, #myMessages .chaseOffer .bonusPts {
+    padding: 0 4px;
+    float: none;
+    font-weight: normal; }
+    #myMessages .chaseOffer .bonusPtsTxt .chasePts, #myMessages .chaseOffer .bonusPts .chasePts {
+      padding-left: 5px;
+      float: none;
+      font-weight: bold; }
 
 /*# sourceMappingURL=card_icon_DTM.css.map */

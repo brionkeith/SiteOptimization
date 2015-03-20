@@ -1,3 +1,14 @@
-/* shell file */
+#myMessages .chaseOffer {
+  margin: 0 0 15px;
+  padding: 0;
+  overflow: auto; }
+  #myMessages .chaseOffer img {
+    margin: 0 10px 0 0;
+    float: left; }
+  #myMessages .chaseOffer p {
+    margin: 0;
+    padding: 7px 0 5px;
+    float: left;
+    width: 315px; }
 
 /*# sourceMappingURL=card_icon.css.map */
