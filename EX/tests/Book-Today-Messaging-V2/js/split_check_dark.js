@@ -19,6 +19,10 @@ jQuery(document).ready(function(jQuery) {
 	jQuery(iconCheckGrn).delay(700).fadeIn(800);
 	jQuery(ltdAvail).delay(700).fadeIn(800);
 
-	// jQuery('.msgWrapper:eq(1)').remove();
+	jQuery('.msgWrapper:eq(1)').remove(); // remove duplicate message
+
+	if (jQuery('#sidebarContainerRatesPage .error1.spotlightError').length === 1) { // if this exists
+	    jQuery('#resultsListContainer .msgWrapper').remove(); // remove this
+	}	
 
 });
