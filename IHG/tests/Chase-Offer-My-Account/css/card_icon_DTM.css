@@ -11,7 +11,7 @@
     padding: 5px 0;
     float: left;
     width: 375px; }
-  #myMessages .chaseOffer .rcPoints {
+  #myMessages .chaseOffer .currentPts {
     margin-right: 3px;
     padding: 0;
     float: left;
@@ -20,13 +20,16 @@
     float: left;
     font-size: 1em;
     font-weight: bold; }
-  #myMessages .chaseOffer .bonusPtsTxt, #myMessages .chaseOffer .bonusPts {
+  #myMessages .chaseOffer .bonusPtsTxt {
     padding: 0 4px;
-    float: none;
+    float: left;
     font-weight: normal; }
-    #myMessages .chaseOffer .bonusPtsTxt .chasePts, #myMessages .chaseOffer .bonusPts .chasePts {
+    #myMessages .chaseOffer .bonusPtsTxt .bonusPts {
       padding-left: 5px;
       float: none;
       font-weight: bold; }
+  #myMessages .chaseOffer .string {
+    float: left;
+    font-weight: bold; }
 
 /*# sourceMappingURL=card_icon_DTM.css.map */

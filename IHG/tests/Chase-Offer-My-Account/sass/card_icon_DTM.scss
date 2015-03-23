@@ -16,7 +16,7 @@
 			float:left;
 			width:375px;			
 		}
-		.rcPoints {
+		.currentPts {
 			margin-right:3px;
 			padding:0;
 			float:left;
@@ -27,16 +27,20 @@
 			font-size:1em;
 			font-weight:bold;
 		}
-		.bonusPtsTxt, .bonusPts {
+		.bonusPtsTxt {
 			padding:0 4px;
-			float:none;
+			float:left;
 			font-weight:normal;
 			
-			.chasePts {
+			.bonusPts {
 				padding-left:5px;
 				float:none;
 				font-weight:bold;
 			}			
+		}
+		.string {
+			float:left;
+			font-weight:bold;
 		}
 	}
 }
