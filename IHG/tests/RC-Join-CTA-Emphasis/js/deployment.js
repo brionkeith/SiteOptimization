@@ -1,4 +1,4 @@
-if (location.pathname.match(/\/rewardsclub\/home\/?$/i) && $data('gdl', 'language') == 'en' && ($data('gdl', 'country') == 'us' || $data('gdl', 'country') == 'gb') && $data('gdl', 'brand') === '6c') {
+if (location.pathname.match(/\/rewardsclub\/(.*)\/home\/?$/i) && $data('gdl', 'language') == 'en' && ($data('gdl', 'country') == 'us' || $data('gdl', 'country') == 'gb') && $data('gdl', 'brand') === '6c') {
   if (!Bootstrapper.hasDOMLoaded()) {
     document.write('<div class="mboxDefault"></div>');
     var lang = $data('gdl', 'language') ? 'language=' + $data('gdl', 'language') : '',
