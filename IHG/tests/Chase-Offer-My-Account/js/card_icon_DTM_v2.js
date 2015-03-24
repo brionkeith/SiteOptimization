@@ -10,7 +10,7 @@ jQuery(document).ready(function(jQuery) {
 	var strParse    	= parseInt(ptsBalance, 10); // * Output should be current RC balance: Not rounded number
 	// alert(strParse);
 	var bonusPoints		= 70000;
-	var bonusPtsTxt 	= jQuery('<span class="bonusPtsTxt">+ Bonus Points:<span class=\"bonusPts\">' + bonusPoints + ' = ' + '</span>' + '</span><span class="string">Points</span>');	
+	var bonusPtsTxt 	= jQuery('<span class="bonusPtsTxt">+ Bonus Points:<span class="bonusPts">' + bonusPoints + ' = ' + '</span>' + '</span><span class="string">Points</span>');	
 	var totalPts    	= jQuery(strParse + bonusPoints); // sum total of Bonus points (70,000) and current RC points
 
 	jQuery(pcINTERACT).remove(); //remove Interact container
