@@ -22,7 +22,7 @@ jQuery(document).ready(function(jQuery) {
   checkbox.replaceWith('<input id="pcrEnroll" type="radio" name="'+checkbox.attr('name')+'" value="'+checkbox.attr('value')+'" />').appendTo('.noEnrollmentRadio'); // Replace checkbox with radio button
 
   jQuery('.newEnrollmentRadio').append('<input id="noEnrollment" name="pcrQuickEnroll" value="true" type="radio">').appendTo('.noEnrollment'); // Create new radio button
-  jQuery('<div class="noEnrollmentText"><label for="pcrEnroll">I am not interested at this time.</label></div>').insertAfter('.newEnrollmentRadio'); // Create new div to hold noEnrollment
+  jQuery('<div class="noEnrollmentText"><label for="noEnrollment">I am not interested at this time.</label></div>').insertAfter('.newEnrollmentRadio'); // Create new div to hold noEnrollment
 
     // Open Terms & Conditions Dialog
   jQuery('a.pcrTerms').on('click', function(event) {
@@ -77,8 +77,8 @@ jQuery(document).ready(function(jQuery) {
   });
 
   jQuery('.noEnrollmentText label').off('click', function(event) {
-    event.preventDefault(); // disable label click event
-  });  
+    // event.preventDefault(); // disable label click event
+  });
 
   jQuery('#quickEnrollVerificationPopup').keydown(function(e){
     // ESCAPE key pressed
