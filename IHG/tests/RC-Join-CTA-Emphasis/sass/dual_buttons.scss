@@ -1,9 +1,28 @@
 .contentWrapperHeader {
 
+	#idHeaderLogo {
+		float:left;
+	}
+	.marketingModuleState {
+		width:31% !important;
+		float:right;
+	}
+
 	.joinNowButton {
 		margin:0 !important;
 		float:right !important;
 		height:30px !important;
+	}
+
+	h3 {
+		margin:6px 0 0;
+		float:left;
+		font:bold italic 20px Georgia,"Times New Roman",Times,serif;
+	}
+
+	#signInSubmit {
+		margin:0 !important;
+		float:right;
 	}
 	
 }

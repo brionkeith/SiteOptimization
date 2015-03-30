@@ -1,24 +1,18 @@
 jQuery(document).ready(function(jQuery) {
-	var RCjoinMod = jQuery('.marketingModuleState');
 
-	jQuery(RCjoinMod).detach();
-	jQuery(RCjoinMod).appendTo('.contentWrapperHeader');
+    if (trackingJson.loginType == 'anonymous') { // validate loginType: anonymous
+        var RCjoinMod = jQuery('.marketingModuleState');
 
-    // validate loginType: implicit
-    if (trackingJson.loginType == 'implicit') {
+        jQuery(RCjoinMod).detach(); // detach marketing module from orignal location
+        jQuery(RCjoinMod).appendTo('.contentWrapperHeader'); // append marketing module to header
+        jQuery('.marketingModuleState h3').text('Not a Member Yet?'); // change text case
+    }
 
-        jQuery('.marketingModuleState').css({
-            'text-align': 'right' // align parent container
-        });
+	var eventHandler = function(e) {
+		e.preventDefault();
+    }
 
-        jQuery('.marketingModuleState h3:contains("Already a Member?")').css({
-            'margin-right': '13px', // increases marging between button
-            'text-align': 'right', // override default text alignment
-            'width': '63%' // prevent text from collapsing
-        });
+    jQuery('a.UHF_signInLink').bind('click', eventHandler);
+    jQuery('a.UHF_signInLink').unbind('click', eventHandler);    
 
-        jQuery('.marketingModuleState #signInSubmit').css({
-            'margin-top': '-5px' // override default top margin
-        });
-    }	
 });

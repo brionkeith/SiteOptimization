@@ -70,24 +70,15 @@ Adbett=window.Adbett||{};
     };
 
     mboxFactoryDefault.addOnLoad(function(){
-
-        // Control Click Tracking
-        Adbett.track({selector:'.marketingModuleState #joinNowSubmit',value:'joinnow',event:'click',type:'signaler'}); // track button clicks
-        Adbett.track({selector:'.marketingModuleState .anonMemberSignIn a.UHF_signInLink',value:'signin',event:'click',type:'signaler'}); // track link clicks
-
-        // Alternative Experience Click Tracking
         Adbett.track({selector:'.contentWrapperHeader .marketingModuleState #joinNowSubmit',value:'joinnow',event:'click',type:'signaler'}); // track button clicks
         Adbett.track({selector:'.contentWrapperHeader .marketingModuleState .anonMemberSignIn a.UHF_signInLink',value:'signin',event:'click',type:'signaler'}); // track link clicks
 
-        // Adbett.track({selector:'.contentSlots .marketingModuleState #joinNowSubmit',value:'joinnow',event:'click',type:'signaler'});
-        // Adbett.track({selector:'.signInBtn.row #pcrLeftSignInBtn',value:'joinnow',event:'click',type:'signaler'}); // only used if tracking form inputs and submit button  
 
-        // jQuery('.signInBtn.row #pcrLeftSignInBtn').on('click', function () {
-        //     if (jQuery('.UHF_pcrDialogRow .pcrReqdDefault.pcrReqdField , .UHF_pcrDialogRow .pcrReqdDefault')) {
-        //         // Track when 'pcrDialogRow' sign-in fields are populated and reservation confirmation button is clicked
-        //         mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=signin");
-        //     }
-        // });
+        jQuery('.contentWrapperHeader .marketingModuleState a.UHF_signInLink').on('click', function () {
+            if (jQuery(this)) {
+                mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=signin");
+            }
+        });        
     });
 
 }(Adbett);

@@ -1,6 +1,18 @@
+.contentWrapperHeader #idHeaderLogo {
+  float: left; }
+.contentWrapperHeader .marketingModuleState {
+  width: 31% !important;
+  float: right; }
 .contentWrapperHeader .joinNowButton {
   margin: 0 !important;
   float: right !important;
   height: 30px !important; }
+.contentWrapperHeader h3 {
+  margin: 6px 0 0;
+  float: left;
+  font: bold italic 20px Georgia,"Times New Roman",Times,serif; }
+.contentWrapperHeader #signInSubmit {
+  margin: 0 !important;
+  float: right; }
 
 /*# sourceMappingURL=dual_buttons.css.map */
