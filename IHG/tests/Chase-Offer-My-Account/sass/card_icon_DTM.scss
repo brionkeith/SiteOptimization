@@ -4,8 +4,6 @@
 		padding:0;
 		overflow:auto;
 
-		/*background: #cacaca;*/
-
 		img {
 			margin:0 10px 0 0;
 			float:left;
@@ -14,14 +12,16 @@
 			margin:0;
 			padding:5px 0;
 			float:left;
-			width:375px;			
+			width:407px;			
 		}
-		.currentPts {
-			margin-right:3px;
+		.currentPts, .pointsInt, .bonusInt, .totalInt {
 			padding:0;
 			float:left;
 			width:auto;
 		}
+		.pointsInt, .bonusInt, .totalInt {
+			font-weight:bold;
+		}		
 		.value {
 			float:left;
 			font-size:1em;
@@ -38,9 +38,8 @@
 				font-weight:bold;
 			}			
 		}
-		.string {
-			float:left;
+		.string, .totalPts {
 			font-weight:bold;
-		}
+		}		
 	}
 }

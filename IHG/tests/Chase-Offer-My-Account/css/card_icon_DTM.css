@@ -1,8 +1,7 @@
 #myMessages .chaseOffer {
   margin: 0 0 15px;
   padding: 0;
-  overflow: auto;
-  /*background: #cacaca;*/ }
+  overflow: auto; }
   #myMessages .chaseOffer img {
     margin: 0 10px 0 0;
     float: left; }
@@ -10,12 +9,13 @@
     margin: 0;
     padding: 5px 0;
     float: left;
-    width: 375px; }
-  #myMessages .chaseOffer .currentPts {
-    margin-right: 3px;
+    width: 407px; }
+  #myMessages .chaseOffer .currentPts, #myMessages .chaseOffer .pointsInt, #myMessages .chaseOffer .bonusInt, #myMessages .chaseOffer .totalInt {
     padding: 0;
     float: left;
     width: auto; }
+  #myMessages .chaseOffer .pointsInt, #myMessages .chaseOffer .bonusInt, #myMessages .chaseOffer .totalInt {
+    font-weight: bold; }
   #myMessages .chaseOffer .value {
     float: left;
     font-size: 1em;
@@ -28,8 +28,7 @@
       padding-left: 5px;
       float: none;
       font-weight: bold; }
-  #myMessages .chaseOffer .string {
-    float: left;
+  #myMessages .chaseOffer .string, #myMessages .chaseOffer .totalPts {
     font-weight: bold; }
 
 /*# sourceMappingURL=card_icon_DTM.css.map */
