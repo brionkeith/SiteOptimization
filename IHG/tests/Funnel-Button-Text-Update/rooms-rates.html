@@ -1,51 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
 <head>
-
-	<script type='text/javascript'>
-//<![CDATA[
-	window['adrum-start-time'] = new Date().getTime();
-	;/* Version f86d2a31df47d41865e76e563673cabf v:4.0.3.3, c:f287a08ea76d1e7e7a9c01e4e4ab5b4fae6f1bff, b:8309 n:19-4.0.3.next */(function(){(function(){if(!window.ADRUM&&!0!==window["adrum-disable"]){var a=window.ADRUM={};window["adrum-start-time"]=window["adrum-start-time"]||(new Date).getTime();(function(b){b.beaconUrlHttp="http://col.eum-appdynamics.com";b.beaconUrlHttps="https://col.eum-appdynamics.com";b.appKey=window["adrum-app-key"]||"AD-AAB-AAA-HPZ";var c="https:"===document.location.protocol;if(window["adrum-geo-resolver-url"]){var e=window["adrum-geo-resolver-url"],d=e.indexOf("://");-1!=d&&(e=e.substring(d+3));e=(c?"https://":"http://")+e}else e=
-	c?"":"";b.adrumExtUrl=(c?"https://cdn.appdynamics.com":"http://cdn.appdynamics.com")+"/adrum-ext.f86d2a31df47d41865e76e563673cabf.js";b.sendImageBeacon="false";b.geoResolverUrl=e;b.useStrictDomainCookies=!0===window["adrum-use-strict-domain-cookies"];b.k;(function(b){function e(b){return 0<=b.location.search.indexOf("ADRUM_debug=true")||0<=b.cookie.search(/(^|;)\s*ADRUM_debug=true/)}b.Ad=e;b.iDR=e})(b.a||(b.a={}));b.isDebug=b.a.Ad(document)})(a||
-	(a={}));(function(b){b.logMessages=[];b.debug;b.warn;b.info;b.error;for(var c=["debug","warn","info","error"],e=0;e<c.length;e++)(function(e){b[e]=function(z,A){b.isDebug&&b.logMessages.push([e,Array.prototype.slice.call(arguments).join(" | ")])}})(c[e]);var d=0;(function(e){window.ADRUM.TPL=e;e.ea=function(b,e,z,m){b=z+"/eumcollector/error.gif?version=1&appKey="+m+"&msg="+encodeURIComponent(b.substring(0,500));e&&(b+="&stack=",b+=encodeURIComponent(e.substring(0,1500-b.length)));return b};e.cIEBU=
-	e.ea;e.p=function(z,A){2<=d||((new Image).src=e.ea(z,A,b.beaconUrlHttps,b.appKey),d++)};e.dumpLog=b.isDebug?function(){for(var e="",z=0;z<b.logMessages.length;z++)var m=b.logMessages[z],e=e+("["+m[0]+"]\t"+m[1].replace(RegExp("<br/>","g"),"\n\t")+"\n");return e}:function(){}})(b.a||(b.a={}));var A=b.a,z=b.error;b.error=function(){for(var b=0;b<arguments.length-0;b++);0<arguments.length&&(b=Array.prototype.slice.call(arguments).join(" | "),z(b),A.p(b,null))};b.exception=function(){if(!(1>arguments.length)){var b=
-	Array.prototype.slice.call(arguments),e;e=(e=b[0])?(e=e.stack)&&"string"===typeof e?e:null:null;b=b.slice(1).join(" | ");z(b);A.p(b,e)}};b.assert=function(e,z){e||b.error("Assert fail: "+z)};b.info("M0")})(a||(a={}));(function(b){(function(c){var e=function(){function e(){this.Kb=[];this.eb(e.nb,0)}e.prototype.ab=function(b){this.eb(e.Wb,b)};e.prototype.yb=function(b){this.eb(e.Zb,b)};e.prototype.bb=function(b){this.eb(e.Xb,b)};e.prototype.eb=function(b,e){this.Kb.push({Hd:(new Date).getTime(),Gd:e,
-	pc:b});this.ld=b};e.prototype.getPhaseID=function(b){for(var z=0;z<e.Yb.length;z++)if(e.Yb[z]===b)return z;return null};e.prototype.getPhaseCallbackTime=function(b){for(var e=this.Kb,m=0;m<e.length;m++)if(e[m].pc===b)return e[m].Hd;return null};e.prototype.findPhaseAtNominalTime=function(c){b.assert(0<=c);for(var z=this.Kb,m=z.length-1;0<=m;m--)if(c>=z[m].Gd)return z[m].pc;b.error("M1",c,b.EXT.bc(z));return e.nb};e.nb="AFTER_FIRST_BYTE";e.Wb="AFTER_DOM_INTERACTIVE";e.Zb="AT_ONLOAD";e.Xb="AFTER_ONLOAD";
-	e.Yb=[e.nb,e.Wb,e.Zb,e.Xb];return e}();c.Ta=e})(b.a||(b.a={}))})(a||(a={}));(function(b){(function(c){c.uc=function(b){setTimeout(b,0)};c.jd=function(){b.navTiming=null;var e=window.performance||window.f||window.g||window.i;if(e&&e.timing)if(e=e.timing,e.navigationStart&&e.navigationStart<=e.loadEventEnd){var c={},A;for(A in e){var z=e[A];"number"===typeof z&&(c[A]=z)}b.navTiming=c}else b.debug("M2")};c.kd=function(){b.resTiming=null;var e=window.performance||window.f||window.g||window.i;e&&e.getEntriesByType&&
-	((e=e.getEntriesByType("resource"))&&e.length&&0!==e.length&&e.unshift?(b.resTiming=e,b.navTiming?(e=b.navTiming,e.initiatorType="other",e.name=document.URL,e.navigationStart&&!e.startTime&&(e.startTime=e.navigationStart),e.isBase=!0):e=null,e&&b.resTiming.unshift(e)):b.debug("M3"))}})(b.a||(b.a={}))})(a||(a={}));(function(b){(function(b){b.Sa=100;b.Aa=100})(b.a||(b.a={}));var c=b.a,e=function(){function b(e){this.max=e;this.qb=0}b.prototype.yd=function(){this.Ya()||this.qb++};b.prototype.Ya=function(){return this.qb>=
-	this.max};b.prototype.reset=function(){this.qb=0};return b}(),d=function(){function A(){this.Va=[];this.Db=new e(c.Sa);this.xb=new e(c.Aa)}A.prototype.submit=function(e){this.push(e)&&b.initEXTDone&&this.processQ()};A.prototype.processQ=function(){for(var e=this.Ea(),m=0;m<e.length;m++){var c=e[m];"function"===typeof b.EXT.H[c[0]]?(b.isDebug&&b.debug("M4",c[0],c.slice(1).join(", ")),b.EXT.H[c[0]].apply(b,c.slice(1))):b.error("M5",c[0])}};A.prototype.Cd=function(b){return"reportXhr"===b||"reportError"===
-	b};A.prototype.push=function(e){var m=e[0],c=this.Cd(m),A=c?this.Db:this.xb;if(A.Ya())return b.debug("M6",c?"spontaneous":"non spontaneous",m),!1;this.Va.push(e);A.yd();return!0};A.prototype.Ea=function(){var b=this.Va;this.reset();return b};A.prototype.size=function(){return this.Va.length};A.prototype.reset=function(){this.Va=[];this.Db.reset();this.xb.reset()};A.prototype.isSpontaneousQueueDead=function(){return this.Db.Ya()};A.prototype.isNonSpontaneousQueueDead=function(){return this.xb.Ya()};
-	return A}();b.Ec=d})(a||(a={}));(function(b){b.q=new b.Ec;b.command=function(c,e){b.isDebug&&b.debug("M7",c,Array.prototype.slice.call(arguments).slice(1).join(", "));b.q.submit(Array.prototype.slice.call(arguments))}})(a||(a={}));(function(b){(function(c){window.ADRUM.aop=c;c.support=function(b){return!b||"apply"in b};c.around=function(e,d,A,z){b.assert(c.support(e),"aop.around called on a function which does not support interception");e=e||function(){};return function(){b.isDebug&&b.debug("M8",
-	z,Array.prototype.slice.call(arguments).join(", "));var m=Array.prototype.slice.call(arguments),c;try{d&&(c=d.apply(this,m))}catch(l){b.exception(l,"M9",z,l)}b.assert(!c||"[object Array]"===Object.prototype.toString.call(c));var a=void 0;try{a=e.apply(this,c||m)}finally{try{A&&A.apply(this,m)}catch(n){b.exception(n,"M10",z,n)}}return a}};c.before=function(b,d){return c.around(b,d)};c.after=function(b,d){return c.around(b,null,d)}})(b.b||(b.b={}))})(a||(a={}));(function(b){b.initEXTDone=!1;b.addEventListener=
-	function(c,e,d){function A(){try{return d.apply(this,Array.prototype.slice.call(arguments))}catch(z){b.exception(z,"M12",e,c,z)}}b.isDebug&&b.debug("M11",e,c);c.addEventListener?c.addEventListener(e,A,!1):c.attachEvent&&c.attachEvent("on"+e,A)};b.compareWindows=function(b,e){return b==e};b.lifecycle=new b.a.Ta;b.listenForErrors=null;(function(){var c=!1;b.listenForErrors=function(){b.b.support(window.onerror)?(window.onerror=b.b.around(window.onerror,function(e,d,A){c||b.command("reportError",e,d,
-	A);c=!0},function(){c=!1},"onerror"),b.windowErrorHandler=window.onerror,b.info("M13")):b.info("M14")}})();b.windowErrorHandler=window.onerror;b.navTiming=null;b.resTiming=null;b.j=function(c){b.lifecycle.yb(c&&c.timeStamp);b.a.uc(function(){var e=(new Date).getTime();b.lifecycle.bb(e);b.command("mark","onload",e);b.a.jd();b.a.kd();b.command("reportOnload");b.e()});b.info("M15")};b.h=function(){function c(b){document.addEventListener?(document.removeEventListener("DOMContentLoaded",c,!1),e(b)):"complete"===
-	document.readyState&&(document.detachEvent("onreadystatechange",c),e(b))}function e(e){d||(b.lifecycle.ab(e&&e.timeStamp),b.command("mark","onready",(new Date).getTime()),d=!0)}var d=!1;if(document.addEventListener)document.addEventListener("DOMContentLoaded",c,!1),window.addEventListener("load",e,!1);else{document.attachEvent("onreadystatechange",c);window.attachEvent("onload",e);var A=null;try{A=null===window.frameElement?document.documentElement:null}catch(z){}null!=A&&A.doScroll&&function h(){try{A.doScroll("left")}catch(b){setTimeout(h,
-	10);return}e()}()}b.info("M16")};b.e=function(){var c=document.createElement("script");c.async=!0;c.src=b.adrumExtUrl;var e=document.getElementsByTagName("script")[0];e?(e.parentNode.insertBefore(c,e),b.info("M17")):b.info("M18")}})(a||(a={}));(function(b){b.startTimeCookie=null;b.cookieMetadataChunks=null;(function(c){c.M=function(e,c){function A(b){var e=[],z=u.exec(b);if(z){b=z[1];var z=z[2].replace(/^"|"$/g,""),z=decodeURIComponent(z).split("|"),c=z[0].split(":");if("R"===c[0]&&Number(c[1])===
-	k)for(a(b),b=1;b<z.length;b++)e.push(z[b])}return e}function z(b){if(b=n.exec(b)){var e=b[1],z=b[4],c=b[5];if(Number(b[3])===k)return a(e),[Number(z),c]}return null}function m(e){var z=l.exec(e);z&&(b.debug("M21",e),3===z.length?(b.startTimeCookie={startTime:Number(z[1]),startPage:z[2]},a("ADRUM")):b.error("M22",e))}function a(e){b.debug("M20",e);var z=new Date;z.setTime(z.getTime()-1E3);document.cookie=e+"=;Expires="+z.toUTCString()}b.info("M19");for(var l=/^\s*ADRUM=s=([\d]+)&r=(.*)\s*/,k=c?c.length:
-	0,n=/^\s*(ADRUM_(\d+)_(\d+)_(\d+))=(.*)\s*$/i,p=[],q=e.split(";"),r=0;r<q.length;r++){var s=q[r],t=z(s);t?p.push(t):m(s)}Array.prototype.sort.call(p,function(b,e){return b[0]-e[0]});s=[];for(r=0;r<p.length;r++)s.push(p[r][1]);for(var u=/^\s*(ADRUM_BT\w*)=(.*)\s*$/i,r=0;r<q.length;r++)(p=A(q[r]))&&0<p.length&&(s=s.concat(p));b.cookieMetadataChunks=s};c.eck=c.M})(b.a||(b.a={}))})(a||(a={}));(function(b){(function(e){e.$b=function(){return function(e,A){if(("load"===e||"error"===e)&&A&&this._adrumXhrData){var z;
-	z=A;if(z.__adrumInterceptor)z=z.__adrumInterceptor;else if(b.b.support(z)){var m=c.ac(z,this,"XHR.invokeEventListener");z=z.__adrumInterceptor=m}else z=null;if(z)return m=Array.prototype.slice.call(arguments),m[1]=z,b.debug("M23"),m;b.debug("M24",e,A)}}}})(b.a||(b.a={}));(function(e){if(!0===window["adrum-xhr-disable"])b.info("M25");else if(window.XMLHttpRequest)if(e.I=window.XMLHttpRequest.prototype,e.I)if("open"in e.I&&"send"in e.I)if(b.b.support(e.I.open)&&b.b.support(e.I.send)){b.info("M30");
-	b.xhrOpen=e.I.open;b.xhrSend=e.I.send;e.hc=function(e){var c=e._adrumXhrData;if(c){var A=(new Date).getTime();2==e.readyState?c.firstByteTime=c.firstByteTime||A:4==e.readyState&&(b.assert(null===c.respAvailTime,"M31"),c.respAvailTime=c.respAvailTime||A,c.firstByteTime=c.firstByteTime||A)}};e.d=function(e,c){var A=e.getAllResponseHeaders(),a=e.status;b.command("reportXhr",c,A,a,400<=a?e.responseText:null)};e.ac=function(z,m,A){return c(z,function(){e.hc(this)},function(){var z=m._adrumXhrData;if(z&&
-	4==m.readyState){var c=(new Date).getTime();b.assert(null===z.respProcTime,"M32");z.respProcTime=z.respProcTime||c;e.d(m,z);delete m._adrumXhrData}},A)};e.gb=function(z){if(z._adrumXhrData){var c=(new Date).getTime()+3E4,A=function(){e.hc(z);var a=z._adrumXhrData;if(a){var d=(new Date).getTime();4==z.readyState?(b.assert(null===a.respProcTime,"M33"),a.respProcTime=a.respProcTime||d,b.debug("M34"),e.d(z,a),delete z._adrumXhrData):d<c?setTimeout(A,50):(delete z._adrumXhrData,b.debug("M35"))}};A()}};
-	var c=function(e,c,A,a){var d=e;e&&"object"===typeof e&&"toString"in e&&"[xpconnect wrapped nsIDOMEventListener]"===e.toString()&&"handleEvent"in e&&(d=function(){e.handleEvent.apply(this,Array.prototype.slice.call(arguments))});return b.b.around(d,c,A,a)};e.I.open=b.b.around(e.I.open,function(){this._adrumXhrData={url:2<=arguments.length?String(arguments[1]):"",sendTime:null,firstByteTime:null,respAvailTime:null,respProcTime:null,parentPhase:null}},null,"XHR.open");var A=function(b){var e=document.createElement("a");
-	e.href=b;b=document.location;return":"===e.protocol&&""===e.hostname&&""===e.port||e.protocol===b.protocol&&e.hostname===b.hostname&&e.port===b.port};e.I.send=b.b.around(e.I.send,function(){var c=this,m=c._adrumXhrData;if(m){var a=(new Date).getTime();b.assert(null===m.sendTime,"M36");m.sendTime=m.sendTime||a;m.parentPhase=b.lifecycle.ld;A(m.url)?c.setRequestHeader("ADRUM","isAjax:true"):b.debug("M37",document.location.href,m.url);var d=0,k=function(){if(4==c.readyState)b.debug("M38"),e.gb(c);else{var A=
-	null;try{A=c.onreadystatechange}catch(m){b.debug("M39",m);e.gb(c);return}d++;A?b.b.support(A)?(c.onreadystatechange=e.ac(A,c,"XHR.onReadyStateChange"),b.debug("M40",d)):(b.debug("M41"),e.gb(c)):5>d?b.a.uc(k):(b.debug("M42"),e.gb(c))}};k()}},null,"XHR.send");"addEventListener"in e.I&&"removeEventListener"in e.I&&b.b.support(e.I.addEventListener)&&b.b.support(e.I.removeEventListener)?(e.I.addEventListener=b.b.around(e.I.addEventListener,b.a.$b(),null,"XHR.addEventListener"),e.I.removeEventListener=
-	b.b.around(e.I.removeEventListener,function(e,c){if(this._adrumXhrData){var A=Array.prototype.slice.call(arguments);c.__adrumInterceptor?(A[1]=c.__adrumInterceptor,b.debug("M43")):b.debug("M44");return A}},null,"XHR.removeEventListener")):b.debug("M45");b.info("M46")}else b.info("M29");else b.info("M28");else b.info("M27");else b.info("M26")})(b.c||(b.c={}));var c=b.c})(a||(a={}));(function(){"APP_KEY_NOT_SET"===window.ADRUM.appKey&&"undefined"!==typeof console&&"undefined"!==typeof console.log&&
-	console.log("AppDynamics EUM cloud application key missing. Please specify window['adrum-app-key']");var b=window.ADRUM;b.a.M(document.cookie,document.referrer);b.command("mark","firstbyte",window["adrum-start-time"]);b.listenForErrors();b.addEventListener(window,"load",b.j);b.h()})(a||(a={}))}})();})();
-
-
-
-	//]]>
-	</script>
 	<meta charset="UTF-8" />
 
 	<title>Room rates and packages</title>
 	<meta content="Earn free nights at over 4,500 hotels worldwide at seven brands: InterContinental, Crowne Plaza, Hotel Indigo, Holiday Inn, Holiday Inn Express, Candlewood and Staybridge Suites." name="description" />
 	<meta content="IHG room rates, reservations, hotel reservations, IHG Rewards Club, hotel rooms, corporate travel rates, leisure travel rates, hotel group rates, packages, Advanced Purchase, Discount Rate, nightly rates, accessible rooms, smoking and non-smoking rooms, IHG cancellation policy, IHG deposit rules, IHG pet policy, IHG valet fees, room description, Lowest Internet Rate Guarantee" name="keywords" />
 	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
-	<link href="/hotels/images/6c/favicon.ico" rel="shortcut icon" />
+	<link href="https://www.ihg.com/hotels/images/6c/favicon.ico" rel="shortcut icon" />
 	<meta content="NOODP, NOYDIR" name="robots" />
 	<link href="http://www.ihg.com/hotels/us/en/reservation/book" rel="canonical" />
-	<script charset="UTF-8" src="/hotels/script/tealeafjs/TeaLeaf.js?BUILD_TIME=1428023276913" type="text/javascript"></script>
+	<script charset="UTF-8" src="https://www.ihg.com/hotels/script/tealeafjs/TeaLeaf.js?BUILD_TIME=1428548111926" type="text/javascript"></script>
 	<script type="text/javascript">
 //<![CDATA[
 	var configByCountry = {
@@ -120,11 +85,11 @@
 
 	//]]>
 	</script>
-	<script charset="UTF-8" src="https://www.ihg.com/hotels/us/en/wro/js_global.js?BUILD_TIME=1428023276913" type="text/javascript"></script>
+	<script charset="UTF-8" src="https://www.ihg.com/hotels/us/en/wro/js_global.js?BUILD_TIME=1428548111926" type="text/javascript"></script>
 	<script charset="UTF-8" src="https://www.roomkey.com/js/connector/connector.js" type="text/javascript"></script>
-	<script charset="UTF-8" src="https://www.ihg.com/hotels/us/en/walletServlet?BUILD_TIME=1428023276913&command=javascript&brand=6c&country=us&language=en&disableTag=&ebaEnabled=true" type="text/javascript"></script>
-	<link href="https://www.ihg.com/hotels/us/en/wro/global_reservationroomrate_6c=en_us.css?BUILD_TIME=1428023276913" rel="stylesheet" type="text/css" />
-	<link href="https://www.ihg.com/hotels/us/en/walletServlet?BUILD_TIME=1428023276913&command=css&brand=6c&country=us&language=en" rel="stylesheet" type="text/css" />
+	<script charset="UTF-8" src="https://www.ihg.com/hotels/us/en/walletServlet?BUILD_TIME=1428548111926&command=javascript&brand=6c&country=us&language=en&disableTag=&ebaEnabled=true" type="text/javascript"></script>
+	<link href="https://www.ihg.com/hotels/us/en/wro/global_reservationroomrate_6c=en_us.css?BUILD_TIME=1428548111926" rel="stylesheet" type="text/css" />
+	<link href="https://www.ihg.com/hotels/us/en/walletServlet?BUILD_TIME=1428548111926&command=css&brand=6c&country=us&language=en" rel="stylesheet" type="text/css" />
 	<meta content="507340843" />
 	<script charset="UTF-8" type="text/javascript">
 //<![CDATA[
@@ -225,7 +190,7 @@
 	</script>
 	<script type="text/javascript">
 //<![CDATA[
-			var trackingJson = {"akamaiRegion":"AMER","pageidbrand":"6c_book","hotelBrand":"ex","siteBrand":"6c_new","categoryID":"6c_new/1/en","departureDate":"06/28/2015","departureDateDC":"06-28-15","arrivalDateDC":"06-24-15","membershipStatus":"CLUB","pcrNumber":"518940367","state":"Georgia","type":"roomrate","loginType":"implicit","urlType":"https","city":"Atlanta","iata":"","controllerName":"book","hotelCityStateCountryCode":"atlanta, ga, usa","ZIP":"30303","propertyCode":"ATLWS","roomImpressionList":"KEXNIDAVA|TDBNIDAVA|TQNNIDAVA|OQNNIDAVA|OEXNIDAVA|XWTNIDAVA|CSTNIDAVA|KEXNIGCOR|TDBNIGCOR|TQNNIGCOR|OQNNIGCOR|OEXNIGCOR|XWTNIGCOR|CSTNIGCOR|KEXNIKHB2|TDBNIKHB2|TQNNIKHB2|OQNNIKHB2|OEXNIKHB2|XWTNIKHB2|CSTNIKHB2|KEXNIKHB4|TDBNIKHB4|TQNNIKHB4|OQNNIKHB4|OEXNIKHB4|XWTNIKHB4|CSTNIKHB4|KEXNIKPCM|TDBNIKPCM|TQNNIKPCM|OQNNIKPCM|OEXNIKPCM|XWTNIKPCM|CSTNIKPCM|KEXNIKPT5|TDBNIKPT5|TQNNIKPT5|OQNNIKPT5|OEXNIKPT5|XWTNIKPT5|CSTNIKPT5|","eID":"543745344","EF14":"","arrivalDate":"06/24/2015","pcrTravelType":"Leisure","propertyName":"(ATLWS) Atlanta Downtown","timeOfDayAttribute":"09","siteCountry":"us","leadTime":"76","destination":"Atlanta, GA, United States","country":"1","envName":"prod","siteLanguage":"en","akamaiSubRegion":"North America","urgencyList":"","brand":"6c_new","language":"en","akamaiCountryCode":"US"};
+			var trackingJson = {"akamaiRegion":"AMER","pageidbrand":"6c_book","hotelBrand":"ex","siteBrand":"6c_new","categoryID":"6c_new/1/en","departureDate":"06/28/2015","departureDateDC":"06-28-15","arrivalDateDC":"06-24-15","membershipStatus":"","state":"Georgia","type":"roomrate","loginType":"anonymous","urlType":"https","city":"Atlanta","iata":"","controllerName":"book","hotelCityStateCountryCode":"atlanta, ga, usa","ZIP":"30303","propertyCode":"ATLWS","roomImpressionList":"KEXNIDAVA|TDBNIDAVA|TQNNIDAVA|OQNNIDAVA|OEXNIDAVA|XWTNIDAVA|CSTNIDAVA|KEXNIGCOR|TDBNIGCOR|TQNNIGCOR|OQNNIGCOR|OEXNIGCOR|XWTNIGCOR|CSTNIGCOR|KEXNIKHB2|TDBNIKHB2|TQNNIKHB2|OQNNIKHB2|OEXNIKHB2|XWTNIKHB2|CSTNIKHB2|KEXNIKHB4|TDBNIKHB4|TQNNIKHB4|OQNNIKHB4|OEXNIKHB4|XWTNIKHB4|CSTNIKHB4|KEXNIKPCM|TDBNIKPCM|TQNNIKPCM|OQNNIKPCM|OEXNIKPCM|XWTNIKPCM|CSTNIKPCM|KEXNIKPT5|TDBNIKPT5|TQNNIKPT5|OQNNIKPT5|OEXNIKPT5|XWTNIKPT5|CSTNIKPT5|","EF14":"","arrivalDate":"06/24/2015","propertyName":"(ATLWS) Atlanta Downtown","timeOfDayAttribute":"13","siteCountry":"us","leadTime":"75","destination":"Atlanta, GA, United States","country":"1","envName":"prod","siteLanguage":"en","akamaiSubRegion":"North America","urgencyList":"","brand":"6c_new","language":"en","akamaiCountryCode":"US"};
 	//]]>
 	</script>
 	<script type="text/javascript">
@@ -254,11 +219,11 @@
 		var isRecoSupported = true;
 		var bn_runtime_attrs;
 		
-			bn_runtime_attrs = {"cmnLoginStat":"i","cmnChildren":"NO","cmnBusLeisure":"leisure","cmnCountry":"us","cmnRecentSearch":"33.7489,-84.3881"};
+			bn_runtime_attrs = {"cmnLoginStat":"a","cmnChildren":"NO","cmnBusLeisure":"leisure","cmnCountry":"us","cmnRecentSearch":"33.7489,-84.3881"};
 		
 		var bn_segment_attrs;   
 		
-			bn_segment_attrs = {"cmnLoginStat":"x","cmnChildren":"NO","cmnBusLeisure":"leisure","cmnCountry":"US"};
+			bn_segment_attrs = {"cmnLoginStat":"a","cmnChildren":"NO","cmnBusLeisure":"leisure","cmnCountry":"US"};
 		 
 		var bn_reco_config  = {'baynoteSearchRadius':'30'}; //default value
 		
@@ -394,7 +359,7 @@
 					<div class="UHF_clearingDiv" style="clear:right"></div>
 
 					<div id="UHF_welcomeContainer">
-						<span class="UHF_WelcomeLabel UHF_implicit_UHFWelcomeLabel">Welcome<span class="welcomeName">James</span></span> (<a class="UHF_notYouLink" href="https://www.ihg.com/hotels/us/en/reservation/book?qRef=rr&qDest=Atlanta%2C+GA%2C+United+States&qRpn=1&qChld=0&qSrt=sDD&qSHp=1&qSmP=3&qGRM=0&qSlH=ATLWS&qLng=-84.3881&qRdU=1&qRms=1&srb_u=1&qAdlt=1&qPSt=0&qRtP=6CBARC&qCiMy=052015&qCoD=28&qLat=33.7489&qCiD=24&qCoMy=052015&qRRSrt=rt&qRad=30&qRpp=12&method=roomRate&qBrs=ic.cp.in.vn.hi.ex.rs.cv.sb.cw.ul.6c&qWch=0" title="not you?">not you?</a>)<a class="link" href="https://www.ihg.com/rewardsclub/us/en/sign-in/?fwdest=https://www.ihg.com/hotels/us/en/reservation/book?qRef=rr&qDest=Atlanta%2C+GA%2C+United+States&qRpn=1&qChld=0&qSrt=sDD&qSHp=1&qSmP=3&qGRM=0&qSlH=ATLWS&qLng=-84.3881&qRdU=1&qRms=1&srb_u=1&qAdlt=1&qPSt=0&qRtP=6CBARC&qCiMy=052015&qCoD=28&qLat=33.7489&qCiD=24&qCoMy=052015&qRRSrt=rt&qRad=30&qRpp=12&method=roomRate&qBrs=ic.cp.in.vn.hi.ex.rs.cv.sb.cw.ul.6c&qWch=0" id="headerLogin" onclick="return UHF.showSignInWallet();" rel="nofollow" title="Sign In">Sign In</a>
+						<a class="link" href="https://www.ihg.com/rewardsclub/us/en/sign-in/?fwdest=https://www.ihg.com/hotels/us/en/reservation/book?qRef=rr&qDest=Atlanta%2C+GA%2C+United+States&qRpn=1&qChld=0&qSrt=sDD&qSHp=1&qSmP=3&qGRM=0&qSlH=ATLWS&qLng=-84.3881&qRdU=1&qRms=1&srb_u=1&qAdlt=1&qPSt=0&qRtP=6CBARC&qCiMy=052015&qCoD=28&qLat=33.7489&qCiD=24&qCoMy=052015&qRRSrt=rt&qRad=30&qRpp=12&method=roomRate&qBrs=ic.cp.in.vn.hi.ex.rs.cv.sb.cw.ul.6c&qWch=0" id="headerLogin" onclick="return UHF.showSignInWallet();" rel="nofollow" title="Sign In">Sign In</a>
 					</div>
 
 					<div id="UHF_menu">
@@ -501,8 +466,12 @@
 										<a href="http://www.ihg.com/hotels/us/en/global/customer_care/change-your-pin" title="Change Pin">Change Pin</a>
 									</li>
 
-									<li class="UHF_menuSubItem lastNavItem">
+									<li class="UHF_menuSubItem">
 										<a href="https://www.ihg.com/hotels/us/en/global/deals/hotel-offers?section=OFFERS" title="Offers">Offers</a>
+									</li>
+
+									<li class="UHF_menuSubItem lastNavItem">
+										<a href="https://www.ihg.com/rewardsclub/us/en/join/register" title="Join">Join</a>
 									</li>
 								</ul><!--[if lte IE 6]></td></tr></table></a><![endif]-->
 
@@ -518,7 +487,7 @@
 
 												<div class="Block_Left_Wrap">
 													<div class="EmailClubLabel">
-														<label for="emailOrPcrNumber">Email or Rewards Club #</label> <input class="pcrReqdField" maxlength="50" name="emailOrPcrNumber" size="22" title="Email or Rewards Club #" type="email" value="518940367" />
+														<label for="emailOrPcrNumber">Email or Rewards Club #</label> <input class="pcrReqdField" maxlength="50" name="emailOrPcrNumber" size="22" title="Email or Rewards Club #" type="email" value="" />
 													</div>
 
 													<div class="UHF_pin_sign_in">
@@ -711,7 +680,7 @@
 								</div>
 
 								<div class="UHF_pcrDialogRow">
-									<span class="UHF_dialogElementA"><input class="pcrReqdDefault pcrReqdField" maxlength="50" name="emailOrPcrNumber" size="28" title="Email or IHG&reg; Rewards Club #" type="email" value="518940367" /></span> <span class="UHF_dialogElementB"><input class="pcrReqdDefault" maxlength="4" name="pin" pattern="[0-9]*" size="4" title="PIN" type="password" value="" /></span> <span class="signInBtn"><input class="cssButton bc6c v fright" data-slnm-ihg="" id="pcrLeftSignInBtn" title="Select to sign into your IHG&reg; Rewards Club account." type="submit" value="Sign In" /></span>
+									<span class="UHF_dialogElementA"><input class="pcrReqdDefault pcrReqdField" maxlength="50" name="emailOrPcrNumber" size="28" title="Email or IHG&reg; Rewards Club #" type="email" value="" /></span> <span class="UHF_dialogElementB"><input class="pcrReqdDefault" maxlength="4" name="pin" pattern="[0-9]*" size="4" title="PIN" type="password" value="" /></span> <span class="signInBtn"><input class="cssButton bc6c v fright" data-slnm-ihg="" id="pcrLeftSignInBtn" title="Select to sign into your IHG&reg; Rewards Club account." type="submit" value="Sign In" /></span>
 								</div>
 
 								<div class="UHF_clearingDiv"></div>
@@ -725,6 +694,16 @@
 								</div>
 							</div>
 						</form>
+					</div>
+
+					<div class="UHF_pcrDialogRow">
+						<div class="pcrTeaser">
+							<!-- Pull language and region from property files as we will point all UHF Wallet URLs to English version for Arabic/Hebrew language website. We definitely don't want to put a language check in JSP file-->
+
+							<div class="rTeaser joinNowPanel">
+								Not a member?<a class="UHF_pcrEnroll" href="https://www.ihg.com/rewardsclub/rewards/us/en/join/" title="Join Today!">Join Today!</a>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -786,6 +765,16 @@
 							</div>
 						</form>
 					</div>
+
+					<div class="UHF_pcrDialogRow">
+						<div class="pcrTeaser">
+							<!-- Pull language and region from property files as we will point all UHF Wallet URLs to English version for Arabic/Hebrew language website. We definitely don't want to put a language check in JSP file-->
+
+							<div class="rTeaser joinNowPanel">
+								Not a member?<a href="https://www.ihg.com/rewardsclub/rewards/us/en/join/" title="Join Today!">Join Today!</a>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="UHF_pcrDialog UHF_accessibleHide" id="UHF_createPinDialog" tabindex="0">
@@ -842,6 +831,16 @@
 							</div>
 						</form>
 					</div>
+
+					<div class="UHF_pcrDialogRow">
+						<div class="pcrTeaser">
+							<!-- Pull language and region from property files as we will point all UHF Wallet URLs to English version for Arabic/Hebrew language website. We definitely don't want to put a language check in JSP file-->
+
+							<div class="rTeaser joinNowPanel">
+								Not a member?<a href="https://www.ihg.com/rewardsclub/rewards/us/en/join/" title="Join Today!">Join Today!</a>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="UHF_pcrDialog UHF_accessibleHide" id="UHF_createEmailDialog" tabindex="0">
@@ -888,11 +887,7 @@
 							</div>
 						</form>
 					</div>
-				</div>
-
-				<form action="https://www.ihg.com/hotels/us/en/reservation/book?qRef=rr&qDest=Atlanta%2C+GA%2C+United+States&qRpn=1&qChld=0&qSrt=sDD&qSHp=1&qSmP=3&qGRM=0&qSlH=ATLWS&qLng=-84.3881&qRdU=1&qRms=1&srb_u=1&qAdlt=1&qPSt=0&qRtP=6CBARC&qCiMy=052015&qCoD=28&qLat=33.7489&qCiD=24&qCoMy=052015&qRRSrt=rt&qRad=30&qRpp=12&method=roomRate&qBrs=ic.cp.in.vn.hi.ex.rs.cv.sb.cw.ul.6c&qWch=0" class="UHF_form" id="UHF_notYouForm" method="post">
-					<input class="UHF_method" name="uhfMethod" type="hidden" value="GET" /> <input name="uhfFilter" type="hidden" value="true" /> <input name="command" type="hidden" value="notYou" /> <input name="currentUrl" type="hidden" value="https://www.ihg.com/hotels/us/en/reservation/book?qRef=rr&qDest=Atlanta%2C+GA%2C+United+States&qRpn=1&qChld=0&qSrt=sDD&qSHp=1&qSmP=3&qGRM=0&qSlH=ATLWS&qLng=-84.3881&qRdU=1&qRms=1&srb_u=1&qAdlt=1&qPSt=0&qRtP=6CBARC&qCiMy=052015&qCoD=28&qLat=33.7489&qCiD=24&qCoMy=052015&qRRSrt=rt&qRad=30&qRpp=12&method=roomRate&qBrs=ic.cp.in.vn.hi.ex.rs.cv.sb.cw.ul.6c&qWch=0" /> <input name="country" type="hidden" value="us" /> <input name="language" type="hidden" value="en" /> <input class="UHF_passThroughParams" name="passThroughParams" type="hidden" value="" />
-				</form><script type="text/javascript">
+				</div><script type="text/javascript">
 //<![CDATA[
 
 				function invokeWalletActivityCallback(){
@@ -918,7 +913,7 @@
 
 				UHF.setUpMegaMenuTeaserContent('https://www.ihg.com/hotels/us/en/walletServlet');
 				try{
-				if('IMPLICIT' === 'EXPLICIT'){                  
+				if('ANONYMOUS' === 'EXPLICIT'){                 
 					UHF.setUpSessionTimeOut('https://www.ihg.com/hotels/us/en/walletServlet', '600', '120', '300');
 				}   
 				}catch(e){              
@@ -972,8 +967,8 @@
 			</div>
 		</div><script type="text/javascript">
 //<![CDATA[
-				var loginStatus = 'implicit';
-				var profilePointsBalance = '0';
+				var loginStatus = 'anonymous';
+				var profilePointsBalance = '';
 		//]]>
 		</script>
 
@@ -986,7 +981,7 @@
 						<script>
 <![CDATA[
 
-						var trackingJson = {"akamaiRegion":"AMER","pageidbrand":"6c_book","hotelBrand":"ex","siteBrand":"6c_new","categoryID":"6c_new/1/en","departureDate":"06/28/2015","departureDateDC":"06-28-15","arrivalDateDC":"06-24-15","membershipStatus":"CLUB","pcrNumber":"518940367","state":"Georgia","type":"roomrate","loginType":"implicit","urlType":"https","city":"Atlanta","iata":"","controllerName":"book","hotelCityStateCountryCode":"atlanta, ga, usa","ZIP":"30303","propertyCode":"ATLWS","roomImpressionList":"KEXNIDAVA|TDBNIDAVA|TQNNIDAVA|OQNNIDAVA|OEXNIDAVA|XWTNIDAVA|CSTNIDAVA|KEXNIGCOR|TDBNIGCOR|TQNNIGCOR|OQNNIGCOR|OEXNIGCOR|XWTNIGCOR|CSTNIGCOR|KEXNIKHB2|TDBNIKHB2|TQNNIKHB2|OQNNIKHB2|OEXNIKHB2|XWTNIKHB2|CSTNIKHB2|KEXNIKHB4|TDBNIKHB4|TQNNIKHB4|OQNNIKHB4|OEXNIKHB4|XWTNIKHB4|CSTNIKHB4|KEXNIKPCM|TDBNIKPCM|TQNNIKPCM|OQNNIKPCM|OEXNIKPCM|XWTNIKPCM|CSTNIKPCM|KEXNIKPT5|TDBNIKPT5|TQNNIKPT5|OQNNIKPT5|OEXNIKPT5|XWTNIKPT5|CSTNIKPT5|","eID":"543745344","EF14":"","arrivalDate":"06/24/2015","pcrTravelType":"Leisure","propertyName":"(ATLWS) Atlanta Downtown","timeOfDayAttribute":"09","siteCountry":"us","leadTime":"76","destination":"Atlanta, GA, United States","country":"1","envName":"prod","siteLanguage":"en","akamaiSubRegion":"North America","urgencyList":"","brand":"6c_new","language":"en","akamaiCountryCode":"US"};
+						var trackingJson = {"akamaiRegion":"AMER","pageidbrand":"6c_book","hotelBrand":"ex","siteBrand":"6c_new","categoryID":"6c_new/1/en","departureDate":"06/28/2015","departureDateDC":"06-28-15","arrivalDateDC":"06-24-15","membershipStatus":"","state":"Georgia","type":"roomrate","loginType":"anonymous","urlType":"https","city":"Atlanta","iata":"","controllerName":"book","hotelCityStateCountryCode":"atlanta, ga, usa","ZIP":"30303","propertyCode":"ATLWS","roomImpressionList":"KEXNIDAVA|TDBNIDAVA|TQNNIDAVA|OQNNIDAVA|OEXNIDAVA|XWTNIDAVA|CSTNIDAVA|KEXNIGCOR|TDBNIGCOR|TQNNIGCOR|OQNNIGCOR|OEXNIGCOR|XWTNIGCOR|CSTNIGCOR|KEXNIKHB2|TDBNIKHB2|TQNNIKHB2|OQNNIKHB2|OEXNIKHB2|XWTNIKHB2|CSTNIKHB2|KEXNIKHB4|TDBNIKHB4|TQNNIKHB4|OQNNIKHB4|OEXNIKHB4|XWTNIKHB4|CSTNIKHB4|KEXNIKPCM|TDBNIKPCM|TQNNIKPCM|OQNNIKPCM|OEXNIKPCM|XWTNIKPCM|CSTNIKPCM|KEXNIKPT5|TDBNIKPT5|TQNNIKPT5|OQNNIKPT5|OEXNIKPT5|XWTNIKPT5|CSTNIKPT5|","EF14":"","arrivalDate":"06/24/2015","propertyName":"(ATLWS) Atlanta Downtown","timeOfDayAttribute":"13","siteCountry":"us","leadTime":"75","destination":"Atlanta, GA, United States","country":"1","envName":"prod","siteLanguage":"en","akamaiSubRegion":"North America","urgencyList":"","brand":"6c_new","language":"en","akamaiCountryCode":"US"};
 						]]>
 						</script>
 
@@ -1500,7 +1495,7 @@
 									AV_STAY_POINTS = "0";
 									AV_SELECTED_ROOM=''
 						//]]>
-						</script> <script charset="UTF-8" src="/hotels/script/reservation/res_availSearch.js?BUILD_TIME=1428023276913" type="text/javascript"></script>
+						</script> <script charset="UTF-8" src="/hotels/script/reservation/res_availSearch.js?BUILD_TIME=1428548111926" type="text/javascript"></script>
 
 						<div id="ratesToolbar">
 							<div class="sortBy">
@@ -5821,7 +5816,7 @@
 				<dl>
 					<dt style="font-weight: bold">Total Points Required for Stay: <span class="pointsRequiredForStay"></span></dt>
 
-					<dt style="font-weight: bold">Your Points Balance:&nbsp; 0</dt>
+					<dt style="font-weight: bold">Your Points Balance:&nbsp;</dt>
 				</dl>
 
 				<div>
@@ -5885,7 +5880,7 @@
 
 				<div class="pcrContent">
 					<dl>
-						<dt><b>Points Balance:</b>0</dt>
+						<dt style="font-weight: bold">Points Balance:</dt>
 
 						<dd>
 							<br />
@@ -6200,13 +6195,15 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="UHF_hide"><img src="https://www.crowneplaza.com/hotels/cdcVanity?cdc_name=country_language&cdc_value=us$:en&action_event=YES&dp=true" style="display:none;margin:0px;padding:0px;height:0px;width:0px;" /> <img src="https://www.candlewoodsuites.com/hotels/cdcVanity?cdc_name=country_language&cdc_value=us$:en&action_event=YES&dp=true" style="display:none;margin:0px;padding:0px;height:0px;width:0px;" /> <img src="https://www.hiexpress.com/hotels/cdcVanity?cdc_name=country_language&cdc_value=us$:en&action_event=YES&dp=true" style="display:none;margin:0px;padding:0px;height:0px;width:0px;" /> <img src="https://www.holidayinn.com/hotels/cdcVanity?cdc_name=country_language&cdc_value=us$:en&action_event=YES&dp=true" style="display:none;margin:0px;padding:0px;height:0px;width:0px;" /> <img src="https://www.ihg.com/hotels/cdcVanity?cdc_name=country_language&cdc_value=us$:en&action_event=YES" style="display:none;margin:0px;padding:0px;height:0px;width:0px;" /> <img src="https://www.hotelindigo.com/hotels/cdcVanity?cdc_name=country_language&cdc_value=us$:en&action_event=YES&dp=true" style="display:none;margin:0px;padding:0px;height:0px;width:0px;" /> <img src="https://www.holidayinnresorts.com/hotels/cdcVanity?cdc_name=country_language&cdc_value=us$:en&action_event=YES&dp=true" style="display:none;margin:0px;padding:0px;height:0px;width:0px;" /> <img src="https://www.staybridge.com/hotels/cdcVanity?cdc_name=country_language&cdc_value=us$:en&action_event=YES&dp=true" style="display:none;margin:0px;padding:0px;height:0px;width:0px;" /> <img src="https://www.evenhotels.com/hotels/cdcVanity?cdc_name=country_language&cdc_value=us$:en&action_event=YES&dp=true" style="display:none;margin:0px;padding:0px;height:0px;width:0px;" /></div>
 		</div><!--
 dac: []
-apa: [sdcwebappp17]
+apa: []
 app: []
 uri: [/hotels/us/en/reservation/book]
 acc: [US]
-_coco: [debug_disabled]
+_coco: []
 -->
 		<!-- We won't show iPerception for Corporate Users, e.g. F&F, Shareholders, Retired Directors and Employees -->
 		<script type="text/javascript">
@@ -6224,7 +6221,7 @@ _coco: [debug_disabled]
 			var globalScriptElem = document.createElement('script');
 			globalScriptElem.type = "text/javascript";
 			globalScriptElem.id = "gs_globalScript";
-			globalScriptElem.src = "https://www.ihg.com/hotels/us/en/reservation/global_javascript/global_javascript.cache.js?BUILD_TIME=1428023276913";
+			globalScriptElem.src = "https://www.ihg.com/hotels/us/en/reservation/global_javascript/global_javascript.cache.js?BUILD_TIME=1428548111926";
 			globalScriptElem.onloadDone = false;
 			globalScriptElem.onload = function() {
 				if (!globalScriptElem.onloadDone) {
@@ -6260,7 +6257,7 @@ _coco: [debug_disabled]
 	<div class="hide"><img id="roomKeyLeadsShim" /> <img id="pCDC6c" /> <img id="pCDCcp" /> <img id="pCDChi" /> <img id="pCDCex" /> <img id="pCDCic" /> <img id="pCDCsb" /> <img id="pCDCcw" /> <img id="pCDCrs" /> <img id="pCDCin" /></div><script type="text/javascript">
 //<![CDATA[
 			var spotlight = true;
-			var userprofile= "implicit";    
+			var userprofile= "anonymous";   
 			var rateChoosen = "6CBARC";
 			var resOption = "" ;
 			var iataNumber = "";
@@ -6288,8 +6285,8 @@ _coco: [debug_disabled]
 			/*<\/sl:translate>*/
 			
 			var jq = jQuery;
-			var loginStatus = 'implicit';
-			var profilePointsBalance = '0';
+			var loginStatus = 'anonymous';
+			var profilePointsBalance = '';
 			var selectedResOption = "";
 			var selectedResOptionParam = "";
 			var numberOfNights = 4;
@@ -6320,7 +6317,7 @@ _coco: [debug_disabled]
 
 			
 	//]]>
-	</script> <script charset="UTF-8" src="https://www.ihg.com/hotels/us/en/wro/js_roomrates.js?BUILD_TIME=1428023276913" type="text/javascript"></script> <script type="text/javascript">
+	</script> <script charset="UTF-8" src="https://www.ihg.com/hotels/us/en/wro/js_roomrates.js?BUILD_TIME=1428548111926" type="text/javascript"></script> <script type="text/javascript">
 //<![CDATA[
 
 		/* This handles any error happens on the page */
@@ -6384,10 +6381,4 @@ _coco: [debug_disabled]
 					cursor: default;
 				}
 	]]>
-	</style></noscript> <script type='text/javascript'>
-//<![CDATA[
-	if (window.ADRUM) { ADRUM.footerMetadataChunks = ["clientRequestGUID%3A86a404ad-fc5b-488f-9f28-d25402f3a728","btId%3A271475","btDuration%3A1382"]; }
-	//]]>
-	</script>
-</body>
-</html>
+	</style></noscript>
