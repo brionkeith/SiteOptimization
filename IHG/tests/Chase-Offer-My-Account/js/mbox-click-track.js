@@ -71,45 +71,9 @@ Adbett=window.Adbett||{};
 
     mboxFactoryDefault.addOnLoad(function(){
 
-        /*jQuery(".joinnowcheckbox #pcrEnroll, .joinnowtext label").on("click",function() {
-            mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=joinnow-link"); // Track mousedown when user clicks to enroll
-        });*/
-
-        /*jQuery(".joinnowcheckbox #pcrEnroll, .joinnowtext label").on("click",function() {
-            mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=do-not-join"); // Track mousedown when user clicks to DO NOT enroll
-        });*/
-
-
-
-        jQuery("#btnNext").on('click', function () {
-            if (jQuery('.joinnowcheckbox #pcrEnroll, .joinnowtext label').is(":checked")) {
-                mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=joinnow-link"); //track enrollments
-            }
-        });
-
-        jQuery("#btnNext").on('click', function () {
-            if (jQuery('.newEnrollmentRadio #noEnrollment, .noEnrollmentText label').is(":checked")) {
-                mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=do-not-join"); //track no enrollments
-            }
-        });
-
-        jQuery("#btnNext").on('click', function () {
-            if (jQuery('.signIn div .emailRCnum, .signIn div .PINnum')) {
-                // Track when sign-in fields are populated and reservation confirmation button is clicked
-                mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=signin-button"); //track sign-ins
-            }
-        });
-
-
-        /*jQuery("#btnNext").on('click', function () {
-            if (jQuery('.joinNow .joinnowcheckbox input#pcrEnroll').is(":checked")) {
-                mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=joinnow-link");
-            } else {
-                jQuery('.joinNow .joinnowcheckbox input#pcrEnroll').off('click', function() {
-                    mboxFactoryDefault.getSignaler().signal('mboxClickTrack', 'mboxClickTrack', 'clicked=unchecked');
-                });
-            }
-        });*/
+        // Control Click Tracking
+        Adbett.track({selector:'.chaseOffer .chaseMsg a',value:'card-icon',event:'click',type:'signaler'}); // track learn more clicks from Card Icon
+        Adbett.track({selector:'.chaseOffer .chaseMsg a',value:'card-icon-DTM',event:'click',type:'signaler'}); // track learn more clicks from Card Icon + DTM
     });
 
 }(Adbett);
