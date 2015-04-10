@@ -223,6 +223,7 @@ EX/tests/book-today-messaging/node_modules/
 EX/tests/Book-Today-Messaging-V2/.sass-cache/
 EX/tests/Book-Today-Messaging-V2/node_modules/
 EX/tests/Book-Today-Messaging-V2/img/
+EX/tests/Quick-Enroll/node_modules/
 EX/node_modules/
 
 # IHG
@@ -236,6 +237,8 @@ IHG/tests/Chase-Offer-My-Account/node_modules/
 IHG/tests/Chase-Offer-My-Account/package.json
 IHG/tests/Chase-Offer-My-Account/gruntfile.js
 IHG/tests/Chase-Offer-My-Account/index.html
+
+IHG/tests/Funnel-Button-Text-Update/node_modules/
 
 
 .sass-cache/
