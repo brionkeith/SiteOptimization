@@ -1,0 +1,152 @@
+$background-white: #ffffff;
+$border-width: 5px;
+$width: auto;
+
+#identityBlock {
+	/*padding-top:10px;
+	padding-bottom:14px;
+	border-width: $border-width !important;*/
+
+	/*.signInErrorBoxContainer {
+		width: auto;
+		float: none;
+	}*/
+
+	/*.paymentihglog {
+		margin-right:25px;
+		position:relative;
+		float:right;
+		top:60px;
+	}*/
+
+	#UHF_header_loginform {
+		/*margin:0;*/
+	}
+
+	.rememberWrap {
+		/*margin:0;
+		padding:0;
+		float:left;
+		width:460px;
+		border-right:2px solid #cccccc;*/
+
+		/*.heavyText {		
+			padding:0;
+			font-size:15px;
+		}*/		
+
+		.heavyText span {
+			padding-left:3px;
+		}
+
+		.signIn {
+			padding:0;
+			background: $background-white;
+
+			#uhf_btn_SignIn {
+				margin:14px 10px 0 10px;
+			}
+
+			div input {
+				height:20px;
+			}
+
+			.rememberCheckbox {
+				top:0;
+			}
+
+			.forgotRememberPin {
+				margin:12px 0 0 0;
+				padding:0;
+				float: left !important;
+
+				#UHF_forgotPinLink {
+					margin-top:4px;
+				}				
+
+				@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) {
+						#UHF_forgotPinLink {
+						margin-top:-14px;
+					}	
+				}
+			}
+
+			.rememberCheck {
+				margin-left:6px;
+				clear:both;
+				
+				#remember {
+					margin:1px 5px 0 0;
+					float:left;
+				}				
+			}
+		}
+	}
+}
+
+#frmGuestInfo #identityBlock {
+	padding:0;
+	border:none;
+
+	.paymentihglog {
+		display:none;
+	}	
+
+	#anonId {
+
+		.heavyText {
+			margin: 0 0 10px;
+			padding:0 0 5px;		
+			float:none;
+			border-bottom:1px solid #aaaaaa;
+		}
+		.heavyText span:first-child {
+			padding-left:0;
+			font-size:18px;
+			color:#0055a5;			
+		}
+
+		.heavyText:nth-child(2) {
+			margin:0 0 7px;			
+			padding-bottom:0;
+			border-bottom: none;
+			font-weight: bold;
+			font-size: 14px;
+			color:#444444;
+		}
+
+		.joinNow {
+			padding:0;
+			float:none;
+			width:$width;
+			background: $background-white;
+
+			label {
+				font-size:13.5px;
+			}
+
+			.joinnowtext {
+				margin-bottom:5px;
+				float:left;
+			}
+			.noEnrollmentText {
+				margin-bottom: 20px;
+				padding-left:10px;
+				float:left;
+			}
+			.newEnrollmentRadio {
+				float:left;
+				width:20px;
+			}	
+		}	
+	}
+}
+
+/* IE9, IE10 */
+@media screen and (min-width:0\0) {
+	#identityBlock .rememberWrap .signIn .rememberCheck #remember { margin-top: -5px \0; margin-right: 0 \0;}
+}
+/* IE 10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	/*#identityBlock .rememberWrap .signIn .rememberCheck #remember { margin-top: -2px; }*/
+}
