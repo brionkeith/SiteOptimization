@@ -5,9 +5,10 @@
   #myMessages .chaseOffer img {
     margin: 0 10px 0 0;
     float: left; }
-  #myMessages .chaseOffer p {
+  #myMessages .chaseOffer .chaseMsg {
     margin: 0;
     padding: 5px 0;
+    line-height: 16px;
     float: left;
     width: 407px; }
   #myMessages .chaseOffer .currentPts, #myMessages .chaseOffer .pointsInt, #myMessages .chaseOffer .bonusInt, #myMessages .chaseOffer .totalInt {
