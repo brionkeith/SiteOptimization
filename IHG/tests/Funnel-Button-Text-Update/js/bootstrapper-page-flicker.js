@@ -1,0 +1,1 @@
+Bootstrapper.MVT.injectCSS('.row.checkRates input.cssButton[value="Check Rates"]{ display:none; }');

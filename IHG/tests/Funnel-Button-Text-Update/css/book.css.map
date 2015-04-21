@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,yCAA0C;EACzC,OAAO,EAAC,iBAAiB",
+"mappings": "AAAA,8CAA+C;EAC9C,OAAO,EAAC,iBAAiB",
 "sources": ["../sass/book.scss"],
 "names": [],
 "file": "book.css"
