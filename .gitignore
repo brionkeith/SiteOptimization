@@ -218,6 +218,7 @@ pip-log.txt
 # Ignore the following directories
 
 # CP
+CP/tests/Book-Today-Messaging-v3/.sass-cache/
 CP/tests/Book-Today-Messaging-v3/node_modules/
 
 # EX
@@ -225,6 +226,8 @@ EX/tests/book-today-messaging/index.html
 EX/tests/book-today-messaging/node_modules/
 EX/tests/Book-Today-Messaging-V2/.sass-cache/
 EX/tests/Book-Today-Messaging-V2/node_modules/
+EX/tests/Book-Today-Messaging-v3/.sass-cache/
+EX/tests/Book-Today-Messaging-v3/node_modules/
 EX/tests/Book-Today-Messaging-V2/img/
 EX/tests/Quick-Enroll/node_modules/
 EX/node_modules/

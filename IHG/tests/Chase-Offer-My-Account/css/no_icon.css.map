@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGC,uBAAY;EACX,MAAM,EAAC,QAAQ;EACf,OAAO,EAAC,CAAC;EACT,QAAQ,EAAE,IAAI;EAEd,2BAAI;IACH,MAAM,EAAC,UAAU;IACjB,KAAK,EAAC,IAAI;EAEX,yBAAE;IACD,MAAM,EAAC,CAAC;IACR,OAAO,EAAC,SAAS;IACjB,KAAK,EAAC,IAAI",
+"sources": ["../sass/no_icon.scss"],
+"names": [],
+"file": "no_icon.css"
+}
