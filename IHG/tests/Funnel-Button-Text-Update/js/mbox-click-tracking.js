@@ -71,9 +71,10 @@ Adbett=window.Adbett||{};
 
     mboxFactoryDefault.addOnLoad(function(){
 
-        // Control Click Tracking
-        Adbett.track({selector:'.row.checkRates .bookAnchor .cssButton.bc6c',value:'check-rates',event:'click',type:'signaler'}); // track 'Check Rates' clicks
-        Adbett.track({selector:'.rateSelectionArea .cssButton.bookThisRoomBaseRate',value:'book-this-room',event:'click',type:'signaler'}); // track 'Book This Room' clicks
+        // Track Clicks
+        Adbett.track({selector:'.row.checkRates .bookAnchor .cssButton',value:'check-rates',event:'click',type:'signaler'}); // track 'Check Rates'
+        Adbett.track({selector:'.rateSelectionArea .cssButton',value:'book-this-room',event:'click',type:'signaler'}); // track 'Book This Room' clicks
+        
     });
 
 }(Adbett);
