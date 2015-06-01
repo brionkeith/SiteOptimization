@@ -15,13 +15,13 @@ jQuery(document).ready(function(jQuery) {
 	    jQuery('.msgWrapper').remove(); // remove this
 	}
 
-	if (jQuery('p.errmsgDetails:contains("Please provide dates") ')) { // if this exists
-	    jQuery('#resultsListContainer .msgWrapper').remove(); // remove this
-	}
+	// if (jQuery('p.errmsgDetails:contains("Please provide dates") ')) { // if this exists
+	//     jQuery('#resultsListContainer .msgWrapper').remove(); // remove this
+	// }
 
-	if (jQuery('#roomRateRoomType > div.ratesListing.roomsView').length === 0) { // check to see if there are no divs with these class names
-	    jQuery('#resultsListContainer .msgWrapper').remove(); // if there are, remove this
-	}
+	// if (jQuery('#roomRateRoomType > div.ratesListing.roomsView').length === 0) { // check to see if there are no divs with these class names
+	//     jQuery('#resultsListContainer .msgWrapper').remove(); // if there are, remove this
+	// }
 
 	// if (jQuery('#sidebarContainerRatesPage .error1.spotlightError').length === 1) { // if this exists
 	//     jQuery('#resultsListContainer .msgWrapper').remove(); // remove this

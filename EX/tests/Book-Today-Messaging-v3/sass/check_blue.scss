@@ -18,11 +18,12 @@ $background-color: #0055a5;
 .msgWrapper {
 	margin:10px 0;
 	padding:15px;
+	min-height:24px;
 	text-align: center;
 	background:$background-color;
 	border:none;
 	position:relative;
-	display:none;
+	/*display:none;*/
 
 	.btmMsg {
 		margin:0 auto;
@@ -34,7 +35,7 @@ $background-color: #0055a5;
 		font-weight:bold;
 		letter-spacing: .3px;
 		color:#fff;
-		display:none;		
+		/*display:none;		*/
 	}
 		.ltdAvail {
 			margin-left:11px;

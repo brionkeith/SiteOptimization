@@ -13,11 +13,12 @@
 .msgWrapper {
   margin: 10px 0;
   padding: 15px;
+  min-height: 24px;
   text-align: center;
   background: #0055a5;
   border: none;
   position: relative;
-  display: none; }
+  /*display:none;*/ }
   .msgWrapper .btmMsg {
     margin: 0 auto;
     padding: 8px 0 8px 45px;
@@ -28,7 +29,7 @@
     font-weight: bold;
     letter-spacing: .3px;
     color: #fff;
-    display: none; }
+    /*display:none;		*/ }
   .msgWrapper .ltdAvail {
     margin-left: 11px;
     padding-left: 9px;

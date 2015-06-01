@@ -8,6 +8,13 @@ jQuery(document).ready(function(jQuery) {
 	jQuery(msgWrap).delay(500).fadeIn(700);
 	jQuery('.btmMsg').delay(700).fadeIn(500);
 
+	jQuery(document).ajaxComplete(function( event,request, settings ) { // Request AJAX
+		jQuery(msgWrap).insertBefore('#roomRateRoomType'); // insert message container if rate type is changed, resulsting in AJAX call
+
+		jQuery(msgWrap).delay(500).fadeIn(700);
+		jQuery('.btmMsg').delay(700).fadeIn(500);
+	});	
+
 	jQuery('.msgWrapper:eq(1)').remove();
 
 	function isEmpty(el) {
