@@ -2,18 +2,19 @@ jQuery(document).ready(function(jQuery) {
 
 	var pcINTERACT    = jQuery('.rewardsClubHome #pcrInteract'); // Interact marketing module
 	var chaseOffer    = jQuery('<div class="chaseOffer"></div>');
-	var iconCC 		  = jQuery('<img src="https://prodcache.internal.ihg.com/content/dam/etc/media_library/branded/6c/cn/rewardsclub/buttons/icon_credit_card.png">');
-	var chaseMsg	  = jQuery('<p class="chaseMsg">Earn 70,000 bonus points. Plus get a Free Night every year.</p>');
+	var iconCC 		  = jQuery('<img src="https://prodcache.internal.ihg.com/content/dam/etc/media_library/branded/6c/en/us/chaserewards/icon-credit-card-shadow.png">');
+	// var iconCC     = jQuery('<img src=\"img/icon-credit-card-shadow.png\">');
+	var chaseMsg	  = jQuery('<p class="chaseMsg">Earn 60,000 bonus points. Plus get a Free Night every year.</p>');
 	var learnMore	  = jQuery('<a href="https://creditcards.chase.com/a1/ihg/ihg70?CELL=6VQH"> Learn More.&nbsp;</a>');
 	var currentPtsDiv = jQuery('<span class="currentPts">Current Points:&nbsp;</span>');
 	
-	var ptsBalance 	  = jQuery('.welcomePointsValue').text(); 				// Get current RC points balance
+	var ptsBalance 	  = jQuery('.welcomePointsValue, .pointsBalanceLabel > .value:first').text().trim(); // Get current RC points balance
 	var strParse 	  = parseInt(ptsBalance.replace(',',''), 10); 			// convert RC points string to number
-	var bonusPoints	  = 70000;
+	var bonusPoints	  = 60000;
 	var bonusPtsTxt   = jQuery('<span class="bonusPtsTxt"> + Bonus Points: </span><span class="bonusValue">' + bonusPoints + '</span>');
 	var totalPts      = Number(strParse) + Number(bonusPoints);				// sum total of Bonus points (70,000) and current RC points	
 	
-	var pointsInt	  = jQuery('<span class="pointsInt"></span>');		// Current RC points span
+	var pointsInt	  = jQuery('<span class="pointsInt"></span>');			// Current RC points span
 	var bonusInt	  = jQuery('<span class="bonusInt"></span>');			// Chase bonus points span
 	var totalInt	  = jQuery('<span class="totalInt">&nbsp;= </span>');	// Total points span
 	
