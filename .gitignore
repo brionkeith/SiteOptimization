@@ -215,7 +215,7 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-# Ignore the following directories
+# Ignore the following TAO-specific directories
 
 # CP
 CP/tests/Book-Today-Messaging-v3/.sass-cache/
@@ -230,7 +230,11 @@ EX/tests/Book-Today-Messaging-v3/.sass-cache/
 EX/tests/Book-Today-Messaging-v3/node_modules/
 EX/tests/Book-Today-Messaging-V2/img/
 EX/tests/Quick-Enroll/node_modules/
-EX/node_modules/
+# EX/node_modules/
+EX/tests/Quick-Enroll-Free-Internet/node_modules/
+EX/tests/Quick-Enroll-Free-Internet/.sass-cache/
+EX/tests/Quick-Enroll-Free-Internet/package.json
+EX/tests/Quick-Enroll-Free-Internet/gruntfile.js
 
 # IHG
 IHG/tests/sign-in-sign-up-simp/node_modules/
