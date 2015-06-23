@@ -1,0 +1,17 @@
+/* line 4, ../sass/no_icon.scss */
+#myMessages .chaseOffer {
+  margin: 0 0 15px;
+  padding: 0;
+  overflow: auto;
+}
+/* line 9, ../sass/no_icon.scss */
+#myMessages .chaseOffer img {
+  margin: 0 10px 0 0;
+  float: left;
+}
+/* line 13, ../sass/no_icon.scss */
+#myMessages .chaseOffer p {
+  margin: 0;
+  padding: 7px 0 5px;
+  float: left;
+}
