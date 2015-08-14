@@ -1,0 +1,74 @@
+#mainContentContainer, #content {
+  overflow: auto;
+  width: auto;
+  /* Hero Module */
+  /* Security Logo */
+  /* Form Styles */
+  /* Terms & Conditions */
+  /* Submit Button Container */ }
+  #mainContentContainer #rcHero, #content #rcHero {
+    margin: 0 0 30px;
+    background: #D96932 url(../img/joinRcHero.jpg) no-repeat 0px 0px;
+    position: relative;
+    overflow: auto;
+    height: 227px;
+    width: 980px; }
+    #mainContentContainer #rcHero section, #content #rcHero section {
+      margin-left: 30px;
+      position: relative;
+      top: 61px; }
+      #mainContentContainer #rcHero section h3, #content #rcHero section h3 {
+        margin-bottom: 5px;
+        padding-bottom: 0;
+        font: bold italic 1.33em Georgia;
+        color: #000; }
+      #mainContentContainer #rcHero section #rcBenefits, #content #rcHero section #rcBenefits {
+        padding-top: 0;
+        padding-bottom: 0;
+        color: #000; }
+  #mainContentContainer #securityLogos, #content #securityLogos {
+    width: 492px; }
+  #mainContentContainer #securityLogos img, #content #securityLogos img {
+    position: absolute; }
+  #mainContentContainer #contentSlot, #content #contentSlot {
+    float: right;
+    clear: right;
+    position: relative;
+    top: 50px; }
+  #mainContentContainer .indicatesRequiredFields, #content .indicatesRequiredFields {
+    margin-bottom: 20px;
+    padding-top: 0;
+    float: left;
+    color: #ff0000;
+    font-weight: bold; }
+  #mainContentContainer .taoAccountBlock, #mainContentContainer .taoMailingBlock, #content .taoAccountBlock, #content .taoMailingBlock {
+    margin-bottom: 15px; }
+    #mainContentContainer .taoAccountBlock label, #mainContentContainer .taoMailingBlock label, #content .taoAccountBlock label, #content .taoMailingBlock label {
+      margin-bottom: 6px;
+      display: block; }
+      #mainContentContainer .taoAccountBlock label span, #mainContentContainer .taoMailingBlock label span, #content .taoAccountBlock label span, #content .taoMailingBlock label span {
+        color: #ff0000; }
+    #mainContentContainer .taoAccountBlock .textinput, #mainContentContainer .taoAccountBlock #countrySelect, #mainContentContainer .taoAccountBlock input, #mainContentContainer .taoMailingBlock .textinput, #mainContentContainer .taoMailingBlock #countrySelect, #mainContentContainer .taoMailingBlock input, #content .taoAccountBlock .textinput, #content .taoAccountBlock #countrySelect, #content .taoAccountBlock input, #content .taoMailingBlock .textinput, #content .taoMailingBlock #countrySelect, #content .taoMailingBlock input {
+      display: block; }
+    #mainContentContainer .taoAccountBlock #firstName, #mainContentContainer .taoAccountBlock #lastName, #mainContentContainer .taoAccountBlock #addressField1, #mainContentContainer .taoAccountBlock #addressField2, #mainContentContainer .taoMailingBlock #firstName, #mainContentContainer .taoMailingBlock #lastName, #mainContentContainer .taoMailingBlock #addressField1, #mainContentContainer .taoMailingBlock #addressField2, #content .taoAccountBlock #firstName, #content .taoAccountBlock #lastName, #content .taoAccountBlock #addressField1, #content .taoAccountBlock #addressField2, #content .taoMailingBlock #firstName, #content .taoMailingBlock #lastName, #content .taoMailingBlock #addressField1, #content .taoMailingBlock #addressField2 {
+      width: 400px; }
+    #mainContentContainer .taoAccountBlock #countrySelect, #mainContentContainer .taoAccountBlock #city, #mainContentContainer .taoAccountBlock #stateBox, #mainContentContainer .taoMailingBlock #countrySelect, #mainContentContainer .taoMailingBlock #city, #mainContentContainer .taoMailingBlock #stateBox, #content .taoAccountBlock #countrySelect, #content .taoAccountBlock #city, #content .taoAccountBlock #stateBox, #content .taoMailingBlock #countrySelect, #content .taoMailingBlock #city, #content .taoMailingBlock #stateBox {
+      width: 200px; }
+  #mainContentContainer #introWrapper, #mainContentContainer #formHeaderWrapper, #mainContentContainer .title.section, #content #introWrapper, #content #formHeaderWrapper, #content .title.section {
+    display: none; }
+  #mainContentContainer .checkbox.section, #content .checkbox.section {
+    padding: 0;
+    width: 412px;
+    line-height: 18px; }
+    #mainContentContainer .checkbox.section h3, #content .checkbox.section h3 {
+      font-family: Arial, 'sans-serif', Helvetica;
+      font-style: normal;
+      font-weight: bold; }
+    #mainContentContainer .checkbox.section #acceptTermsAndConditions1, #content .checkbox.section #acceptTermsAndConditions1 {
+      float: left; }
+    #mainContentContainer .checkbox.section .inline, #content .checkbox.section .inline {
+      display: block; }
+      #mainContentContainer .checkbox.section .inline a, #content .checkbox.section .inline a {
+        text-decoration: underline; }
+  #mainContentContainer .submit.section, #content .submit.section {
+    padding-left: 0; }

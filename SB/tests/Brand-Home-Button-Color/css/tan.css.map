@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yBAA0B;EACzB,UAAU,EAAE,OAAO;EACnB,KAAK,EAAC,OAAO",
+"sources": ["../sass/tan.scss"],
+"names": [],
+"file": "tan.css"
+}

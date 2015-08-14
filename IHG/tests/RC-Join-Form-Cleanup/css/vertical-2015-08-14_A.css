@@ -1,0 +1,91 @@
+#mainContentContainer {
+  overflow: auto;
+  width: auto;
+  /* Hero Module */
+  /* Form Heading */
+  /*h2 {display:none;}*/
+  /* Security Logo */
+  /* Form Styles */
+  /* Terms & Conditions */
+  /* Submit Button Container */ }
+  #mainContentContainer #rcHero {
+    margin: 0 0 30px;
+    background: url("https://prodcache.internal.ihg.com/content/dam/etc/media_library/branded/6c/en/us/rewardsclub/banners/joinRcHero.jpg") no-repeat 0px 0px;
+    position: relative;
+    overflow: auto;
+    height: 227px;
+    width: 980px; }
+    #mainContentContainer #rcHero section {
+      margin-left: 30px;
+      position: relative;
+      top: 61px; }
+      #mainContentContainer #rcHero section h3 {
+        margin-bottom: 5px;
+        padding-bottom: 0;
+        font: bold italic 1.33em Georgia;
+        color: #000; }
+      #mainContentContainer #rcHero section #rcBenefits {
+        padding-top: 0;
+        padding-bottom: 0;
+        color: #000; }
+  #mainContentContainer #content {
+    width: 540px; }
+  #mainContentContainer #securityLogos {
+    width: 492px; }
+  #mainContentContainer #securityLogos img {
+    position: absolute; }
+  #mainContentContainer #contentSlot {
+    float: right;
+    clear: right;
+    position: relative;
+    top: 50px; }
+  #mainContentContainer .indicatesRequiredFields {
+    margin-bottom: 20px;
+    padding-top: 0;
+    float: left;
+    color: #ff0000;
+    font-weight: bold; }
+  #mainContentContainer .taoAccountBlock, #mainContentContainer .taoMailingBlock {
+    margin-bottom: 15px; }
+    #mainContentContainer .taoAccountBlock label, #mainContentContainer .taoMailingBlock label {
+      margin-bottom: 6px;
+      display: block; }
+      #mainContentContainer .taoAccountBlock label span, #mainContentContainer .taoMailingBlock label span {
+        color: #ff0000; }
+    #mainContentContainer .taoAccountBlock .textinput, #mainContentContainer .taoAccountBlock #countrySelect, #mainContentContainer .taoAccountBlock input, #mainContentContainer .taoMailingBlock .textinput, #mainContentContainer .taoMailingBlock #countrySelect, #mainContentContainer .taoMailingBlock input {
+      display: block; }
+    #mainContentContainer .taoAccountBlock #firstName, #mainContentContainer .taoAccountBlock #lastName, #mainContentContainer .taoAccountBlock #addressField1, #mainContentContainer .taoAccountBlock #addressField2, #mainContentContainer .taoMailingBlock #firstName, #mainContentContainer .taoMailingBlock #lastName, #mainContentContainer .taoMailingBlock #addressField1, #mainContentContainer .taoMailingBlock #addressField2 {
+      width: 400px; }
+    #mainContentContainer .taoAccountBlock #countrySelect, #mainContentContainer .taoAccountBlock #city, #mainContentContainer .taoAccountBlock #stateBox, #mainContentContainer .taoMailingBlock #countrySelect, #mainContentContainer .taoMailingBlock #city, #mainContentContainer .taoMailingBlock #stateBox {
+      width: 200px; }
+  #mainContentContainer #introWrapper, #mainContentContainer #formHeaderWrapper, #mainContentContainer .title.section {
+    display: none; }
+  #mainContentContainer .checkbox.section {
+    padding: 0;
+    width: 412px;
+    line-height: 18px; }
+    #mainContentContainer .checkbox.section h3 {
+      font-family: Arial, 'sans-serif', Helvetica;
+      font-style: normal;
+      font-weight: bold; }
+    #mainContentContainer .checkbox.section #acceptTermsAndConditions1 {
+      float: left; }
+    #mainContentContainer .checkbox.section .inline {
+      display: block; }
+      #mainContentContainer .checkbox.section .inline a {
+        text-decoration: underline; }
+  #mainContentContainer #taoMailErrorMsgs .validationCell {
+    /*background-image:url("https://ihg.scene7.com/is/image/ihg/pc_masterSprite2?fmt=gif-alpha&wid=28&hei=4799") no-repeat;*/
+    background: url("https://ihg.scene7.com/is/image/ihg/pc_masterSprite2?fmt=gif-alpha&wid=28&hei=4799") no-repeat scroll 7px -2692px #FBE5E5;
+    border: 1px solid #EAB7B7;
+    clear: both;
+    line-height: 20px;
+    margin-top: 1px;
+    padding: 0.833em 3em;
+    width: 85%; }
+  #mainContentContainer .submit.section {
+    padding-left: 0; }
+  #mainContentContainer .validationClass, #mainContentContainer .validationCell {
+    /*display:block !important; // DISPLAY ERROR MESSAGE CONTAINER*/ }
+
+/*# sourceMappingURL=vertical-2015-08-14_A.css.map */

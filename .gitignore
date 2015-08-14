@@ -220,16 +220,24 @@ pip-log.txt
 # CP
 CP/tests/Book-Today-Messaging-v3/.sass-cache/
 CP/tests/Book-Today-Messaging-v3/node_modules/
+CP/tests/Search-Results-Button-Color/.sass-cache/
+CP/tests/Search-Results-Button-Color/node_modules/
+
 
 # EX
 EX/tests/book-today-messaging/index.html
 EX/tests/book-today-messaging/node_modules/
 EX/tests/Book-Today-Messaging-V2/.sass-cache/
 EX/tests/Book-Today-Messaging-V2/node_modules/
+EX/tests/Book-Today-Messaging-V2/img/
 EX/tests/Book-Today-Messaging-v3/.sass-cache/
 EX/tests/Book-Today-Messaging-v3/node_modules/
 EX/tests/Book-Today-Messaging-V2/img/
 EX/tests/Quick-Enroll/node_modules/
+EX/tests/Quick-Enroll/.sass-cache/
+EX/tests/Quick-Enroll-Free-Internet/node_modules/
+EX/tests/Quick-Enroll-Free-Internet/.sass-cache/
+
 # EX/node_modules/
 EX/tests/Quick-Enroll-Free-Internet/node_modules/
 EX/tests/Quick-Enroll-Free-Internet/.sass-cache/
@@ -249,7 +257,20 @@ IHG/tests/Chase-Offer-My-Account/gruntfile.js
 IHG/tests/Chase-Offer-My-Account/index.html
 
 IHG/tests/Funnel-Button-Text-Update/node_modules/
+IHG/tests/Funnel-Button-Text-Update/.sass-cache/
 
+IHG/tests/RC-Join-Form-Cleanup/node_modules/
+IHG/tests/RC-Join-Form-Cleanup/.sass-cache/
+
+IHG/tests/P+C-Default-Radio-Button/node_modules/
+IHG/tests/P+C-Default-Radio-Button/.sass-cache/
+
+IHG/tests/RC-Join-Form-Cleanup/node_modules/
+IHG/tests/RC-Join-Form-Cleanup/.sass-cache/
+
+# SB
+SB/tests/Brand-Home-Button-Color/node_modules/
+SB/tests/Brand-Home-Button-Color/.sass-cache/
 
 .sass-cache/
 gruntfile.js
