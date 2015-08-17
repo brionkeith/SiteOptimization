@@ -1,21 +1,7 @@
 #mainContentContainer {
   overflow: auto;
   width: auto;
-  /* Hero Module */
-  /* Form Heading */
-  /*h2 {display:none;}*/
-  /* Security Logo */
-  /*#securityLogos {width:492px;}*/
-  /*#securityLogos img {position:absolute;}*/
-  /*	#contentSlot {
-  		float:right;
-  		clear:right;
-  		position:relative;
-  		top:50px;
-  	}*/
-  /*#introWrapper {display:none;}*/
-  /* Submit Button Container */
-  /*.submit.section {padding-left:0;}*/ }
+  /* Hero Module */ }
   #mainContentContainer #rcHero {
     margin: 0 0 30px;
     background: url("https://prodcache.internal.ihg.com/content/dam/etc/media_library/branded/6c/en/us/rewardsclub/banners/joinRcHero.jpg") no-repeat 0px 0px;
@@ -38,5 +24,7 @@
         color: #000; }
   #mainContentContainer .validationClass, #mainContentContainer .validationCell {
     /*display:block !important; // DISPLAY ERROR MESSAGE CONTAINER*/ }
+  #mainContentContainer #content .label {
+    text-align: right; }
 
-/*# sourceMappingURL=vertical-2015-08-14_B.css.map */
+/*# sourceMappingURL=vertical-2015-08-17_B.css.map */

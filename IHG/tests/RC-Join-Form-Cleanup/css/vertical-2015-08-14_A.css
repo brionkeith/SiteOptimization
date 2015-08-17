@@ -3,7 +3,6 @@
   width: auto;
   /* Hero Module */
   /* Form Heading */
-  /*h2 {display:none;}*/
   /* Security Logo */
   /* Form Styles */
   /* Terms & Conditions */
@@ -30,6 +29,8 @@
         color: #000; }
   #mainContentContainer #content {
     width: 540px; }
+  #mainContentContainer h2 {
+    display: none; }
   #mainContentContainer #securityLogos {
     width: 492px; }
   #mainContentContainer #securityLogos img {

@@ -31,27 +31,11 @@
 		}
 	}
 
-	/* Form Heading */
-	/*h2 {display:none;}*/
-
-	/* Security Logo */
-	/*#securityLogos {width:492px;}*/
-	/*#securityLogos img {position:absolute;}*/
-/*	#contentSlot {
-		float:right;
-		clear:right;
-		position:relative;
-		top:50px;
-	}*/
-
-
-	/*#introWrapper {display:none;}*/
-
-
-	/* Submit Button Container */
-	/*.submit.section {padding-left:0;}*/
-
 	.validationClass, .validationCell {
 		/*display:block !important; // DISPLAY ERROR MESSAGE CONTAINER*/
 	}
+
+	#content {
+		.label {text-align:right;}
+	}	
 }
