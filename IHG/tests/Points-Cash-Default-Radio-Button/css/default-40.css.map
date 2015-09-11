@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,WAAY;EACX,UAAU,EAAC,KAAK",
+"mappings": "AAAA,0BAA2B;EAC1B,UAAU,EAAC,KAAK",
 "sources": ["../sass/default-40.scss"],
 "names": [],
 "file": "default-40.css"

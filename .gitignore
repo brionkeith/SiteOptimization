@@ -245,6 +245,7 @@ EX/tests/Quick-Enroll-Free-Internet/package.json
 EX/tests/Quick-Enroll-Free-Internet/gruntfile.js
 
 # IHG
+IHG/terminal.glue
 IHG/tests/sign-in-sign-up-simp/node_modules/
 IHG/tests/sign-in-sign-up-simp/css/site.css
 IHG/tests/sign-in-sign-up-simp/js/bootstrapper-page-flicker.js
@@ -269,9 +270,32 @@ IHG/tests/RC-Join-Form-Cleanup/node_modules/
 IHG/tests/RC-Join-Form-Cleanup/.sass-cache/
 IHG/tests/RC-Join-Form-Cleanup/assets/screenshots/
 
+IHG/tests/Points-Cash-Default-Radio-Button/node_modules/
+IHG/tests/Points-Cash-Default-Radio-Button/.sass-cache/
+IHG/tests/Points-Cash-Default-Radio-Button/assets/
+IHG/tests/Points-Cash-Default-Radio-Button/img/
+
+IHG/tests/Points-Cash-Sort-Order/node_modules/
+IHG/tests/Points-Cash-Sort-Order/.sass-cache/
+IHG/tests/Points-Cash-Sort-Order/assets/
+IHG/tests/Points-Cash-Sort-Order/terminal.glue
+
+IHG/tests/Enrollment-Form-Additional-CTAs/node_modules/
+IHG/tests/Enrollment-Form-Additional-CTAs/.sass-cache/
+IHG/tests/Enrollment-Form-Additional-CTAs/assets/
+IHG/tests/Enrollment-Form-Additional-CTAs/img/
+IHG/tests/Enrollment-Form-Additional-CTAs/terminal.glue
+
 # SB
 SB/tests/Brand-Home-Button-Color/node_modules/
 SB/tests/Brand-Home-Button-Color/.sass-cache/
+
+# Playground
+_playground/constructor-pattern/node_modules/
+_playground/constructor-pattern//.sass-cache/
+_playground/module-pattern/node_modules/
+_playground/module-pattern//.sass-cache/
+_playground/node_modules/terminal.glue
 
 .sass-cache/
 gruntfile.js

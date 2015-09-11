@@ -1,0 +1,25 @@
+$background:#000000;
+$para:#cccccc;
+
+body {
+	background: $background;
+}
+h1 {
+	font: 16px/20px;
+	color:#232323;
+}
+p {
+	color:$para;
+}
+span {
+	text-transform:uppercase;
+}
+#red span {
+	color:#ff0000;
+}
+#silver span {
+	color:#eee;
+}
+#blue span {
+	color:#0276FD;
+}

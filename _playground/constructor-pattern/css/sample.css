@@ -1,0 +1,23 @@
+body {
+  background: #000000; }
+
+h1 {
+  font: 16px/20px;
+  color: #232323; }
+
+p {
+  color: #cccccc; }
+
+span {
+  text-transform: uppercase; }
+
+#red span {
+  color: #ff0000; }
+
+#silver span {
+  color: #eee; }
+
+#blue span {
+  color: #0276FD; }
+
+/*# sourceMappingURL=sample.css.map */

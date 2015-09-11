@@ -1,0 +1,1 @@
+// Bootstrapper.MVT.injectCSS('.row input[type="radio"]{ display:none; }');

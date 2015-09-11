@@ -1,5 +1,4 @@
 #mainContentContainer {
-  overflow: auto;
   width: auto;
   /* Hero Module */ }
   #mainContentContainer #rcHero {
@@ -8,23 +7,42 @@
     position: relative;
     overflow: auto;
     height: 227px;
-    width: 980px; }
+    /*width: 980px;*/ }
     #mainContentContainer #rcHero section {
       margin-left: 30px;
       position: relative;
-      top: 61px; }
+      top: 35px; }
       #mainContentContainer #rcHero section h3 {
         margin-bottom: 5px;
         padding-bottom: 0;
         font: bold italic 1.33em Georgia;
         color: #000; }
+      #mainContentContainer #rcHero section p {
+        color: #000; }
       #mainContentContainer #rcHero section #rcBenefits {
         padding-top: 0;
         padding-bottom: 0;
         color: #000; }
+        #mainContentContainer #rcHero section #rcBenefits li {
+          margin-bottom: 9px;
+          line-height: 16px; }
+          #mainContentContainer #rcHero section #rcBenefits li:first-child {
+            width: 33%; }
+          #mainContentContainer #rcHero section #rcBenefits li:nth-child(3n) {
+            width: 34%; }
+  #mainContentContainer :root #rcHero {
+    /* IE9 Hacks: removes horizontal scroll bar */
+    width: auto; }
+  #mainContentContainer :root #contentSlot {
+    /* IE9 Hacks: Correctly positions brand logos */
+    text-align: right;
+    float: none;
+    clear: none; }
   #mainContentContainer .validationClass, #mainContentContainer .validationCell {
     /*display:block !important; // DISPLAY ERROR MESSAGE CONTAINER*/ }
   #mainContentContainer #content .label {
     text-align: right; }
+  #mainContentContainer #securityLogos {
+    float: right; }
 
 /*# sourceMappingURL=vertical-2015-08-17_B.css.map */
