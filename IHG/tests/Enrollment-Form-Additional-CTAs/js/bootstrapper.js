@@ -1,0 +1,1 @@
+Bootstrapper.MVT.injectCSS('#contentSlot img{ display:none; }');

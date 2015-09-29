@@ -61,7 +61,9 @@ jQuery(document).ready(function (jQuery) {
 		jQuery('.wallet.walletTransition').addClass('show');
 
 		if(jQuery('.wallet.walletTransition').css('margin-right') == '-480px') {
-			jQuery('.wallet.walletTransition.show').animate({'margin-right': '0px'}, 80);
+			jQuery('.wallet.walletTransition.show').animate({'margin-right': '0px'}, 100);
+		} else {
+			jQuery('.wallet.walletTransition').animate({'margin-right': '0px'},  100);
 		}
 
 		jQuery('.uhf_headerFooter .wallet .wallet-login-shared, .uhf_headerFooter .wallet .wallet-anonymous').css({
@@ -86,7 +88,9 @@ jQuery(document).ready(function (jQuery) {
 		jQuery('.wallet.walletTransition').addClass('show');
 
 		if(jQuery('.wallet.walletTransition').css('margin-right') == '-480px') {
-			jQuery('.wallet.walletTransition.show').animate({'margin-right': '0px'}, 80);
+			jQuery('.wallet.walletTransition.show').animate({'margin-right': '0px'}, 100);
+		} else {
+			jQuery('.wallet.walletTransition').animate({'margin-right': '0px'},  100);
 		}
 
 		jQuery('.uhf_headerFooter .wallet .wallet-createPin').css({
@@ -94,14 +98,6 @@ jQuery(document).ready(function (jQuery) {
 		});
 		jQuery('.uhf_headerFooter .wallet .wallet-login-shared, .uhf_headerFooter .wallet .wallet-anonymous').css({
 			'display': 'none' // Hide Sign In form when clicked
-		});
-
-		// If button is clicked again prevent wallet from closing
-		// by adding the classname 'show' again
-		if(jQuery('.walletTransition').addClass('show')) {
-			jQuery('.uhf_headerFooter .walletTransition.show').css({
-				'display': 'block'
-			});
-		}		
+		});		
 	});
 });

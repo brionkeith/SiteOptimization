@@ -39,7 +39,7 @@
         width: auto;
     }
     #content {
-        width: 540px;
+        width: 580px;
     }
     /* Form Heading */
     h2 {
@@ -48,14 +48,15 @@
     /* Security Logo */
     #securityLogos {
         width: 492px;
+        float:right;
     }
-    :root #securityLogos {
-        float: none \0;
-        clear: none \0;
-        text-align: right \0;
-    }
+    /*:root #securityLogos {
+        float: none\0;
+        clear: none\0;
+        text-align: right\0;
+    }*/
     #securityLogos img {
-        position: absolute;
+        /*position: absolute;*/
     }
     #contentSlot {
         float: right;
@@ -64,16 +65,16 @@
         top: 50px;
     }
     :root #contentSlot {
-        text-align: right \0;
-        float: none \0;
-        clear: none \0;
+        text-align: right\0;
+        float: none\0;
+        clear: none\0;
     }
     /* Form Styles */
     .indicatesRequiredFields {
         margin-bottom: 20px;
         padding-top: 0;
         float: left;
-        color: #ff0000;
+        /*color: #ff0000;*/
         font-weight: bold;
     }
     .taoAccountBlock, .taoMailingBlock {
@@ -118,23 +119,25 @@
             }
         }
     }
-    #taoMailErrorMsgs .validationCell {
-        background: url("https://ihg.scene7.com/is/image/ihg/pc_masterSprite2?fmt=gif-alpha&wid=28&hei=4799") no-repeat scroll 7px -2692px #FBE5E5;
-        border: 1px solid #EAB7B7;
-        clear: both;
-        line-height: 20px;
-        margin-top: 1px;
-        padding: 0.833em 3em;
-        width: 85%;
+    #taoMailErrorMsgs {
+        width:99%;
+
+        .validationCell {
+            background: url("https://ihg.scene7.com/is/image/ihg/pc_masterSprite2?fmt=gif-alpha&wid=28&hei=4799") no-repeat scroll 7px -2692px #FBE5E5;
+            border: 1px solid #EAB7B7;
+            clear: both;
+            line-height: 20px;
+            margin-top: 1px;
+            padding: 0.833em 3em;
+            width: 85%;
+        }     
+        /* Submit Button Container */
+        .submit.section {
+            padding-left: 0;
+        }
+        .form_rightcol {
+            float:none;
+        }        
     }
-    /* Submit Button Container */
-    .submit.section {
-        padding-left: 0;
-    }
-    .validationClass, .validationCell {
-        /*display:block !important; // DISPLAY ERROR MESSAGE CONTAINER*/
-    }
-    .form_rightcol {
-        float:none;
-    }
+
 }

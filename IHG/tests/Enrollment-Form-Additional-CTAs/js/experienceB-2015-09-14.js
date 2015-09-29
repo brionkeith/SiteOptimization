@@ -42,66 +42,37 @@ jQuery(document).ready(function (jQuery) {
 	jQuery(taoLearnMoreTxt).insertAfter(taoLearnMoreHeader);
 	jQuery(taoLearnMoreBtn).insertAfter(taoLearnMoreTxt);
 
-	// UHF Sign In click event
-	jQuery('.logIn .logIn-link').on('click', function(){
-		jQuery('.uhf_headerFooter .walletTransition').css({
-			'margin-right': '0px'
-		});
-		jQuery('.uhf_headerFooter .wallet .wallet-login-shared, .uhf_headerFooter .wallet .wallet-anonymous').css({
-			'display': 'block'
-		});
-		jQuery('.uhf_headerFooter .wallet .wallet-createPin, .uhf_headerFooter .wallet .errorTopMsg').css({
-			'display': 'none' // Hide Create PIN form when clicked
-		});		
-	});
-
-	// Sign In click event handler
-	jQuery('#contentSlot #taoSignIn .btn').on('click', function(){
-		jQuery('body').addClass('walletIsOpen');		
-		jQuery('.wallet.walletTransition').addClass('show');
-
-		if(jQuery('.wallet.walletTransition').css('margin-right') == '-480px') {
-			jQuery('.wallet.walletTransition.show').animate({'margin-right': '0px'}, 80);
-		}
-
+	// Sign In click event
+	jQuery('#contentSlot #taoSignIn .btn, .logIn a.logIn-link').on('click', function(){
+		jQuery('body').addClass('walletIsOpen');
+		jQuery('.wallet.walletTransition').addClass('show').delay(5000).animate({right: '=-480'}, 1000, function() {});
 		jQuery('.uhf_headerFooter .wallet .wallet-login-shared, .uhf_headerFooter .wallet .wallet-anonymous').css({
 			'display': 'block'
 		});
 		jQuery('.uhf_headerFooter .wallet .wallet-createPin').css({
 			'display': 'none' // Hide Create PIN form when clicked
-		});
-
-		// If button is clicked again prevent wallet from closing
-		// by adding the classname 'show' again
-		if(jQuery('.walletTransition').addClass('show')) {
-			jQuery('.uhf_headerFooter .walletTransition.show').css({
-				'display': 'block'
-			});
-		}
+		});		
 	});
 
-	// Create PIN click event handler
+	// Create PIN click event
 	jQuery('#contentSlot #taoCreatePIN .btn').on('click', function(){
-		jQuery('body').addClass('walletIsOpen');		
-		jQuery('.wallet.walletTransition').addClass('show');
-
-		if(jQuery('.wallet.walletTransition').css('margin-right') == '-480px') {
-			jQuery('.wallet.walletTransition.show').animate({'margin-right': '0px'}, 80);
-		}
-
+		jQuery('body').addClass('walletIsOpen');
+		jQuery('.wallet.walletTransition').addClass('show').delay(5000).animate({right: '=-480'}, 1000, function() {});
 		jQuery('.uhf_headerFooter .wallet .wallet-createPin').css({
 			'display': 'block'
 		});
 		jQuery('.uhf_headerFooter .wallet .wallet-login-shared, .uhf_headerFooter .wallet .wallet-anonymous').css({
 			'display': 'none' // Hide Sign In form when clicked
-		});
-
-		// If button is clicked again prevent wallet from closing
-		// by adding the classname 'show' again
-		if(jQuery('.walletTransition').addClass('show')) {
-			jQuery('.uhf_headerFooter .walletTransition.show').css({
-				'display': 'block'
-			});
-		}		
+		});		
 	});
+
+	// Conditions for click event when the wallet is already open
+    // jQuery('#contentSlot #taoSignIn .btn').on('click', function() {
+    //     if (jQuery('body')) {
+    //         // code execution
+    //         jQuery(this).hasClass('show').css({
+    //         	'display': 'block'
+    //         });
+    //     }
+    // }); 		
 });

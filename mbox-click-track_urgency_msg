@@ -70,11 +70,14 @@ Adbett=window.Adbett||{};
     };
 
     mboxFactoryDefault.addOnLoad(function(){
-        // Control Click Tracking
-        Adbett.track({selector:'#contentSlot #taoSignIn .btnWallet',value:'sign-in',event:'click',type:'signaler'});
-        Adbett.track({selector:'#contentSlot #taoCreatePIN .btnWallet',value:'create-pin',event:'click',type:'signaler'});
-        Adbett.track({selector:'#contentSlot #taoLearnMore a',value:'learn-more',event:'click',type:'signaler'});
-        Adbett.track({selector:'#joinNowPanel #joinSubmitButton',value:'join-now',event:'click',type:'signaler'});
+        jQuery('.bookThisRoomBaseRate').on('click', function () {
+            // If 'roomTypeDesc' is present find instances of the descendant 'urgentMsgCss'
+            // and track "Book This Room" button clicks
+            if (jQuery('.roomTypeDesc').find('div.urgentMsgCss')) {
+                mboxFactoryDefault.getSignaler().signal('mboxClickTrack', 'mboxClickTrack', 'clicked=book-room');
+                alert("button clicked");
+            }
+        });
     });
 
 }(Adbett);

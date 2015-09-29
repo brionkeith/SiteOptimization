@@ -1,6 +1,3 @@
-.wallet {
-  height: 1745px; }
-
 #mainContentContainer {
   float: left; }
   #mainContentContainer .pcmrRegistration h1 {
@@ -68,7 +65,16 @@
     text-decoration: none; }
 
 .uhf_headerFooter .walletTransition {
-  margin-right: -480px; }
+  /* FORCES SUPPORT FOR JQUERY .ANIMATE() METHOD */
+  /*display:block !important;*/ }
+
+.uhf_headerFooter .walletTransition.show {
+  /*right:0;*/ }
+
+.form-group .wallet-anonymous .wallet-logInToContinue,
+.uhf_headerFooter .wallet .wallet-logInToContinue {
+  /*display:block;*/
+  /* Show Sign In text */ }
 
 .uhf_headerFooter .wallet .slideClosedBtn {
   font-style: normal !important; }
