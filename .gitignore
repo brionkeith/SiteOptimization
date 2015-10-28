@@ -286,6 +286,12 @@ IHG/tests/Enrollment-Form-Additional-CTAs/assets/
 IHG/tests/Enrollment-Form-Additional-CTAs/img/
 IHG/tests/Enrollment-Form-Additional-CTAs/terminal.glue
 
+IHG/tests/Georama-On-Homepage/node_modules/
+IHG/tests/Georama-On-Homepage/.sass-cache/
+IHG/tests/Georama-On-Homepage/_assets/
+IHG/tests/Georama-On-Homepage/_final-creative/
+IHG/tests/Georama-On-Homepage/img/
+
 # SB
 SB/tests/Brand-Home-Button-Color/node_modules/
 SB/tests/Brand-Home-Button-Color/.sass-cache/
@@ -297,6 +303,10 @@ _playground/module-pattern/node_modules/
 _playground/module-pattern//.sass-cache/
 _playground/node_modules/terminal.glue
 _playground/terminal.glue
+_playground/ES6/es6-tutorial/node_modules/
+_playground/ES6/es6-tutorial/.gitignore
+_playground/ES6/es6-tutorial/terminal.glue
+# _playground/ES6/es6-tutorial/.git/
 
 .sass-cache/
 gruntfile.js

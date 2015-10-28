@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qBAAsB;EACrB,MAAM,EAAC,QAAQ;EACf,MAAM,EAAC,KAAK;EACZ,UAAU,EAAC,OAAO;EAElB,kCAAa;IACZ,MAAM,EAAC,CAAC;IACR,KAAK,EAAC,IAAI",
+"sources": ["../sass/smallMap.scss"],
+"names": [],
+"file": "smallMap.css"
+}

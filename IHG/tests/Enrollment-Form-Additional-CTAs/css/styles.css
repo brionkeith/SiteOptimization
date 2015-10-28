@@ -1,6 +1,9 @@
 .wallet {
   height: 1745px; }
 
+.walletIsOpen .uhf-walletPushOver {
+  background-color: purple; }
+
 #mainContentContainer {
   float: left; }
   #mainContentContainer .pcmrRegistration h1 {

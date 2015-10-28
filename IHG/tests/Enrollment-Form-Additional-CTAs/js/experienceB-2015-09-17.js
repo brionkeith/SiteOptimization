@@ -100,4 +100,36 @@ jQuery(document).ready(function (jQuery) {
 			'display': 'none' // Hide Sign In form when clicked
 		});		
 	});
+
+	// Close wallet if body is clicked
+	jQuery('.uhf-walletPushOver').on('click', function(){
+
+		jQuery(this).css({
+			'background-color': 'red'
+		});
+
+		jQuery('body').removeClass('walletIsOpen');
+		jQuery('div.wallet.walletTransition').removeClass('show');
+
+	});	
+
+	// Check if loginType is explcit and hide wallet sign in
+    if (typeof trackingJson != "undefined") {
+        if (trackingJson.loginType == 'EXPLICIT') {
+			jQuery('.uhf_headerFooter .wallet .wallet-login-shared, .uhf_headerFooter .wallet .wallet-createPin').remove();
+        }
+	}
+
+    // Just in case someone is already logged into their RC account and
+    // they create a new account, make sure the wallet doesn't display
+    // the sign in form if they open the wallet from the "Welcome to
+    // IHG Rewards Club" screen
+    jQuery('.logIn-link-logo').on('click', function() {
+        var taoNewEnrollee = jQuery(".bar5").text();
+        if (taoNewEnrollee.indexOf("Welcome to IHG") > -1) {
+            jQuery('.uhf_headerFooter .wallet .wallet-login-shared, .uhf_headerFooter .wallet .wallet-anonymous').css({
+                'display': 'none' // Hide Sign In form when clicked
+            });
+        }
+    })	
 });

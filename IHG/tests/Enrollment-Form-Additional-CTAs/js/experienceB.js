@@ -104,4 +104,21 @@ jQuery(document).ready(function (jQuery) {
 			});
 		}		
 	});
+
+	// Check if loginType is explcit
+	if(trackingJsonMB.loginType == 'EXPLICIT') {
+		jQuery('.uhf_headerFooter .wallet .wallet-login-shared, .uhf_headerFooter .wallet .wallet-createPin').remove();
+	}
+
+	// Close wallet if body is clicked
+	// jQuery('.uhf-walletPushOver').on('click', function(){
+
+	// 	jQuery(this).css({
+	// 		'background-color': 'red'
+	// 	});
+
+	// 	jQuery('body').removeClass('walletIsOpen');
+	// 	jQuery('div.wallet.walletTransition').removeClass('show');
+
+	// });		
 });
