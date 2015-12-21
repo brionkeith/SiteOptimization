@@ -1,0 +1,37 @@
+.taoRatingsAmenities, .taoBrandsFilter {
+  border: 3px solid red;
+  float: left;
+  width: 300px; }
+  .taoRatingsAmenities .ratingsWrapper #ratingsFilter + .spanB1, .taoRatingsAmenities .ratingsWrapper #ratingsFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .ratingsWrapper #amenitiesFilter + .spanB1, .taoRatingsAmenities .ratingsWrapper #amenitiesFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .ratingsWrapper #brandsFilter + .spanB1, .taoRatingsAmenities .ratingsWrapper #brandsFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .ratingsWrapper #miscFilter + .spanB1, .taoRatingsAmenities .ratingsWrapper #miscFilter + .spanB1 > .spanB1, .taoRatingsAmenities .amenitiesWrapper #ratingsFilter + .spanB1, .taoRatingsAmenities .amenitiesWrapper #ratingsFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .amenitiesWrapper #amenitiesFilter + .spanB1, .taoRatingsAmenities .amenitiesWrapper #amenitiesFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .amenitiesWrapper #brandsFilter + .spanB1, .taoRatingsAmenities .amenitiesWrapper #brandsFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .amenitiesWrapper #miscFilter + .spanB1, .taoRatingsAmenities .amenitiesWrapper #miscFilter + .spanB1 > .spanB1, .taoRatingsAmenities .brandsWrapper #ratingsFilter + .spanB1, .taoRatingsAmenities .brandsWrapper #ratingsFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .brandsWrapper #amenitiesFilter + .spanB1, .taoRatingsAmenities .brandsWrapper #amenitiesFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .brandsWrapper #brandsFilter + .spanB1, .taoRatingsAmenities .brandsWrapper #brandsFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .brandsWrapper #miscFilter + .spanB1, .taoRatingsAmenities .brandsWrapper #miscFilter + .spanB1 > .spanB1, .taoRatingsAmenities .filterWrapper #ratingsFilter + .spanB1, .taoRatingsAmenities .filterWrapper #ratingsFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .filterWrapper #amenitiesFilter + .spanB1, .taoRatingsAmenities .filterWrapper #amenitiesFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .filterWrapper #brandsFilter + .spanB1, .taoRatingsAmenities .filterWrapper #brandsFilter + .spanB1 > .spanB1,
+  .taoRatingsAmenities .filterWrapper #miscFilter + .spanB1, .taoRatingsAmenities .filterWrapper #miscFilter + .spanB1 > .spanB1, .taoBrandsFilter .ratingsWrapper #ratingsFilter + .spanB1, .taoBrandsFilter .ratingsWrapper #ratingsFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .ratingsWrapper #amenitiesFilter + .spanB1, .taoBrandsFilter .ratingsWrapper #amenitiesFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .ratingsWrapper #brandsFilter + .spanB1, .taoBrandsFilter .ratingsWrapper #brandsFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .ratingsWrapper #miscFilter + .spanB1, .taoBrandsFilter .ratingsWrapper #miscFilter + .spanB1 > .spanB1, .taoBrandsFilter .amenitiesWrapper #ratingsFilter + .spanB1, .taoBrandsFilter .amenitiesWrapper #ratingsFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .amenitiesWrapper #amenitiesFilter + .spanB1, .taoBrandsFilter .amenitiesWrapper #amenitiesFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .amenitiesWrapper #brandsFilter + .spanB1, .taoBrandsFilter .amenitiesWrapper #brandsFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .amenitiesWrapper #miscFilter + .spanB1, .taoBrandsFilter .amenitiesWrapper #miscFilter + .spanB1 > .spanB1, .taoBrandsFilter .brandsWrapper #ratingsFilter + .spanB1, .taoBrandsFilter .brandsWrapper #ratingsFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .brandsWrapper #amenitiesFilter + .spanB1, .taoBrandsFilter .brandsWrapper #amenitiesFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .brandsWrapper #brandsFilter + .spanB1, .taoBrandsFilter .brandsWrapper #brandsFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .brandsWrapper #miscFilter + .spanB1, .taoBrandsFilter .brandsWrapper #miscFilter + .spanB1 > .spanB1, .taoBrandsFilter .filterWrapper #ratingsFilter + .spanB1, .taoBrandsFilter .filterWrapper #ratingsFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .filterWrapper #amenitiesFilter + .spanB1, .taoBrandsFilter .filterWrapper #amenitiesFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .filterWrapper #brandsFilter + .spanB1, .taoBrandsFilter .filterWrapper #brandsFilter + .spanB1 > .spanB1,
+  .taoBrandsFilter .filterWrapper #miscFilter + .spanB1, .taoBrandsFilter .filterWrapper #miscFilter + .spanB1 > .spanB1 {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+
+.taoBrandsFilter {
+  border-color: green; }
+
+/*# sourceMappingURL=exp_B.css.map */

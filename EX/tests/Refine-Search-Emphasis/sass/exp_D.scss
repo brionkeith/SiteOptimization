@@ -1,0 +1,190 @@
+.col-md-12 {
+	/* RATINGS */
+	.taoRatings,
+	.taoAmenities {
+		margin-right:18px;
+		border:1px solid red;
+		width:130px;
+		float:left;
+
+		.taoRatingsHeading,
+		.taoAmenitiesHeading {
+			margin:0 10px 12px 0;
+			padding:0;
+			font-size:13px;
+			font-weight:bold;
+			text-transform:uppercase;
+			border-bottom:1px solid #cacaca;
+		}
+		section {
+			clear:both;
+		}
+		input {
+			margin-right:5px;
+			margin-bottom:10px;
+			float:left;
+			clear:left;
+		}
+		span {
+			padding-right:90px;
+			background: transparent url('../img/icon_stars.png') no-repeat -3px -3px;
+		}
+		.taoThreeStars {
+			background-position:-22px -3px;
+		}
+		.taoTwoStars {
+			background-position:-41px -3px;
+		}
+		.taoOneStar {
+			background-position:-60px -3px;
+		}
+
+	}
+
+	/* AMENITIES */
+	.taoAmenities {
+		width:302px;
+
+		section {
+			clear:none;
+		}
+
+		.amenitiesLeftCol,
+		.amenitiesRightCol {
+			margin-right:12px;
+			float:left;
+			width:139px;
+			
+			.dropdown-menu {
+				min-width:145px;
+
+				li > a {
+					padding:3px 0;
+				}
+			}
+
+			.multiselect-container {
+				display:block;
+				position:relative;
+				float:none;
+				box-shadow:none;
+				border:none;
+				max-height:none !important;
+				overflow:hidden;
+
+				li > a:hover {
+					padding:3px 0;
+					overflow:auto;		
+				}
+			}
+
+			span {
+				padding:0;
+				background:none;
+			}
+		}
+
+		.amenitiesRightCol {
+			margin-right:0;
+				
+			span {
+				padding:0;
+				background:none;
+			}
+		}
+	}
+
+	/* IHG BRANDS */
+	.taoBrands {
+		margin-right:18px;
+		padding:0;
+		float:left;
+		width:320px;
+		border:1px solid red;
+
+		.taoBrandsHeading {
+			margin:0 0 12px 0;
+			padding:0;
+			font-size:13px;
+			font-weight:bold;
+			text-transform:uppercase;
+			border-bottom:1px solid #cacaca;	
+		}
+		.brandsLeftCol,
+		.brandsRightCol {
+			margin-right:12px;
+			float:left;
+			width:180px;
+
+			.dropdown-menu {
+				/*min-width:145px;*/
+
+				li > a {
+					padding:3px 0;
+				}
+			}
+
+			.multiselect-container {
+				display:block;
+				position:relative;
+				float:none;
+				box-shadow:none;
+				border:none;
+				max-height:none !important;
+				overflow:hidden;
+
+				li > a:hover {
+					padding:3px 0;
+					overflow:auto;		
+				}
+			}
+
+		}
+		.brandsRightCol {
+			margin-right:0;
+			width:128px;
+		}
+
+	}
+
+	/* FILTER BY */
+	.taoFilterBy {
+		margin:0;
+		padding:0;
+		float:left;
+		width:145px;
+		border:1px solid red;
+
+		.taoFilterByHeading {
+			margin:0 0 12px 0;
+			padding:0;
+			font-size:13px;
+			font-weight:bold;
+			text-transform:uppercase;
+			border-bottom:1px solid #cacaca;		
+		}
+
+		.dropdown-menu {
+			min-width:145px;
+
+			li > a {
+				padding:3px 0;
+			}
+		}
+
+		.multiselect-container {
+			display:block;
+			position:relative;
+			float:none;
+			box-shadow:none;
+			border:none;
+			max-height:none !important;
+			overflow:hidden;
+
+			li > a:hover {
+				padding:3px 0;
+				overflow:auto;		
+			}
+		}	
+	}
+}

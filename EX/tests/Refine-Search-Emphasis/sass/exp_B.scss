@@ -1,0 +1,20 @@
+.taoRatingsAmenities, .taoBrandsFilter {
+	border:3px solid red;
+	float:left;
+	width:300px;
+	.ratingsWrapper, .amenitiesWrapper, .brandsWrapper, .filterWrapper {
+		#ratingsFilter + .spanB1, #ratingsFilter + .spanB1 > .spanB1,
+		#amenitiesFilter + .spanB1, #amenitiesFilter + .spanB1 > .spanB1,
+		#brandsFilter + .spanB1, #brandsFilter + .spanB1 > .spanB1, 
+		#miscFilter + .spanB1, #miscFilter + .spanB1 > .spanB1 {
+			margin:0;
+			padding:0;
+			width:100%;
+		}	
+	}
+}
+.taoBrandsFilter {
+	border-color:green;
+}
+
+
