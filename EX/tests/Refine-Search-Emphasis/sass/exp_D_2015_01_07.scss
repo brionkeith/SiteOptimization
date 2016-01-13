@@ -12,12 +12,14 @@
 	background: -webkit-linear-gradient(top, #fefefe 0%,#efefef 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #fefefe 0%,#efefef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
 
-	fieldset > .controls-row:nth-child(1) {		
-		display:none;
-	}
+	fieldset > .controls-row:nth-child(1) {
+		background:red;
+		/*display:none;*/
+	}	
 }
 .taoFilterParent {
 	padding:12px;
+	/*display:none;*/
 	text-align:center;
 }
 #sortOptions {
@@ -30,10 +32,6 @@
 	.sortBox {
 		border-right:none;
 		border-left:none;
-	}
-
-	.tab-pane {
-		padding:10px 10px 0;
 	}
 
 	/* SHOW/HIDE */
@@ -53,9 +51,11 @@
 		height:40px;
 		width:168px;
 		cursor:pointer;		
+		/*background:transparent url('../img/icon_plus.png') no-repeat 7px 17px;*/
 		background:transparent url('http://prodcache.internal.ihg.com/content/dam/etc/media_library/branded/ex/cn/icons/sprite/sprite.gif') no-repeat 10px -1557px;
 	}
 	label.spanOffset.taoMinus {
+		/*background:transparent url('../img/icon_minus.png') no-repeat 7px 17px;*/
 		background:transparent url('http://prodcache.internal.ihg.com/content/dam/etc/media_library/branded/ex/cn/icons/sprite/sprite.gif') no-repeat 10px -1170px;
 	}
 	.multiselect-container li a label.checkbox,
@@ -124,23 +124,20 @@
 			    }
 			}
 		}
-		.taoFourStars, .taoThreeStars, .taoTwoStars, .taoOneStar {
-			background: transparent url('https://prodcache.internal.ihg.com/content/dam/etc/media_library/cn/0/cn/reviews/icon_stars.png') no-repeat 14px 3px;
+		.taoFourStars {
+			background: transparent url('../img/icon_stars.png') no-repeat -3px -3px;
 		}
 		.taoThreeStars {
-			width:75px;
+			background-position:-22px -3px;
 		}
 		.taoTwoStars {
-			width:55px;
+			background-position:-41px -3px;
 		}
 		.taoOneStar {
-			width:35px;
+			background-position:-60px -3px;
 		}
 
 	}
-	/*.taoRatings:first-child {
-		display:none;
-	}*/
 
 	/* AMENITIES */
 	.taoAmenities {
@@ -184,13 +181,6 @@
 
 		.amenitiesRightCol {
 			margin-right:0;
-			 ul li {
-			 	list-style:none;
-			 }
-
-			a {
-				color:#444444;
-			}
 				
 			span {
 				padding:0;
@@ -251,9 +241,6 @@
 		}
 
 	}
-	#btnApplyFilter ~ .taoBrands {
-		display:none;
-	}
 
 	/* FILTER BY */
 	.taoFilterBy {
@@ -295,9 +282,5 @@
 				overflow:auto;		
 			}
 		}	
-	}
-	#btnApplyFilter ~ .taoFilterBy,
-	#btnApplyFilter:nth-child(2) {
-		display:none;
 	}
 }

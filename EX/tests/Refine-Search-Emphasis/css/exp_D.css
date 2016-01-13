@@ -1,150 +1,251 @@
-.col-md-12 {
+.tabWellRow .tabwell {
+  padding: 0;
+  /* remove l/r padding on search filter */ }
+  .tabWellRow .tabwell .controls-row {
+    padding-bottom: 0; }
+
+#filterSortForm {
+  background: #fefefe;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fefefe 0%, #efefef 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fefefe 0%, #efefef 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fefefe 0%, #efefef 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  #filterSortForm fieldset > .controls-row:nth-child(1) {
+    display: none; }
+
+.taoFilterParent {
+  padding: 12px;
+  text-align: center; }
+
+#sortOptions {
+  padding: 0 0 10px; }
+
+/*.col-md-12*/
+.tabwell {
+  /* SHOW/HIDE */
   /* RATINGS */
+  /*.taoRatings:first-child {
+  	display:none;
+  }*/
   /* AMENITIES */
   /* IHG BRANDS */
   /* FILTER BY */ }
-  .col-md-12 .taoRatings,
-  .col-md-12 .taoAmenities {
-    margin-right: 18px;
-    border: 1px solid red;
+  .tabwell .sortBox {
+    border-right: none;
+    border-left: none; }
+  .tabwell .tab-pane {
+    padding: 10px 10px 0; }
+  .tabwell .taoShow {
+    display: block !important; }
+  .tabwell .taoHide {
+    display: none; }
+  .tabwell label.spanOffset.taoPlus,
+  .tabwell label.spanOffset.taoMinus {
+    padding: 20px 0 0 34px;
+    text-align: left;
+    color: #0055A5;
+    text-decoration: underline;
+    font-weight: bold;
+    height: 40px;
+    width: 168px;
+    cursor: pointer;
+    background: transparent url("http://prodcache.internal.ihg.com/content/dam/etc/media_library/branded/ex/cn/icons/sprite/sprite.gif") no-repeat 10px -1557px; }
+  .tabwell label.spanOffset.taoMinus {
+    background: transparent url("http://prodcache.internal.ihg.com/content/dam/etc/media_library/branded/ex/cn/icons/sprite/sprite.gif") no-repeat 10px -1170px; }
+  .tabwell .multiselect-container li a label.checkbox,
+  .tabwell .multiselect-container li a label.radio {
+    background: none; }
+  .tabwell #btnApplyFilter {
+    margin: 20px 0 10px;
+    clear: both; }
+  .tabwell .dropdown-menu > li > a,
+  .tabwell .dropdown-menu > li > a:hover,
+  .tabwell .dropdown-menu > li > a:focus,
+  .tabwell .dropdown-menu > .active > a,
+  .tabwell .dropdown-menu > .active > a:hover,
+  .tabwell .dropdown-menu > .active > a:focus,
+  .tabwell .dropdown-menu > .active > a:hover,
+  .tabwell .dropdown-menu > .active > a:focus,
+  .tabwell .dropdown-menu .dropdown-submenu:hover > a,
+  .tabwell .dropdown-menu .dropdown-submenu:focus > a,
+  .tabwell .dimSelected > li > a,
+  .tabwell .dimSelected > li > a:hover,
+  .tabwell .dimSelected > li > a:focus,
+  .tabwell .dimSelected > .active > a,
+  .tabwell .dimSelected > .active > a:hover,
+  .tabwell .dimSelected > .active > a:focus,
+  .tabwell .dimSelected > .active > a:hover,
+  .tabwell .dimSelected > .active > a:focus,
+  .tabwell .dimSelected .dropdown-submenu:hover > a,
+  .tabwell .dimSelected .dropdown-submenu:focus > a {
+    padding: 3px 0;
+    background-color: transparent !important;
+    background-image: none !important;
+    color: #444444; }
+  .tabwell .taoRatings,
+  .tabwell .taoAmenities {
+    margin-right: 10px;
+    text-align: left;
     width: 130px;
     float: left; }
-    .col-md-12 .taoRatings .taoRatingsHeading,
-    .col-md-12 .taoRatings .taoAmenitiesHeading,
-    .col-md-12 .taoAmenities .taoRatingsHeading,
-    .col-md-12 .taoAmenities .taoAmenitiesHeading {
+    .tabwell .taoRatings .taoRatingsHeading,
+    .tabwell .taoRatings .taoAmenitiesHeading,
+    .tabwell .taoAmenities .taoRatingsHeading,
+    .tabwell .taoAmenities .taoAmenitiesHeading {
       margin: 0 10px 12px 0;
       padding: 0;
       font-size: 13px;
       font-weight: bold;
       text-transform: uppercase;
       border-bottom: 1px solid #cacaca; }
-    .col-md-12 .taoRatings section,
-    .col-md-12 .taoAmenities section {
+    .tabwell .taoRatings section,
+    .tabwell .taoAmenities section {
       clear: both; }
-    .col-md-12 .taoRatings input,
-    .col-md-12 .taoAmenities input {
-      margin-right: 5px;
-      margin-bottom: 10px;
-      float: left;
-      clear: left; }
-    .col-md-12 .taoRatings span,
-    .col-md-12 .taoAmenities span {
-      padding-right: 90px;
-      background: transparent url("../img/icon_stars.png") no-repeat -3px -3px; }
-    .col-md-12 .taoRatings .taoThreeStars,
-    .col-md-12 .taoAmenities .taoThreeStars {
-      background-position: -22px -3px; }
-    .col-md-12 .taoRatings .taoTwoStars,
-    .col-md-12 .taoAmenities .taoTwoStars {
-      background-position: -41px -3px; }
-    .col-md-12 .taoRatings .taoOneStar,
-    .col-md-12 .taoAmenities .taoOneStar {
-      background-position: -60px -3px; }
-  .col-md-12 .taoAmenities {
-    width: 302px; }
-    .col-md-12 .taoAmenities section {
-      clear: none; }
-    .col-md-12 .taoAmenities .amenitiesLeftCol,
-    .col-md-12 .taoAmenities .amenitiesRightCol {
-      margin-right: 12px;
-      float: left;
-      width: 139px; }
-      .col-md-12 .taoAmenities .amenitiesLeftCol .dropdown-menu,
-      .col-md-12 .taoAmenities .amenitiesRightCol .dropdown-menu {
-        min-width: 145px; }
-        .col-md-12 .taoAmenities .amenitiesLeftCol .dropdown-menu li > a,
-        .col-md-12 .taoAmenities .amenitiesRightCol .dropdown-menu li > a {
-          padding: 3px 0; }
-      .col-md-12 .taoAmenities .amenitiesLeftCol .multiselect-container,
-      .col-md-12 .taoAmenities .amenitiesRightCol .multiselect-container {
+      .tabwell .taoRatings section .multiselect-container,
+      .tabwell .taoAmenities section .multiselect-container {
         display: block;
         position: relative;
         float: none;
         box-shadow: none;
         border: none;
+        background: none;
         max-height: none !important;
         overflow: hidden; }
-        .col-md-12 .taoAmenities .amenitiesLeftCol .multiselect-container li > a:hover,
-        .col-md-12 .taoAmenities .amenitiesRightCol .multiselect-container li > a:hover {
+        .tabwell .taoRatings section .multiselect-container li a label.radio input,
+        .tabwell .taoAmenities section .multiselect-container li a label.radio input {
+          margin-right: 5px;
+          margin-bottom: 10px;
+          float: left;
+          clear: left;
+          display: block !important; }
+    .tabwell .taoRatings .taoFourStars, .tabwell .taoRatings .taoThreeStars, .tabwell .taoRatings .taoTwoStars, .tabwell .taoRatings .taoOneStar,
+    .tabwell .taoAmenities .taoFourStars,
+    .tabwell .taoAmenities .taoThreeStars,
+    .tabwell .taoAmenities .taoTwoStars,
+    .tabwell .taoAmenities .taoOneStar {
+      background: transparent url("https://prodcache.internal.ihg.com/content/dam/etc/media_library/cn/0/cn/reviews/icon_stars.png") no-repeat 14px 3px; }
+    .tabwell .taoRatings .taoThreeStars,
+    .tabwell .taoAmenities .taoThreeStars {
+      width: 75px; }
+    .tabwell .taoRatings .taoTwoStars,
+    .tabwell .taoAmenities .taoTwoStars {
+      width: 55px; }
+    .tabwell .taoRatings .taoOneStar,
+    .tabwell .taoAmenities .taoOneStar {
+      width: 35px; }
+  .tabwell .taoAmenities {
+    width: 302px; }
+    .tabwell .taoAmenities section {
+      clear: none; }
+    .tabwell .taoAmenities .amenitiesLeftCol,
+    .tabwell .taoAmenities .amenitiesRightCol {
+      margin-right: 12px;
+      float: left;
+      width: 139px; }
+      .tabwell .taoAmenities .amenitiesLeftCol .dropdown-menu,
+      .tabwell .taoAmenities .amenitiesRightCol .dropdown-menu {
+        min-width: 145px; }
+      .tabwell .taoAmenities .amenitiesLeftCol .multiselect-container,
+      .tabwell .taoAmenities .amenitiesRightCol .multiselect-container {
+        display: block;
+        position: relative;
+        float: none;
+        box-shadow: none;
+        border: none;
+        background: none;
+        max-height: none !important;
+        overflow: hidden; }
+        .tabwell .taoAmenities .amenitiesLeftCol .multiselect-container li > a:hover,
+        .tabwell .taoAmenities .amenitiesRightCol .multiselect-container li > a:hover {
           padding: 3px 0;
           overflow: auto; }
-      .col-md-12 .taoAmenities .amenitiesLeftCol span,
-      .col-md-12 .taoAmenities .amenitiesRightCol span {
+      .tabwell .taoAmenities .amenitiesLeftCol span,
+      .tabwell .taoAmenities .amenitiesRightCol span {
         padding: 0;
         background: none; }
-    .col-md-12 .taoAmenities .amenitiesRightCol {
+    .tabwell .taoAmenities .amenitiesRightCol {
       margin-right: 0; }
-      .col-md-12 .taoAmenities .amenitiesRightCol span {
+      .tabwell .taoAmenities .amenitiesRightCol ul li {
+        list-style: none; }
+      .tabwell .taoAmenities .amenitiesRightCol a {
+        color: #444444; }
+      .tabwell .taoAmenities .amenitiesRightCol span {
         padding: 0;
         background: none; }
-  .col-md-12 .taoBrands {
+  .tabwell .taoBrands {
     margin-right: 18px;
     padding: 0;
     float: left;
     width: 320px;
-    border: 1px solid red; }
-    .col-md-12 .taoBrands .taoBrandsHeading {
+    text-align: left; }
+    .tabwell .taoBrands .taoBrandsHeading {
       margin: 0 0 12px 0;
       padding: 0;
       font-size: 13px;
       font-weight: bold;
       text-transform: uppercase;
       border-bottom: 1px solid #cacaca; }
-    .col-md-12 .taoBrands .brandsLeftCol,
-    .col-md-12 .taoBrands .brandsRightCol {
+    .tabwell .taoBrands .brandsLeftCol,
+    .tabwell .taoBrands .brandsRightCol {
       margin-right: 12px;
       float: left;
       width: 180px; }
-      .col-md-12 .taoBrands .brandsLeftCol .dropdown-menu,
-      .col-md-12 .taoBrands .brandsRightCol .dropdown-menu {
-        /*min-width:145px;*/ }
-        .col-md-12 .taoBrands .brandsLeftCol .dropdown-menu li > a,
-        .col-md-12 .taoBrands .brandsRightCol .dropdown-menu li > a {
-          padding: 3px 0; }
-      .col-md-12 .taoBrands .brandsLeftCol .multiselect-container,
-      .col-md-12 .taoBrands .brandsRightCol .multiselect-container {
+      .tabwell .taoBrands .brandsLeftCol .dropdown-menu li > a,
+      .tabwell .taoBrands .brandsRightCol .dropdown-menu li > a {
+        padding: 3px 0; }
+      .tabwell .taoBrands .brandsLeftCol .multiselect-container,
+      .tabwell .taoBrands .brandsRightCol .multiselect-container {
         display: block;
         position: relative;
         float: none;
         box-shadow: none;
         border: none;
         max-height: none !important;
-        overflow: hidden; }
-        .col-md-12 .taoBrands .brandsLeftCol .multiselect-container li > a:hover,
-        .col-md-12 .taoBrands .brandsRightCol .multiselect-container li > a:hover {
+        overflow: hidden;
+        background: none; }
+        .tabwell .taoBrands .brandsLeftCol .multiselect-container li > a:hover,
+        .tabwell .taoBrands .brandsRightCol .multiselect-container li > a:hover {
           padding: 3px 0;
           overflow: auto; }
-    .col-md-12 .taoBrands .brandsRightCol {
+    .tabwell .taoBrands .brandsRightCol {
       margin-right: 0;
       width: 128px; }
-  .col-md-12 .taoFilterBy {
-    margin: 0;
+  .tabwell #btnApplyFilter ~ .taoBrands {
+    display: none; }
+  .tabwell .taoFilterBy {
+    margin: 0 0 109px;
     padding: 0;
     float: left;
     width: 145px;
-    border: 1px solid red; }
-    .col-md-12 .taoFilterBy .taoFilterByHeading {
+    text-align: left; }
+    .tabwell .taoFilterBy .taoFilterByHeading {
       margin: 0 0 12px 0;
       padding: 0;
       font-size: 13px;
       font-weight: bold;
       text-transform: uppercase;
       border-bottom: 1px solid #cacaca; }
-    .col-md-12 .taoFilterBy .dropdown-menu {
+    .tabwell .taoFilterBy .dropdown-menu {
       min-width: 145px; }
-      .col-md-12 .taoFilterBy .dropdown-menu li > a {
+      .tabwell .taoFilterBy .dropdown-menu li > a {
         padding: 3px 0; }
-    .col-md-12 .taoFilterBy .multiselect-container {
+    .tabwell .taoFilterBy .multiselect-container {
       display: block;
       position: relative;
       float: none;
       box-shadow: none;
       border: none;
+      background: none;
       max-height: none !important;
       overflow: hidden; }
-      .col-md-12 .taoFilterBy .multiselect-container li > a:hover {
+      .tabwell .taoFilterBy .multiselect-container li > a:hover {
         padding: 3px 0;
         overflow: auto; }
+  .tabwell #btnApplyFilter ~ .taoFilterBy,
+  .tabwell #btnApplyFilter:nth-child(2) {
+    display: none; }
 
 /*# sourceMappingURL=exp_D.css.map */

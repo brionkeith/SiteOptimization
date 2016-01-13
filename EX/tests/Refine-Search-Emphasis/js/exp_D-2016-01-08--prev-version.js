@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function(jQuery) {
 
   jQuery('<div class="taoFilterParent"></div>').prependTo('.tabwell #filterSortForm fieldset > .controls-row:eq(0)');
@@ -16,40 +15,41 @@ jQuery(document).ready(function(jQuery) {
     });
 
     if ('label.spanOffset') {
+      //toggle plus/minus classes
       jQuery(jQuery(this).toggleClass('taoPlus taoMinus'));
     }
   });
 
   // BUILD AFTER AJAX COMPLETE FUNCTION
-  jQuery(document).ajaxComplete(function(event, request, settings) {
+  jQuery(document).ajaxSuccess(function(event, request, settings) { // Request AJAX
 
     // BUILD  GUEST RATINGS BLOCK
-    jQuery('<div class="taoRatings"><h3 class="taoRatingsHeading">Guest Ratings</h3></div>').prependTo('.taoFilterParent');
-    jQuery('#ratingsFilter + .spanB1 > .dropdown-menu').appendTo('.taoRatings').wrapAll('<section></section>');
-    jQuery('.taoRatings input').prop('type', 'checkbox');
+    jQuery('<div class="taoRatings"><h3 class="taoRatingsHeading">Guest Ratings</h3></div>').prependTo('.col-md-12:eq(8)');
+    jQuery('#ratingsFilter + .spanB1 > .dropdown-menu').appendTo('.taoRatings').wrapAll('<section></section>'); // Get 'Ratings' UL: wrap in <section />
+    jQuery('.taoRatings input').prop('type', 'checkbox'); //change radio to checkbox
     jQuery('.taoRatings li:eq(1)').addClass('taoFourStars');
     jQuery('.taoRatings li:eq(2)').addClass('taoThreeStars');
     jQuery('.taoRatings li:eq(3)').addClass('taoTwoStars');
     jQuery('.taoRatings li:eq(4)').addClass('taoOneStar');
-    jQuery('.taoFourStars label, .taoThreeStars label, .taoTwoStars label, .taoOneStar label').contents().filter(function() {
+    jQuery('.taoFourStars label, .taoThreeStars label, .taoTwoStars label, .taoOneStar label').contents().filter(function(){
       return this.nodeType === 3;
     }).remove(); // remove label text from node
-    jQuery('#ratingsFilter + .btn-group'); // Remove all "btn-group" drop down's in "col-md-12"
-    jQuery('.taoRatings').prevAll('.taoRatings').remove();
+    jQuery('#ratingsFilter + .btn-group'); // Remove all child "btn-group" in "col-md-12"
+    jQuery('.taoRatings:eq(1)').remove(); // Remove duplicate DIV
 
     // BUILD AMENITIES BLOCK: Left Column
-    jQuery('<div class="taoAmenities"><h3 class="taoAmenitiesHeading">Amenities</h3></div>').appendTo('.taoFilterParent');
+    jQuery('<div class="taoAmenities"><h3 class="taoAmenitiesHeading">Amenities</h3></div>').insertAfter('.taoRatings');
     jQuery('#amenitiesFilter + .spanB1 > .dropdown-menu').appendTo('.taoAmenities').wrapAll('<section class="amenitiesLeftCol"></section>');
+    //jQuery('.taoAmenities:eq(0)').remove(); // Hide duplicate DIV
 
     // BUILD AMENITIES BLOCK: Right Column    
     jQuery('<section class="amenitiesRightCol"><ul></ul></section>').insertAfter('.amenitiesLeftCol');
-    var taoItems = jQuery('.amenitiesLeftCol li:gt(6)'); // Get list items greater than 7
-    jQuery(taoItems).appendTo('.amenitiesRightCol ul').addClass('multiselect-container dropdown-menu dimSelected');
-    jQuery('.taoAmenities').nextAll('.taoAmenities').remove();
-    jQuery('.amenitiesRightCol').prev('.amenitiesRightCol').remove(); // Remove duplicate
+    var taoItems = jQuery('.amenitiesLeftCol li:gt(6)'); // Get list items greater than 6
+    jQuery(taoItems).appendTo('.amenitiesRightCol ul');
+    //jQuery('.amenitiesRightCol:eq(0)').remove(); // Remove duplicate '.amenitiesRightCol'
 
     // BUILD BRANDS BLOCK: Left Column
-    jQuery('<div class="taoBrands"><h3 class="taoBrandsHeading">IHG Brands</h3></div>').appendTo('.taoFilterParent');
+    jQuery('<div class="taoBrands"><h3 class="taoBrandsHeading">IHG Brands</h3></div>').insertAfter('.taoAmenities');
     jQuery('#brandsFilter + .spanB1 > .dropdown-menu').insertAfter('.taoBrandsHeading').wrapAll('<section class="brandsLeftCol"></section>');
 
     // BUILD BRANDS BLOCK: Right Column    
@@ -57,24 +57,19 @@ jQuery(document).ready(function(jQuery) {
     var taoBrandItems = jQuery('.brandsLeftCol li:gt(6)');
     jQuery('.brandsRightCol').append('<ul class="multiselect-container dropdown-menu dimSelected"></ul>');
     jQuery(taoBrandItems).appendTo('.brandsRightCol ul');
-    jQuery('.taoBrands').nextAll('.taoBrands').remove();
-    jQuery('.brandsRightCol').prev('.brandsRightCol').remove(); // Remove duplicate
 
     // BUILD FILTER BY BLOCK
-    jQuery('<div class="taoFilterBy"><h3 class="taoFilterByHeading">Filter By</h3></div>').appendTo('.taoFilterParent');
-    jQuery('#miscFilter + .spanB1 > .dropdown-menu').appendTo('.taoFilterBy');
-    jQuery('.taoFilterBy').nextAll('.taoFilterBy').remove();
-    
+    /*jQuery('<div class="taoFilterBy"><h3 class="taoFilterByHeading">Filter By</h3></div>').insertAfter('.taoBrands');
+    var taoFilterBy = jQuery('ul.multiselect-container.dropdown-menu.dimSelected');
+    jQuery(taoFilterBy).appendTo('.taoFilterBy') */
+
     // REPOSITION 'APPLY' BUTTON
     jQuery('#btnApplyFilter').insertAfter('.taoFilterBy').val('Apply Filters');
 
-    // REMOVE DUPLICATE DIVs and BUTTON INPUTs AFTER INITIAL PAGE LOAD
-    jQuery('#btnApplyFilter:eq(0) + .taoAmenities, #btnApplyFilter:eq(0) + .taoBrands, #btnApplyFilter:eq(0) + .taoFilterBy').remove();
-    jQuery('.taoFilterBy:eq(1) ~ #btnApplyFilter').remove();
+    // PARENT WRAPPER 
+    jQuery('.taoRatings, .taoAmenities, .taoBrands, .taoFilterBy, #btnApplyFilter').appendTo('.taoFilterParent');
+  });
 
-    // REMOVE FILTER 'BUTTONS'
-    jQuery('#ratingsFilter + .btn-group, #amenitiesFilter + .btn-group, #brandsFilter + .btn-group, #miscFilter + .btn-group').hide();
-
-  }); // END AJAX COMPLETE FUNCTION
-
+	// DUPLICATE DIVs
+	jQuery('.taoAmenities:eq(0)').remove(); // Hide duplicate DIV
 });

@@ -46,7 +46,6 @@ jQuery(document).ready(function(jQuery) {
     var taoItems = jQuery('.amenitiesLeftCol li:gt(6)'); // Get list items greater than 7
     jQuery(taoItems).appendTo('.amenitiesRightCol ul').addClass('multiselect-container dropdown-menu dimSelected');
     jQuery('.taoAmenities').nextAll('.taoAmenities').remove();
-    jQuery('.amenitiesRightCol').prev('.amenitiesRightCol').remove(); // Remove duplicate
 
     // BUILD BRANDS BLOCK: Left Column
     jQuery('<div class="taoBrands"><h3 class="taoBrandsHeading">IHG Brands</h3></div>').appendTo('.taoFilterParent');
@@ -58,7 +57,6 @@ jQuery(document).ready(function(jQuery) {
     jQuery('.brandsRightCol').append('<ul class="multiselect-container dropdown-menu dimSelected"></ul>');
     jQuery(taoBrandItems).appendTo('.brandsRightCol ul');
     jQuery('.taoBrands').nextAll('.taoBrands').remove();
-    jQuery('.brandsRightCol').prev('.brandsRightCol').remove(); // Remove duplicate
 
     // BUILD FILTER BY BLOCK
     jQuery('<div class="taoFilterBy"><h3 class="taoFilterByHeading">Filter By</h3></div>').appendTo('.taoFilterParent');
@@ -68,6 +66,9 @@ jQuery(document).ready(function(jQuery) {
     // REPOSITION 'APPLY' BUTTON
     jQuery('#btnApplyFilter').insertAfter('.taoFilterBy').val('Apply Filters');
 
+    // PARENT WRAPPER 
+    // jQuery('.taoRatings, .taoAmenities, .taoBrands, .taoFilterBy, #btnApplyFilter').appendTo('.taoFilterParent');
+
     // REMOVE DUPLICATE DIVs and BUTTON INPUTs AFTER INITIAL PAGE LOAD
     jQuery('#btnApplyFilter:eq(0) + .taoAmenities, #btnApplyFilter:eq(0) + .taoBrands, #btnApplyFilter:eq(0) + .taoFilterBy').remove();
     jQuery('.taoFilterBy:eq(1) ~ #btnApplyFilter').remove();
@@ -76,5 +77,20 @@ jQuery(document).ready(function(jQuery) {
     jQuery('#ratingsFilter + .btn-group, #amenitiesFilter + .btn-group, #brandsFilter + .btn-group, #miscFilter + .btn-group').hide();
 
   }); // END AJAX COMPLETE FUNCTION
+
+  /*if ('.taoFilterParent:has(:not(.taoRatings section)) ') {
+    //code block
+    $('section').css({
+      'background': 'red'
+        // 'display': 'none'
+    });
+  }*/
+
+  /*jQuery('.showMoreLink').on('click', function(event) {
+    jQuery(document).ajaxComplete(function(event, request, settings) {
+      event.preventDefault();
+      jQuery('div.taoRatings').prevAll().remove();
+    });
+  });*/
 
 });

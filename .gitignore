@@ -217,11 +217,15 @@ pip-log.txt
 
 # Ignore the following TAO-specific directories
 
+#MISC.
+.idea/
+
 # CP
 CP/tests/Book-Today-Messaging-v3/.sass-cache/
 CP/tests/Book-Today-Messaging-v3/node_modules/
 CP/tests/Search-Results-Button-Color/.sass-cache/
 CP/tests/Search-Results-Button-Color/node_modules/
+CP/tests/Quick-Enroll-Benefits/
 
 
 # EX
@@ -243,6 +247,18 @@ EX/tests/Quick-Enroll-Free-Internet/node_modules/
 EX/tests/Quick-Enroll-Free-Internet/.sass-cache/
 EX/tests/Quick-Enroll-Free-Internet/package.json
 EX/tests/Quick-Enroll-Free-Internet/gruntfile.js
+
+EX/tests/Refine-Search-Emphasis/node_modules/
+EX/tests/Refine-Search-Emphasis/.sass-cache/
+EX/tests/Refine-Search-Emphasis/assets/
+EX/tests/Refine-Search-Emphasis/test_plan/
+EX/tests/Refine-Search-Emphasis/natives/
+EX/tests/Refine-Search-Emphasis/test_plan/
+EX/tests/Refine-Search-Emphasis/package.json
+EX/tests/Refine-Search-Emphasis/gruntfile.js
+EX/tests/Refine-Search-Emphasis/icon_plus_minus.png
+EX/tests/Refine-Search-Emphasis/index_2016_01_06.html
+EX/tests/Refine-Search-Emphasis/index_original.html
 
 # IHG
 IHG/terminal.glue
@@ -286,17 +302,14 @@ IHG/tests/Enrollment-Form-Additional-CTAs/assets/
 IHG/tests/Enrollment-Form-Additional-CTAs/img/
 IHG/tests/Enrollment-Form-Additional-CTAs/terminal.glue
 
-IHG/tests/Georama-On-Homepage/node_modules/
-IHG/tests/Georama-On-Homepage/.sass-cache/
-IHG/tests/Georama-On-Homepage/_assets/
-IHG/tests/Georama-On-Homepage/_final-creative/
-IHG/tests/Georama-On-Homepage/img/
+IHG/tests/Georama-On-Homepage
 
 # SB
 SB/tests/Brand-Home-Button-Color/node_modules/
 SB/tests/Brand-Home-Button-Color/.sass-cache/
 
 # Playground
+_playground/
 _playground/constructor-pattern/node_modules/
 _playground/constructor-pattern//.sass-cache/
 _playground/module-pattern/node_modules/
