@@ -12,7 +12,9 @@
   background: -webkit-linear-gradient(top, #fefefe 0%, #efefef 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #fefefe 0%, #efefef 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#efefef',GradientType=0 );
+  /* IE6-9 */ }
   #filterSortForm fieldset > .controls-row:nth-child(1) {
     display: none; }
 
@@ -27,9 +29,6 @@
 .tabwell {
   /* SHOW/HIDE */
   /* RATINGS */
-  /*.taoRatings:first-child {
-  	display:none;
-  }*/
   /* AMENITIES */
   /* IHG BRANDS */
   /* FILTER BY */ }
@@ -84,6 +83,8 @@
     padding: 3px 0;
     background-color: transparent !important;
     background-image: none !important;
+    filter: none;
+    /* IE6-9 */
     color: #444444; }
   .tabwell .taoRatings,
   .tabwell .taoAmenities {
