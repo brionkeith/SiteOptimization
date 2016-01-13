@@ -162,7 +162,7 @@
         .tabwell .taoAmenities .amenitiesLeftCol .multiselect-container li > a:hover,
         .tabwell .taoAmenities .amenitiesRightCol .multiselect-container li > a:hover {
           padding: 3px 0;
-          overflow: auto; }
+          overflow: visible; }
       .tabwell .taoAmenities .amenitiesLeftCol span,
       .tabwell .taoAmenities .amenitiesRightCol span {
         padding: 0;
