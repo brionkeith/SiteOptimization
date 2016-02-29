@@ -217,82 +217,87 @@ pip-log.txt
 
 # Ignore the following TAO-specific directories
 
-#MISC.
-.idea/
+assets/
+natives/
+test_plan/
+.sass-cache/
+node_modules/
+package.json
+gruntfile.js
 
 # CP
-CP/tests/Book-Today-Messaging-v3/.sass-cache/
-CP/tests/Book-Today-Messaging-v3/node_modules/
-CP/tests/Search-Results-Button-Color/.sass-cache/
-CP/tests/Search-Results-Button-Color/node_modules/
+# CP/tests/Book-Today-Messaging-v3/.sass-cache/
+# CP/tests/Book-Today-Messaging-v3/node_modules/
+# CP/tests/Search-Results-Button-Color/.sass-cache/
+# CP/tests/Search-Results-Button-Color/node_modules/
 CP/tests/Quick-Enroll-Benefits/
 
 
 # EX
 EX/tests/book-today-messaging/index.html
-EX/tests/book-today-messaging/node_modules/
-EX/tests/Book-Today-Messaging-V2/.sass-cache/
-EX/tests/Book-Today-Messaging-V2/node_modules/
+# EX/tests/book-today-messaging/node_modules/
+# EX/tests/Book-Today-Messaging-V2/.sass-cache/
+# EX/tests/Book-Today-Messaging-V2/node_modules/
 EX/tests/Book-Today-Messaging-V2/img/
-EX/tests/Book-Today-Messaging-v3/.sass-cache/
-EX/tests/Book-Today-Messaging-v3/node_modules/
+# EX/tests/Book-Today-Messaging-v3/.sass-cache/
+# EX/tests/Book-Today-Messaging-v3/node_modules/
 EX/tests/Book-Today-Messaging-V2/img/
-EX/tests/Quick-Enroll/node_modules/
-EX/tests/Quick-Enroll/.sass-cache/
-EX/tests/Quick-Enroll-Free-Internet/node_modules/
-EX/tests/Quick-Enroll-Free-Internet/.sass-cache/
+# EX/tests/Quick-Enroll/node_modules/
+# EX/tests/Quick-Enroll/.sass-cache/
+# EX/tests/Quick-Enroll-Free-Internet/node_modules/
+# EX/tests/Quick-Enroll-Free-Internet/.sass-cache/
 
 # EX/node_modules/
 EX/tests/Quick-Enroll-Free-Internet/node_modules/
-EX/tests/Quick-Enroll-Free-Internet/.sass-cache/
-EX/tests/Quick-Enroll-Free-Internet/package.json
-EX/tests/Quick-Enroll-Free-Internet/gruntfile.js
+# EX/tests/Quick-Enroll-Free-Internet/.sass-cache/
+# EX/tests/Quick-Enroll-Free-Internet/package.json
+# EX/tests/Quick-Enroll-Free-Internet/gruntfile.js
 
-EX/tests/Refine-Search-Emphasis/node_modules/
-EX/tests/Refine-Search-Emphasis/.sass-cache/
-EX/tests/Refine-Search-Emphasis/assets/
-EX/tests/Refine-Search-Emphasis/test_plan/
-EX/tests/Refine-Search-Emphasis/natives/
-EX/tests/Refine-Search-Emphasis/test_plan/
-EX/tests/Refine-Search-Emphasis/package.json
-EX/tests/Refine-Search-Emphasis/gruntfile.js
+# EX/tests/Refine-Search-Emphasis/node_modules/
+# EX/tests/Refine-Search-Emphasis/.sass-cache/
+# EX/tests/Refine-Search-Emphasis/assets/
+# EX/tests/Refine-Search-Emphasis/test_plan/
+# EX/tests/Refine-Search-Emphasis/natives/
+# EX/tests/Refine-Search-Emphasis/test_plan/
+# EX/tests/Refine-Search-Emphasis/package.json
+# EX/tests/Refine-Search-Emphasis/gruntfile.js
 EX/tests/Refine-Search-Emphasis/icon_plus_minus.png
 EX/tests/Refine-Search-Emphasis/index_2016_01_06.html
 EX/tests/Refine-Search-Emphasis/index_original.html
 
 # IHG
-IHG/terminal.glue
-IHG/tests/sign-in-sign-up-simp/node_modules/
+# IHG/terminal.glue
+# IHG/tests/sign-in-sign-up-simp/node_modules/
 IHG/tests/sign-in-sign-up-simp/css/site.css
 IHG/tests/sign-in-sign-up-simp/js/bootstrapper-page-flicker.js
-IHG/tests/RC-Join-CTA-Emphasis/.sass-cache/
-IHG/tests/RC-Join-CTA-Emphasis/node_modules/
+# IHG/tests/RC-Join-CTA-Emphasis/.sass-cache/
+# IHG/tests/RC-Join-CTA-Emphasis/node_modules/
 
-IHG/tests/Chase-Offer-My-Account/node_modules/
-IHG/tests/Chase-Offer-My-Account/package.json
-IHG/tests/Chase-Offer-My-Account/gruntfile.js
+# IHG/tests/Chase-Offer-My-Account/node_modules/
+# IHG/tests/Chase-Offer-My-Account/package.json
+# IHG/tests/Chase-Offer-My-Account/gruntfile.js
 IHG/tests/Chase-Offer-My-Account/index.html
 
-IHG/tests/Funnel-Button-Text-Update/node_modules/
-IHG/tests/Funnel-Button-Text-Update/.sass-cache/
+# IHG/tests/Funnel-Button-Text-Update/node_modules/
+# IHG/tests/Funnel-Button-Text-Update/.sass-cache/
 
-IHG/tests/RC-Join-Form-Cleanup/node_modules/
-IHG/tests/RC-Join-Form-Cleanup/.sass-cache/
+# IHG/tests/RC-Join-Form-Cleanup/node_modules/
+# IHG/tests/RC-Join-Form-Cleanup/.sass-cache/
 
-IHG/tests/P+C-Default-Radio-Button/node_modules/
-IHG/tests/P+C-Default-Radio-Button/.sass-cache/
+# IHG/tests/P+C-Default-Radio-Button/node_modules/
+# IHG/tests/P+C-Default-Radio-Button/.sass-cache/
 
-IHG/tests/RC-Join-Form-Cleanup/node_modules/
-IHG/tests/RC-Join-Form-Cleanup/.sass-cache/
+# IHG/tests/RC-Join-Form-Cleanup/node_modules/
+# IHG/tests/RC-Join-Form-Cleanup/.sass-cache/
 IHG/tests/RC-Join-Form-Cleanup/assets/screenshots/
 
-IHG/tests/Points-Cash-Default-Radio-Button/node_modules/
-IHG/tests/Points-Cash-Default-Radio-Button/.sass-cache/
-IHG/tests/Points-Cash-Default-Radio-Button/assets/
+# IHG/tests/Points-Cash-Default-Radio-Button/node_modules/
+# IHG/tests/Points-Cash-Default-Radio-Button/.sass-cache/
+# IHG/tests/Points-Cash-Default-Radio-Button/assets/
 IHG/tests/Points-Cash-Default-Radio-Button/img/
 
-IHG/tests/Points-Cash-Sort-Order/node_modules/
-IHG/tests/Points-Cash-Sort-Order/.sass-cache/
+# IHG/tests/Points-Cash-Sort-Order/node_modules/
+# IHG/tests/Points-Cash-Sort-Order/.sass-cache/
 IHG/tests/Points-Cash-Sort-Order/assets/
 IHG/tests/Points-Cash-Sort-Order/terminal.glue
 
@@ -302,7 +307,14 @@ IHG/tests/Enrollment-Form-Additional-CTAs/assets/
 IHG/tests/Enrollment-Form-Additional-CTAs/img/
 IHG/tests/Enrollment-Form-Additional-CTAs/terminal.glue
 
-IHG/tests/Georama-On-Homepage
+IHG/tests/App-Download-Headline-Text/assets/
+IHG/tests/App-Download-Headline-Text/node_modules/
+IHG/tests/App-Download-Headline-Text/test plans/
+IHG/tests/App-Download-Headline-Text/gruntfile.js
+IHG/tests/App-Download-Headline-Text/package.json
+IHG/tests/App-Download-Headline-Text/terminal.glue
+
+IHG/tests/Georama-On-Homepage/
 
 # SB
 SB/tests/Brand-Home-Button-Color/node_modules/
@@ -321,6 +333,8 @@ _playground/ES6/es6-tutorial/.gitignore
 _playground/ES6/es6-tutorial/terminal.glue
 # _playground/ES6/es6-tutorial/.git/
 
+#MISC.
+.idea/
 .sass-cache/
 gruntfile.js
 package.json

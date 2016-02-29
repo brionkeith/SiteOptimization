@@ -47,8 +47,7 @@ jQuery(document).ready(function (jQuery) {
     });
 
     // ADD "+" TO EACH INPUT
-    jQuery('<span class="plus">+</span>').appendTo('.taoRatings li:gt(0)');
-    jQuery('.plus').next('.plus').remove(); // remove duplicates
+    jQuery('.taoRatings .dimSelected li').append('<span>+</span>');
 
     /* ----------------------------------------------- */
 
@@ -63,17 +62,17 @@ jQuery(document).ready(function (jQuery) {
     jQuery('.taoAmenities').nextAll('.taoAmenities').remove();
     jQuery('.amenitiesRightCol').prev('.amenitiesRightCol').remove(); // Remove duplicate
 
-    // ALL AMENITIES: REMOVE 'DISABLED' ATTRIBUTE AND DISABLE/UNCHECK CHECKBOX
+    // ALL AMENITIES: REMOVE 'DISABLED' ATTRIBUTE AND UNCHECK CHECKBOX
     jQuery('.amenitiesLeftCol input:checkbox, .amenitiesRightCol input:checkbox').change(function() {
-      jQuery('.disabled input:checkbox').removeAttr('disabled').prop("checked", false); // disable checkbox
-      jQuery('.amenitiesLeftCol li:eq(0)').removeClass('disabled active'); // remove classes on first list item only
+      jQuery('.disabled input:checkbox').removeAttr('disabled').prop("checked", false);
+      jQuery('.amenitiesLeftCol li:eq(0)').removeClass('disabled active');
     });
 
-    // ALL AMENITIES: ADD 'DISABLED' ATTRIBUTE AND CLASS NAMES, CHECK/UNCHECK CHECKBOXES
+    // ALL AMENITIES: ADD 'DISABLED' ATTRIBUTE AND CLASS NAME, CHECK/UNCHECK CHECKBOX
     jQuery('.amenitiesLeftCol .dimSelected li:first-child input:checkbox').change(function() {
       jQuery(this).attr('disabled', true).prop('checked', true);
-      jQuery('.amenitiesLeftCol .dimSelected li:first-child').addClass('disabled active'); // Add classes to first-child only
-      jQuery('.amenitiesLeftCol .dimSelected li:gt(0) input, .amenitiesRightCol .dimSelected li input').prop('checked', false); // Uncheck any input after first-child
+      jQuery('.amenitiesLeftCol .dimSelected li:first-child').addClass('disabled active');
+      jQuery('.amenitiesLeftCol .dimSelected li:gt(0) input, .amenitiesRightCol .dimSelected li input').prop('checked', false);
     });
 
     // If any checkbox is checked, and 'All Amenities' is NOT checked, disable 'All Amenities'
@@ -92,8 +91,8 @@ jQuery(document).ready(function (jQuery) {
       if (jQuery(this).prop('checked') === false) { // if 'All Amenities' is NOT checked
         if (jQuery(".taoAmenities input[type=checkbox]:checked").length < 1) { // if ANY checkbox less than this is checked
           jQuery('.taoAmenities .dimSelected input:checkbox:eq(0)').attr('disabled', true).prop('checked', true); // check and disable 'All Amenities'
-          jQuery('.amenitiesLeftCol li:eq(0)').addClass('disabled active'); // add classes 'disabled' and 'active'
-          jQuery('.amenitiesLeftCol li, .amenitiesRightCol li').addClass('active'); // add class name 'active' to all inputs
+          jQuery('.amenitiesLeftCol li:eq(0)').addClass('disabled active');
+          jQuery('.amenitiesLeftCol li, .amenitiesRightCol li').addClass('active');          
         }
       }
     });
@@ -111,84 +110,30 @@ jQuery(document).ready(function (jQuery) {
     jQuery(taoBrandItems).appendTo('.brandsRightCol ul');
     jQuery('.taoBrands').nextAll('.taoBrands').remove();
     jQuery('.brandsRightCol').prev('.brandsRightCol').remove(); // Remove duplicate
-    jQuery('.brandsRightCol .multiselect-container:eq(1)').remove(); // Remove empty duplicate
 
-    jQuery('.taoBrands .dimSelected input:checkbox:eq(0)').on('click', function() {
-
-      // If 'All IHG Brands' is NOT checked, uncheck ALL inputs except 'EX'
-      if (this.checked === false) {
-
-        // Is this 'All IHG Brands'?
-        if(jQuery(this).attr('value') == 'all_brands') {
-
-          // Add active and disabled classes to ALL AMENITES list item
-          jQuery("input[value='all_brands']")
-                  .prop('checked', false)
-                  .closest('li').addClass('active');    
-
-          // Click on those checkboxes that are selected
-          jQuery('.taoBrands li:gt(1) input:checked').each(function () {
-            jQuery(this).click();
-          });
-
-        }
-
-      } else {
-
-        // If 'All IHG Brands' IS checked, check ALL inputs
-        if (jQuery(this).prop('checked') === true) {
-          jQuery('.taoBrands .dimSelected li').addClass('active');
-
-            // Click on those checkboxes that are selected
-            jQuery('.taoBrands .dimSelected li:gt(0) input:not(:checked)').each(function () {
-              jQuery(this).click();
-            });
-
-        }
-
+    // If 'All IHG Brands' is NOT selected, uncheck ALL inputs except 'EX'
+    jQuery('.taoBrands .dimSelected input:checkbox:eq(0)').change(function() {
+      // uncheck all checkboxes
+      if (jQuery(this).prop('checked') === false) {
+        jQuery('.taoBrands .dimSelected input:checkbox:gt(1), .taoBrands .dimSelected input:checkbox:lt(1)').prop('checked', false);
       }
-
     });
 
-    jQuery('.taoBrands .dimSelected input:checkbox:gt(0)').on('click', function() {
-      
-      // If any signle brand is unchecked, also uncheck 'All IHG Brands', and remove classname 'active'
-      if (this.checked === false) {
+    // If 'All IHG Brands' is selected, check ALL inputs
+    jQuery('.taoBrands .dimSelected input:checkbox:eq(0)').change(function() {
+      if (jQuery(this).prop('checked') === true) {
+        jQuery('.taoBrands .dimSelected input:checkbox').prop('checked', true);
+        jQuery('.taoBrands .dimSelected li').addClass('active');
+      }
+    });
 
-        // Is this any brand exept 'All IHG Brands'?
-        if(jQuery(this).attr('value') != 'all_brands') {
-        
-        // Remove 'active' class from 'ALL BRANDS' list item and uncheck its input
-        jQuery('input[value="all_brands"]')
-                .prop('checked', false)
-                .closest('li').removeClass('active');
-
-          // Each click, on any unchecked checkboxes
-          jQuery('.taoBrands .dimSelected li:gt(0) input:checked)').each(function () {
-            jQuery(this).click(); //simulate click
-          });
-
+    // If any input AFTER 'All Brands' is unchecked, uncheck 'All Brands'
+    jQuery('.taoBrands .dimSelected input:checkbox:gt(0)').change(function() {
+      if (jQuery(this).prop('checked') === false) {
+        if (jQuery(".taoBrands input[type=checkbox]:checked").length > 1) { // if ANY checkbox greater than this is checked
+          jQuery('.taoBrands .dimSelected input:checkbox:eq(0)').prop('checked', false); // uncheck 'All Brands'
         }
       }
-
-      // If more than 12 inputs are checked, also check 'All IHG BRANDS'
-      if(this.checked === true) {
-
-          // If 11 or more inputs are checked
-          if(jQuery('.taoBrands .dimSelected input[type=checkbox]:checked').length > 11) {
-
-            jQuery('.taoBrands .checkbox input:checkbox:eq(0)')
-            .prop('checked', true)
-            .closest('li').addClass('active');
-
-            // Each click, on any unchecked checkboxes
-            jQuery('.taoBrands .dimSelected li:gt(0) input:checked)').each(function () {
-              jQuery(this).click(); //simulate click
-            });
-
-          }
-      }
-
     });
 
     /* ----------------------------------------------- */

@@ -127,16 +127,45 @@
 			}
 		}
 		.taoFourStars, .taoThreeStars, .taoTwoStars, .taoOneStar {
-			background: transparent url('https://prodcache.internal.ihg.com/content/dam/etc/media_library/cn/0/cn/reviews/icon_stars.png') no-repeat 14px 3px;
+			position:relative;
+			background: transparent url('https://prodcache.internal.ihg.com/content/dam/etc/media_library/cn/0/cn/reviews/icon_stars.png') no-repeat 14px 1px;
+
+			.plus {
+			    position: absolute;
+			    top: 3px;
+			    right: 22px;			    
+			    font-size: 15px;
+			    font-weight: bold;		
+			}
+
 		}
 		.taoThreeStars {
 			width:75px;
+
+			.plus {
+			    top: 4px;
+			    right: -14px;
+			}
+
+
 		}
 		.taoTwoStars {
 			width:55px;
+
+			.plus {
+			    top: 5px;
+			    right: -14px;
+			}
+
 		}
 		.taoOneStar {
 			width:35px;
+
+			.plus {
+			    top: 5px;
+			    right: -13px;
+			}
+
 		}
 
 	}

@@ -127,39 +127,16 @@
     .tabwell .taoAmenities .taoThreeStars,
     .tabwell .taoAmenities .taoTwoStars,
     .tabwell .taoAmenities .taoOneStar {
-      position: relative;
       background: transparent url("https://prodcache.internal.ihg.com/content/dam/etc/media_library/cn/0/cn/reviews/icon_stars.png") no-repeat 14px 1px; }
-      .tabwell .taoRatings .taoFourStars .plus, .tabwell .taoRatings .taoThreeStars .plus, .tabwell .taoRatings .taoTwoStars .plus, .tabwell .taoRatings .taoOneStar .plus,
-      .tabwell .taoAmenities .taoFourStars .plus,
-      .tabwell .taoAmenities .taoThreeStars .plus,
-      .tabwell .taoAmenities .taoTwoStars .plus,
-      .tabwell .taoAmenities .taoOneStar .plus {
-        position: absolute;
-        top: 3px;
-        right: 22px;
-        font-size: 15px;
-        font-weight: bold; }
     .tabwell .taoRatings .taoThreeStars,
     .tabwell .taoAmenities .taoThreeStars {
       width: 75px; }
-      .tabwell .taoRatings .taoThreeStars .plus,
-      .tabwell .taoAmenities .taoThreeStars .plus {
-        top: 4px;
-        right: -14px; }
     .tabwell .taoRatings .taoTwoStars,
     .tabwell .taoAmenities .taoTwoStars {
       width: 55px; }
-      .tabwell .taoRatings .taoTwoStars .plus,
-      .tabwell .taoAmenities .taoTwoStars .plus {
-        top: 5px;
-        right: -14px; }
     .tabwell .taoRatings .taoOneStar,
     .tabwell .taoAmenities .taoOneStar {
       width: 35px; }
-      .tabwell .taoRatings .taoOneStar .plus,
-      .tabwell .taoAmenities .taoOneStar .plus {
-        top: 5px;
-        right: -13px; }
   .tabwell .taoAmenities {
     width: 302px; }
     .tabwell .taoAmenities section {
@@ -271,5 +248,3 @@
   .tabwell #btnApplyFilter ~ .taoFilterBy,
   .tabwell #btnApplyFilter:nth-child(2) {
     display: none; }
-
-/*# sourceMappingURL=exp_D.css.map */
