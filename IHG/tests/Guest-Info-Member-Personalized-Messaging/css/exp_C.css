@@ -1,0 +1,14 @@
+.bpgContainerNew {
+  margin-bottom: 10px;
+  float: left; }
+  .bpgContainerNew .bpg_congratulations, .bpgContainerNew .bpg_message {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    display: block;
+    color: #7b5400; }
+  .bpgContainerNew .bpg_message {
+    font-weight: normal;
+    color: #54534a; }
+
+/*# sourceMappingURL=exp_C.css.map */

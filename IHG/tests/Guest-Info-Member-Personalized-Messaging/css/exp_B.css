@@ -1,0 +1,13 @@
+.bpgContainerNew {
+  margin-bottom: 10px;
+  float: left; }
+  .bpgContainerNew .bpg_congratulations {
+    font-size: 30px;
+    color: #d96932; }
+  .bpgContainerNew .bpg_message {
+    font-size: 24px;
+    color: #444; }
+  .bpgContainerNew .bpg_congratulations, .bpgContainerNew .bpg_message {
+    display: block; }
+
+/*# sourceMappingURL=exp_B.css.map */

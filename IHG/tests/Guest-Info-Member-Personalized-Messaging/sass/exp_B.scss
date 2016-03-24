@@ -1,0 +1,16 @@
+.bpgContainerNew {
+  margin-bottom: 10px;
+  float:left;
+  
+  .bpg_congratulations {
+    font-size: 30px;
+    color: #d96932;
+  }
+  .bpg_message {
+    font-size: 24px;
+    color: #444;
+  }
+  .bpg_congratulations, .bpg_message {
+  	display: block;
+  }
+}
