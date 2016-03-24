@@ -1,0 +1,88 @@
+.container .appdl-bkgd {
+  background: url("http://prodcache.internal.ihg.com/content/dam/mobile/6c/en/us/app/app_download_iphone.jpg") no-repeat 0 -22px;
+  height: 459px;
+  margin-bottom: 55px;
+  width: 972px; }
+  .container .appdl-bkgd .ihgtranslatortext {
+    padding-top: 36px; }
+    .container .appdl-bkgd .ihgtranslatortext .taoDownloadintro {
+      color: #777;
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      padding-top: 28px; }
+      .container .appdl-bkgd .ihgtranslatortext .taoDownloadintro strong {
+        color: #d97738; }
+    .container .appdl-bkgd .ihgtranslatortext #sms_modal {
+      max-height: 160px; }
+  .container .appdl-bkgd .appdl-store {
+    margin-top: 0;
+    overflow: auto;
+    width: 468px; }
+    .container .appdl-bkgd .appdl-store .appdl-badges {
+      float: left;
+      margin: 0 20px 0 0;
+      padding: 0;
+      width: 52%; }
+      .container .appdl-bkgd .appdl-store .appdl-badges img {
+        height: auto;
+        width: 118px; }
+    .container .appdl-bkgd .appdl-store .appdl-stars {
+      float: left;
+      height: 36px;
+      overflow: hidden;
+      margin: 0;
+      width: 190px; }
+      .container .appdl-bkgd .appdl-store .appdl-stars p {
+        font-size: 11.5px; }
+.container #sms_modal {
+  margin-bottom: 60px; }
+  .container #sms_modal #sms_modal_form div:nth-child(4) {
+    width: 432px; }
+  .container #sms_modal #sms_modal_form .sms_modal_enter_number {
+    font-size: 20px; }
+    .container #sms_modal #sms_modal_form .sms_modal_enter_number .appdl-txt {
+      color: #777;
+      margin: 0;
+      padding: 0; }
+    .container #sms_modal #sms_modal_form .sms_modal_enter_number .taoDataRates {
+      color: #777;
+      font-size: 11px;
+      margin-bottom: 15px;
+      padding-top: 0; }
+  .container #sms_modal #sms_modal_form .cellphonenumber,
+  .container #sms_modal #sms_modal_form .countrydrop {
+    margin-top: 0;
+    /* Re-applies the controls on :hover and :focus */ }
+    .container #sms_modal #sms_modal_form .cellphonenumber input[type="number"],
+    .container #sms_modal #sms_modal_form .cellphonenumber select,
+    .container #sms_modal #sms_modal_form .countrydrop input[type="number"],
+    .container #sms_modal #sms_modal_form .countrydrop select {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      color: #777;
+      height: 34px;
+      margin: 0 10px 0 0;
+      padding: 0;
+      width: 200px;
+      -moz-appearance: textfield;
+      /* show input as textfield only */
+      -webkit-appearance: none; }
+    .container #sms_modal #sms_modal_form .cellphonenumber input[type="number"]:hover,
+    .container #sms_modal #sms_modal_form .cellphonenumber input[type="number"]:focus,
+    .container #sms_modal #sms_modal_form .countrydrop input[type="number"]:hover,
+    .container #sms_modal #sms_modal_form .countrydrop input[type="number"]:focus {
+      -moz-appearance: number-input;
+      -webkit-appearance: number-input; }
+    .container #sms_modal #sms_modal_form .cellphonenumber select,
+    .container #sms_modal #sms_modal_form .countrydrop select {
+      line-height: 30px;
+      /* Fixes Safari bug causing select menu to collapse */ }
+  .container #sms_modal #sms_modal_form .sms_modal_terms {
+    display: none; }
+  .container #sms_modal #sms_modal_form .appdl-sms-send {
+    margin-top: 33px; }
+.container .appdl-rating-txt {
+  display: none; }
+
+/*# sourceMappingURL=experience_C.css.map */
