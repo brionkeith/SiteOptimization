@@ -1,0 +1,19 @@
+.row.checkRates {
+  position: relative; }
+  .row.checkRates a {
+    margin-bottom: 12px; }
+  .row.checkRates .taoCheckRatesBPG {
+    padding-left: 25px;
+    background: transparent url(http://ihg.scene7.com/is/image/ihg/icon_checkmarks?fmt=png-alpha) no-repeat 0 -3px;
+    height: 23px;
+    width: 186px;
+    position: absolute;
+    top: 75px;
+    left: 20px;
+    /*display: none;*/ }
+    .row.checkRates .taoCheckRatesBPG span {
+      width: 186px;
+      float: left;
+      font-weight: bold; }
+
+/*# sourceMappingURL=exp_C.css.map */
