@@ -73,7 +73,7 @@ Adbett=window.Adbett||{};
         Adbett.track({selector:'.signIn #uhf_btn_SignIn input#pcrLeftSignInBtn',value:'signin-button',event:'mousedown',type:'signaler'});
         Adbett.track({selector:'.joinNow .joinnowcheckbox input#pcrEnroll',value:'joinnow-link',event:'mousedown',type:'signaler'});
 
-        jQuery(".signIn #uhf_btn_SignIn input#pcrLeftSignInBtn").on("mousedown", function() {
+        /*jQuery(".signIn #uhf_btn_SignIn input#pcrLeftSignInBtn").on("mousedown", function() {
             mboxFactoryDefault.getSignaler().signal("mboxClickTrack", "mboxClickTrack", "clicked=signin-button"); // Track mousedown when user signs in to RC
         });
 
@@ -85,7 +85,7 @@ Adbett=window.Adbett||{};
                     mboxFactoryDefault.getSignaler().signal('mboxClickTrack', 'mboxClickTrack', 'clicked=unchecked'); // Turn off click event
                 });
             }
-        });
+        });*/
     });
 
 }(Adbett);
