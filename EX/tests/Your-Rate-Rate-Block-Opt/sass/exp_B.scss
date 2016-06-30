@@ -1,0 +1,59 @@
+$mango-text:#d96932;
+
+.spotlightContentWrapper {
+	/*padding-top: 0;*/
+
+	.memberRateTypeLineItem {
+		.avgratediv {
+			padding-top:10px;
+		}
+		.baseRateInfo {
+			margin-bottom: 20px;
+		}
+	}	
+}
+
+.memberRateTypeLineItem {
+	width:180px;
+}
+
+.taoYourRateBlock {
+	/*margin-right:0;*/
+	padding-top:12px;
+	/*width:290px;*/
+
+	.taoMemberRate {
+		display:block;
+		color:$mango-text;
+		font-weight:bold;
+		text-transform: uppercase;
+	}
+	.memberRateInfo {
+		margin-bottom:20px;
+	}
+	.rateSelectionArea {
+		padding:5px 10px 20px;
+		width:100%;
+		background:#f4f4f4;
+		border:1px solid #e9e9e9;
+
+		.bookThisRoomMemberRate {
+			position: relative;
+			top:8px;
+		}
+
+		.taoMemberText {
+			float: right;
+			font-size: 11px;
+			line-height: 14px;
+
+			span {
+				color:$mango-text;
+			}
+		}
+	}
+
+	.memberTitle {
+		font-size:13px;
+	}	
+}

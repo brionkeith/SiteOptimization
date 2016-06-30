@@ -1,0 +1,86 @@
+$mango:#d96932;
+
+.spotlightContentWrapper {
+
+	.memberRateTypeLineItem {
+		.avgratediv {
+			padding-top:10px;
+		}
+		.baseRateInfo {
+			margin-bottom: 10px;
+		}
+	}	
+}
+
+.memberRateTypeLineItem {
+	/*margin-top: 0px !important;*/
+	position: relative;
+	bottom:-29px;
+	width:180px;
+}
+
+.taoYourRateBlock {
+	margin-top: 15px;
+	margin-right:25px;
+	padding:12px;
+	width:290px;
+
+	.taoMemberRate {
+		margin-bottom: 5px;
+		padding:2px 0;
+		text-align: center;
+		display:block;
+		color:#fff;
+		font-weight:bold;
+		background: $mango;
+	}
+	.memberRateInfo {
+		margin-bottom:20px;
+		width:120px;
+	}
+	.taoMemberText {
+		margin-right:15px;
+		padding:5px 10px;
+		float: right;
+		font-size: 11px;
+		line-height: 14px;
+		border:1px solid $mango;
+		position: relative;
+		top:-74px;
+
+		span {
+			color:$mango;
+		}
+		.taoRectangle {
+		    width: 20px;
+		    height: 1px;
+		    background: $mango;
+		    position: absolute;
+		    left: -20px;
+		    top:9px;
+		}
+		.taoArrowLeft {
+			position: absolute;
+			top:4.25px;
+			left:-27px;
+		    width: 0;
+		    height: 0;
+		    border-top: 5px solid transparent;
+		    border-right: 9px solid $mango;
+		    border-bottom: 5px solid transparent;
+		}		
+	}	
+	.rateSelectionArea {
+		padding:0;
+		width:100%;
+
+		.bookThisRoomMemberRate {
+			position: relative;
+			top:8px;
+		}
+	}
+
+	.memberTitle {
+		font-size:13px;
+	}	
+}

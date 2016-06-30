@@ -1,0 +1,39 @@
+.spotlightContentWrapper {
+  /*padding-top: 0;*/ }
+  .spotlightContentWrapper .memberRateTypeLineItem .avgratediv {
+    padding-top: 10px; }
+  .spotlightContentWrapper .memberRateTypeLineItem .baseRateInfo {
+    margin-bottom: 20px; }
+
+.memberRateTypeLineItem {
+  width: 180px; }
+
+.taoYourRateBlock {
+  /*margin-right:0;*/
+  padding-top: 12px;
+  /*width:290px;*/ }
+  .taoYourRateBlock .taoMemberRate {
+    display: block;
+    color: #d96932;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .taoYourRateBlock .memberRateInfo {
+    margin-bottom: 20px; }
+  .taoYourRateBlock .rateSelectionArea {
+    padding: 5px 10px 20px;
+    width: 100%;
+    background: #f4f4f4;
+    border: 1px solid #e9e9e9; }
+    .taoYourRateBlock .rateSelectionArea .bookThisRoomMemberRate {
+      position: relative;
+      top: 8px; }
+    .taoYourRateBlock .rateSelectionArea .taoMemberText {
+      float: right;
+      font-size: 11px;
+      line-height: 14px; }
+      .taoYourRateBlock .rateSelectionArea .taoMemberText span {
+        color: #d96932; }
+  .taoYourRateBlock .memberTitle {
+    font-size: 13px; }
+
+/*# sourceMappingURL=exp_B.css.map */
