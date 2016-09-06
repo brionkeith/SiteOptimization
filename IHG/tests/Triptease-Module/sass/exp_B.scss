@@ -1,1 +1,74 @@
-//
+.price-fighter-widget {
+	//padding-top:40px;
+	display: none;
+	position:absolute;
+	top:-5px;
+	right: 223px;
+	//background-color:#fff;
+	z-index:998;
+	height:280px;
+	width:256px;
+	//border:2px solid #cacaca !important;
+	border-radius:4px;
+
+	.closeBtn {
+      position: absolute;
+      top: 6px;
+      right: 14px;
+      height: 25px;
+      width: 25px;
+      background: url('https://ihg-my.sharepoint.com/personal/brion_mills_ihg_com/_layouts/15/guestaccess.aspx?guestaccesstoken=hxvUQaKSyUaxEWtWj1wkaBMUOD3e0lKyI9NZY6uhtYM%3d&docid=0196ea14227eb4326a034b81e34ef997e&rev=1') no-repeat 0px 0px;
+	}
+
+  .closeBtn:hover {
+    cursor: pointer;
+  }
+}
+
+.show-widget {
+	display: block;
+	//background-image: url('https://ihg-my.sharepoint.com/personal/brion_mills_ihg_com/_layouts/15/guestaccess.aspx?guestaccesstoken=hxvUQaKSyUaxEWtWj1wkaBMUOD3e0lKyI9NZY6uhtYM%3d&docid=0196ea14227eb4326a034b81e34ef997e&rev=1') no-repeat 0px 0px;
+}
+
+//.price-fighter-widget:after {
+//	content:"";
+//	position: absolute;
+//	top:115px;
+//	right:-14px;
+//	background: #fff url('../../img/tao-right-arrow.png') no-repeat 0px 0px;
+//	height:16px;
+//	width:16px;
+//}
+
+.taoPriceNowWrapper {
+	margin:0;
+	padding:10px;
+	background:#fff;
+	border:2px solid #cacaca;
+	border-radius:4px;
+	overflow:auto;
+
+	.taoNightlyRate {
+		margin-left:1.2345679012345678%;
+	}
+
+	.priceNow {
+		margin-bottom:3px;
+	}
+
+	.taoCompare {
+		padding-left:20px;
+		display:block;
+		font-weight:bold;
+		position:relative;
+		background: url('https://prodcache.internal.ihg.com/content/dam/etc/media_library/branded/6c/cn/buttons/btn_expand.gif') no-repeat 0px 0px;
+		overflow:auto;
+		height:18px;
+	}
+}
+
+.avgrate {
+	display:none;
+}
+
+

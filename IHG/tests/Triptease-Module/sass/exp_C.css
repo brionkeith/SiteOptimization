@@ -1,3 +1,11 @@
+.price-fighter-widget {
+  margin-top: 10px;
+  display: block !important;
+  position: relative !important;
+  width: auto !important;
+  overflow: auto !important; }
 
+.avgrate {
+  display: none; }
 
 /*# sourceMappingURL=exp_C.css.map */

@@ -1,3 +1,17 @@
+.priceInfoArea .price-fighter-widget {
+  margin: 0;
+  padding: 0;
+  display: block !important;
+  position: relative !important;
+  top: 3px !important;
+  right: 0 !important;
+  height: 200px;
+  overflow: visible !important;
+  z-index: 998; }
+.priceInfoArea .checkRates {
+  padding-top: 11px !important; }
 
+.no-widget .row {
+  display: block; }
 
 /*# sourceMappingURL=exp_D.css.map */
