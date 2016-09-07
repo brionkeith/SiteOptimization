@@ -1,8 +1,9 @@
+// =================== START =======================
 //jshint strict:false
 //jshint jquery:true
 //jshint browser:true
 //jshint camelcase:false
-/*globals roomkey_config,PFConfig*/
+/*globals roomkey_config,Paperboy*/
 
 function taoTripTeaseModule() {
 
@@ -59,7 +60,7 @@ function taoTripTeaseModule() {
             'class="price-fighter-widget ' + propertyCode.toLowerCase() + '"' +
             'data-pf-hotelkey="6e7dd50235b6f9def5cbf723d630411f0507c358"' +
             'data-pf-property="' + propertyCode +'"' +
-            'data-pf-currency="GBP"' +
+            // 'data-pf-currency="GBP"' +
             'data-pf-checkin="' + checkin + '"' +
             'data-pf-checkout="' + checkout+'"' +
             'data-pf-direct-price="' + direct + '"'+
@@ -73,7 +74,21 @@ function taoTripTeaseModule() {
     });
 
     //PL reload paperboy
-    jQuery.getScript('https://paperboy.triptease.net/IHG.js');
+    jQuery.getScript('https://paperboy.triptease.net/IHG.js',function(){
+        Paperboy.on('priceCheck:apiComplete', function(event) {
+            if(event.visible === false) {
+                // widget won't show/hide the button
+                // 1. find the widget
+                var widget = jQuery('.price-fighter-widget')[event.id];
+                // 2. find the button
+                var button = jQuery(widget).closest('.priceInfoArea').find('.taoCompare');
+                // 3. hide it
+                button.hide();
+            }
+        });
+
+
+    });
 
     jQuery('<span class="closeBtn"></span>').appendTo('.price-fighter-widget');
 
@@ -129,6 +144,7 @@ function taoTripTeaseModule() {
         }
 
     });
+
 }
 
 jQuery(document).ready(function() {
@@ -152,6 +168,7 @@ jQuery(document).ready(function() {
             }
         }); // End ajaxComplete();
     });
+
 });
 
 // create an array that contains all of the hotel codes that are part of this
@@ -508,3 +525,5 @@ var taoAllHotelCodes = [
     "EDIIN",
     "LTNST"
 ];
+
+// =================== END =======================
